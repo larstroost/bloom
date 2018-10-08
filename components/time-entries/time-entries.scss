@@ -1,0 +1,45 @@
+@import "../../shared/styles/main";
+
+.time-entries-bundling-stamp {
+  display: flex;
+  justify-content: space-between;
+  margin: 32px 16px 16px;
+  min-width: 343px;
+
+  // @include container
+
+  @media (min-width: 600px) and (max-width: 1201px) {
+    margin: 33px 16px 25px;
+  }
+
+  @media (min-width: 1202px) {
+    margin: 33px auto 25px;
+    max-width: 1170px;
+  }
+
+  &__date {
+    color: $color-monochrome-2;
+    font-family: $font-primary;
+    font-size: $paragraph-size--mobile;
+    height: 19px;
+
+    @include tablet {
+      font-size: $default-font-size--mobile;
+      font-weight: 300;
+      height: 29px;
+    }
+  }
+
+  &__total-hours {
+    color: $color-monochrome-2;
+    font-family: $font-primary;
+    font-size: $paragraph-size--mobile;
+    height: 19px;
+
+    @include tablet {
+      font-size: $default-font-size--mobile;
+      font-weight: 300;
+      height: 29px;
+    }
+  }
+}

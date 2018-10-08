@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="4px" viewBox="0 0 7 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="teamawesome-timesheets" transform="translate(-458.000000, -281.000000)" fill="#A8AAB7">
+            <g id="New-time-entry" transform="translate(205.000000, 227.000000)">
+                <g id="Select-employer" transform="translate(30.000000, 12.000000)">
+                    <g id="Select" transform="translate(1.000000, 26.000000)">
+                        <path d="M224,18 L227.502301,18 C227.777173,18 228,18.2319336 228,18.5 C228,18.7761424 227.785156,19 227.502301,19 L223.497699,19 C223.360656,19 223.23655,18.9423476 223.146546,18.8513085 C223.055654,18.767462 223,18.6433359 223,18.5023012 L223,14.4976988 C223,14.2228273 223.231934,14 223.5,14 C223.776142,14 224,14.2148438 224,14.4976988 L224,18 Z" id="Arrow" transform="translate(225.500000, 16.500000) rotate(-45.000000) translate(-225.500000, -16.500000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

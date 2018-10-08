@@ -1,0 +1,60 @@
+@import "../../shared/styles/main";
+
+.page-header {
+  background-color: $color-monochrome-1;
+  box-shadow: 0 1px 0 0 $color-monochrome-3;
+  display: none;
+  height: 70px;
+
+  @include tablet {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 32px;
+  }
+
+  &__title {
+    color: $color-monochrome-4;
+    display: inline-block;
+    font-family: $font-primary;
+    font-size: $heading-tertriary-size;
+    font-weight: 500;
+    position: relative;
+
+    &::after {
+      background: $color-accent-alt-3;
+      bottom: 8px;
+      content: "";
+      position: absolute;
+      right: -12px;
+      top: 10px;
+      width: 1px;
+    }
+  }
+
+  &__subtitle {
+    color: $color-monochrome-2;
+    display: inline;
+    font-family: $font-primary;
+    font-size: $default-font-size;
+    font-weight: 300;
+    margin: 12px 0 7px 25px;
+  }
+
+  &__select-search-wrapper {
+    display: flex;
+  }
+
+  &__search {
+    background-color: $color-monochrome-1;
+    border: solid 1px $color-accent-alt-3;
+    border-radius: 4px;
+    color: $color-monochrome-2;
+    font-family: $font-primary;
+    font-weight: 500;
+    height: 36px;
+    max-width: 270px;
+    min-width: 100px;
+    padding: 9px 0 8px 13px;
+  }
+}

@@ -1,0 +1,111 @@
+@import "../../shared/styles/main";
+
+.login {
+  align-items: center;
+  background: $color-primary;
+  bottom: 0;
+  display: flex;
+  left: 0;
+  padding: 0 16px;
+  position: fixed;
+  right: 0;
+  top: 0;
+
+  &__screen {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__form {
+    background: $color-monochrome-1;
+    border: solid 1px $color-monochrome-3;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    padding: 24px 30px;
+    width: 100%;
+  }
+
+  &__header {
+    -webkit-font-smoothing: antialiased;
+    color: $color-primary;
+    display: block;
+    font-family: belloscript;
+    font-size: $heading-primary-size--mobile;
+    margin-bottom: 24px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  &__label {
+    color: $color-monochrome-2;
+    display: flex;
+    flex-direction: column;
+    font-family: $font-primary;
+    font-size: $default-font-size;
+    font-weight: 500;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  &__input {
+    background: $color-monochrome-1;
+    border: solid 1px $color-monochrome-5;
+    border-radius: 4px;
+    color: $color-monochrome-4;
+    font-family: $font-primary;
+    font-size: $default-font-size;
+    font-weight: 500;
+    height: 36px;
+    margin-top: 5px;
+    padding-left: 13px;
+
+    &--invalid {
+      border: solid 1px $color-error;
+
+      &:focus {
+        border: solid 1px $color-monochrome-5;
+      }
+    }
+  }
+
+  &__submit {
+    margin-top: 10px;
+    min-width: 200px;
+    padding: 9px 0 8px;
+    text-align: center;
+    width: 100%;
+
+    &--valid {
+      background: linear-gradient($color-secondary, $color-accent-alt-1 98%);
+      border: 1px solid $color-accent;
+      color: $color-monochrome-1;
+    }
+
+    &--invalid {
+      background: $color-monochrome-7;
+      border: 1px solid $color-monochrome-5;
+      color: $color-accent3;
+    }
+  }
+
+  &__forgot-password {
+    background: $color-monochrome-8;
+    border: solid 1px $color-monochrome-3;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top: none;
+    color: $color-monochrome-2;
+    font-family: $font-primary;
+    font-size: $default-font-size;
+    font-weight: 500;
+    max-width: 350px;
+    padding: 14px 0;
+    text-align: center;
+    width: 100%;
+  }
+}

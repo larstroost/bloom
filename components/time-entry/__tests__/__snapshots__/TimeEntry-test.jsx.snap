@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`time entry should render without crashing 1`] = `
+<section
+  className="time-entry"
+>
+  <div
+    className="single-time-entry"
+  >
+    <div
+      className="single-time-entry__wrapper-client-delete"
+    >
+      <p
+        className="single-time-entry__client"
+      >
+        Client Unknown
+      </p>
+      <button
+        className="single-time-entry__delete"
+        onClick={[Function]}
+        type="button"
+      >
+        Delete
+        <div
+          className="single-time-entry__forbidden-icon"
+        />
+      </button>
+    </div>
+    <div>
+      <p
+        className="single-time-entry__hours"
+      >
+        09:00
+         - 
+        17:00
+      </p>
+      <p
+        className="single-time-entry__hours-worked"
+      >
+        08:00
+      </p>
+    </div>
+  </div>
+</section>
+`;

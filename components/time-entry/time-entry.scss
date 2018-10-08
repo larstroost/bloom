@@ -1,0 +1,116 @@
+@import "../../shared/styles/main";
+
+.single-time-entry {
+  border: solid 1px $color-monochrome-3;
+  border-left: solid 4px $color-primary;
+  border-radius: 4px;
+  display: flex;
+  height: 82px;
+  justify-content: space-between;
+  margin: 0 16px;
+  min-width: 343px;
+
+  // @include container
+
+  @media (min-width: 600px) and (max-width: 1201px) {
+    margin: 0 16px;
+  }
+
+  @media (min-width: 1202px) {
+    margin: 0 auto;
+    max-width: 1170px;
+  }
+
+  &__wrapper-client-delete {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+  }
+
+  &__client {
+    color: $color-monochrome-4;
+    font-family: $font-primary;
+    font-size: $paragraph-size--mobile;
+    font-weight: 500;
+    height: 19px;
+    margin: 30px 0 33px 16px;
+    width: auto;
+
+    @include tablet {
+      margin: 30px 0 33px 30px;
+    }
+  }
+
+  &__delete {
+    display: none;
+    font-family: $font-primary;
+    font-size: $default-font-size;
+    font-weight: 400;
+
+    @include tablet {
+      background-color: $color-error;
+      border: solid 1px $color-error;
+      border-radius: 4px;
+      color: $color-monochrome-1;
+      display: block;
+      height: 30px;
+      margin: 26px 0 26px 33px;
+      opacity: 0;
+      overflow: hidden;
+      padding: 6px 7px;
+      text-align: right;
+      transition: opacity .2s ease-out;
+      width: 80px;
+    }
+  }
+
+  &__forbidden-icon {
+    -webkit-mask: url("/static/icons/forbid.png") no-repeat;
+    -webkit-mask-size: 16px 16px;
+    background-color: $color-monochrome-1;
+    border-style: none;
+    border-width: 0;
+    height: 16px;
+    position: relative;
+    text-align: left;
+    top: -16px;
+    width: 16px;
+  }
+
+  &:hover {
+    .single-time-entry__delete {
+      @include tablet {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__hours {
+    color: $color-monochrome-4;
+    font-family: $font-primary;
+    font-size: $paragraph-size--mobile;
+    font-weight: 500;
+    height: 19px;
+    margin: 18px 16px 0 0;
+    width: auto;
+
+    @include tablet {
+      margin: 18px 32px 0 0;
+    }
+  }
+
+  &__hours-worked {
+    color: $color-monochrome-2;
+    font-family: $font-primary;
+    font-size: $default-font-size;
+    font-weight: 500;
+    height: 19px;
+    margin: 10px 16px 0 0;
+    text-align: right;
+    width: auto;
+
+    @include tablet {
+      margin: 10px 32px 0 0;
+    }
+  }
+}

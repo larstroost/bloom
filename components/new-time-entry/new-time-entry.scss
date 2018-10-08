@@ -1,0 +1,204 @@
+@import "../../shared/styles/main";
+
+.new-time-entry {
+  padding: 24px 16px 0;
+  width: 100%;
+
+  @include tablet {
+    padding: 33px 16px 0;
+  }
+}
+
+.new-time-entry__button {
+  background: linear-gradient($color-secondary, $color-accent-alt-1 98%);
+  border: 1px solid $color-accent;
+  border-radius: 4px;
+  color: $color-monochrome-1;
+  display: block;
+  font-family: $font-primary;
+  font-size: $default-font-size;
+  font-weight: 400;
+  height: 36px;
+  margin: 0 auto;
+  padding: 9px 0 8px;
+  text-align: center;
+  width: 100%;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.new-time-entry-header {
+  color: $color-monochrome-4;
+  display: none;
+  font-family: $font-primary;
+  font-size: $default-font-size--mobile;
+  font-weight: 400;
+  height: 29px;
+
+  @media (min-width: 600px) and (max-width: 1201px) {
+    display: flex;
+    margin: auto;
+    width: auto;
+  }
+
+  @media (min-width: 1202px) {
+    display: block;
+    margin: auto;
+    max-width: 1170px;
+    width: auto;
+  }
+}
+
+.new-entry-form {
+  align-content: flex-start;
+  background-color: $color-tertriary;
+  border: solid 1px $color-monochrome-3;
+  border-radius: 4px;
+  display: none;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 16px 16px 32px;
+  position: relative;
+  width: 100%;
+
+  &--open {
+    display: flex;
+  }
+
+  @media (min-width: 600px) and (max-width: 1201px) {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    padding: 12px 32px 20px;
+    width: auto;
+  }
+
+  @media (min-width: 1202px) {
+    display: flex;
+    flex-direction: row;
+    margin: 25px auto 0;
+    max-width: 1170px;
+    padding: 12px 32px 20px;
+    width: auto;
+  }
+
+  &__input {
+    background: linear-gradient(to top, $color-accent-alt-2, $color-accent-alt-2);
+    border: solid 1px $color-monochrome-5;
+    border-radius: 4px;
+    font-family: $font-primary;
+    font-size: $default-font-size;
+    font-weight: 500;
+    height: 36px;
+    margin-top: 12px;
+    padding-left: 14px;
+    width: 100%;
+
+    &--invalid {
+      border: solid 1px $color-error;
+
+      &:focus {
+        border: solid 1px $color-monochrome-5;
+      }
+    }
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    font-family: $font-primary;
+    font-size: $heading-tertriary-size--mobile;
+    font-weight: 400;
+    margin-bottom: 16px;
+    opacity: .5;
+
+    &--full {
+      margin-bottom: 16px;
+      width: 100%;
+
+      @include tablet {
+        margin: 0 13px 0 0;
+        max-width: 245px;
+        min-width: 100px;
+      }
+    }
+
+    &--half {
+      margin-bottom: 16px;
+      width: 100%;
+
+      @include tablet {
+        margin: 0 17px 0 0;
+        max-width: 130px;
+        min-width: 75px;
+      }
+    }
+
+    &--quarter {
+      margin-bottom: 16px;
+      width: 48%;
+
+      @include tablet {
+        margin: 0 13px 0 0;
+        max-width: 64px;
+        min-width: 55px;
+      }
+    }
+  }
+
+  &__add-button {
+    background: linear-gradient($color-secondary, $color-accent-alt-1 98%);
+    border: 1px solid $color-accent;
+    border-radius: 4px;
+    color: $color-monochrome-1;
+    font-family: $font-primary;
+    font-size: $default-font-size;
+    font-weight: 400;
+    height: 36px;
+    margin-top: 26px;
+    padding: 9px 0 8px;
+    text-align: center;
+    width: 100%;
+
+    &--invalid {
+      background: $color-monochrome-3;
+      border: none;
+      color: $color-accent2;
+    }
+
+    @include tablet {
+      margin: 26px 0 0 auto;
+      max-width: 90px;
+      min-width: 45px;
+    }
+  }
+
+  &__close-button {
+    -webkit-mask: url("/static/icons/close.svg") no-repeat;
+    -webkit-mask-size: 7px 7px;
+    background-color: $color-monochrome-4;
+    border-style: none;
+    border-width: 0;
+    display: block;
+    height: 7px;
+    position: absolute;
+    right: 9px;
+    top: 16px;
+
+    @include tablet {
+      display: none;
+    }
+  }
+}
+
+.two-boxes-inline {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  @include tablet {
+    width: 141px;
+  }
+}

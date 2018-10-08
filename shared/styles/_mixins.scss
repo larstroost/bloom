@@ -1,0 +1,202 @@
+@import "variables";
+
+/* color scheme sections */
+
+@mixin scheme-primary {
+  background-color: $color-monochrome-1;
+  color: $color-monochrome-4;
+
+  &__title {
+    color: $color-monochrome-5;
+  }
+
+  &__description {
+    color: $color-monochrome-4;
+  }
+}
+
+@mixin scheme-secondary {
+  background-color: $color-monochrome-2;
+  color: $color-monochrome-4;
+
+  &__title {
+    color: $color-monochrome-5;
+  }
+
+  &__description {
+    color: $color-monochrome-4;
+  }
+}
+
+@mixin scheme-accent {
+  background-color: $color-secondary;
+  color: $color-tertriary;
+
+  &__title {
+    color: $color-monochrome-1;
+  }
+
+  &__description {
+    color: $color-tertriary;
+  }
+}
+
+@mixin scheme-accent--dark {
+  background-color: $color-primary;
+  color: $color-tertriary;
+
+  &__title {
+    color: $color-monochrome-1;
+  }
+
+  &__description {
+    color: $color-tertriary;
+  }
+}
+
+@mixin apply-scheme($scheme) {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @if $scheme == "primary" {
+    @include scheme-primary;
+  } @else if $scheme == "secondary" {
+    @include scheme-secondary;
+  } @else if $scheme == "accent" {
+    @include scheme-accent;
+  } @else if $scheme == "accent-dark" {
+    @include scheme-accent--dark;
+  } @else {
+    @include scheme-primary;
+  }
+}
+
+/* media queries */
+@mixin mobile-max {
+  @media #{$xs} {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media #{$gt-xs} {
+    @content;
+  }
+}
+
+@mixin tablet-max {
+  @media #{$sm} {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media #{$gt-sm} {
+    @content;
+  }
+}
+
+@mixin desktop-max {
+  @media #{$md} {
+    @content;
+  }
+}
+
+@mixin desktop-large {
+  @media #{$gt-md} {
+    @content;
+  }
+}
+
+@mixin desktop-large-max {
+  @media #{$lg} {
+    @content;
+  }
+}
+
+@mixin desktop-xlarge {
+  @media #{$gt-lg} {
+    @content;
+  }
+}
+
+/* grid */
+@mixin container {
+  display: flex;
+  margin: auto;
+  max-width: $container-xs;
+  padding: 0 $padding;
+  width: 100%;
+
+  @include tablet {
+    max-width: $container-sm;
+  }
+  @include desktop {
+    max-width: $container-md;
+  }
+  @include desktop-large {
+    max-width: $container-lg;
+  }
+  @include desktop-xlarge {
+    max-width: $container-xlg;
+  }
+}
+
+@mixin row {
+  display: flex;
+  flex-direction: row;
+}
+
+/* grid */
+
+// How to use:
+// gridtype: "columns" || "rows"
+// args: "1fr 1fr 2fr" || repeat(3, auto)
+// row-gap: "15px"
+// column-gap: "15px"
+
+@mixin grid($grid-type, $args, $row-gap: $padding, $column-gap: $row-gap) {
+  @supports (display: grid) {
+    display: grid;
+    grid-gap: $row-gap $column-gap;
+    grid-template-#{$grid-type}: #{$args};
+  }
+}
+
+/* font-size */
+@mixin paragraph {
+  font-size: $paragraph-size--mobile;
+  font-weight: $font-weight-book;
+  line-height: 1.65;
+  @include tablet {
+    font-size: $paragraph-size;
+  }
+}
+
+@mixin heading-primary {
+  font-size: $heading-primary-size--mobile;
+  font-weight: $font-weight-black;
+  line-height: 1.5;
+  @include tablet {
+    font-size: $heading-primary-size;
+  }
+}
+
+@mixin heading-secondary {
+  font-size: $heading-secondary-size--mobile;
+  font-weight: $font-weight-black;
+  line-height: 1.5;
+  @include tablet {
+    font-size: $heading-secondary-size;
+  }
+}
+
+@mixin heading-tertriary {
+  font-size: $heading-tertriary-size--mobile;
+  font-weight: $font-weight-bold;
+  line-height: 1.5;
+  @include tablet {
+    font-size: $heading-tertriary-size;
+  }
+}

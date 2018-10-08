@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`header should render without crashing 1`] = `
+<header
+  className="header"
+>
+  <Link
+    href="/"
+  >
+    <a
+      className="header__logo"
+    >
+      team awesome
+    </a>
+  </Link>
+  <nav
+    className="
+          main-nav
+          main-nav--
+        "
+  >
+    <ul>
+      <li
+        className="main-nav__item main-nav__item--active"
+      >
+        <Link
+          href="/timesheets"
+        >
+          <a
+            className="main-nav__link main-nav__link--active"
+          >
+            Timesheets
+          </a>
+        </Link>
+      </li>
+      <li
+        className="main-nav__item"
+      >
+        <Link
+          href="/team-members"
+        >
+          <a
+            className="main-nav__link"
+          >
+            Team Members
+          </a>
+        </Link>
+      </li>
+      <li
+        className="main-nav__item"
+      >
+        <a
+          className="main-nav__link"
+          href="/"
+        >
+          Projects
+        </a>
+      </li>
+      <li
+        className="main-nav__item"
+      >
+        <Link
+          href="/clients"
+        >
+          <a
+            className="main-nav__link"
+          >
+            Clients
+          </a>
+        </Link>
+      </li>
+      <li
+        className="main-nav__item"
+      >
+        <a
+          className="main-nav__link"
+          href="/"
+        >
+          Documents
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <button
+    className="menu-toggle"
+    onClick={[Function]}
+    type="button"
+  >
+    <img
+      alt="Open menu"
+      className="menu-toggle__image menu-toggle__image--open"
+      src="/static/icons/hamburger.svg"
+    />
+  </button>
+  <div
+    className="profile"
+  >
+    <img
+      alt="Humanoids logo"
+      className="profile__logo"
+      src="/static/icons/humanoids-logo.png"
+    />
+    <img
+      alt="Avatar"
+      className="profile__avatar"
+      src="/static/icons/avatar.png"
+    />
+  </div>
+</header>
+`;

@@ -1,0 +1,158 @@
+@import "../../shared/styles/main";
+
+.header {
+  background-color: $color-primary;
+  display: flex;
+  height: 50px;
+  justify-content: space-around;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+
+  @include desktop {
+    align-items: center;
+    height: 70px;
+    justify-content: space-between;
+    left: 0;
+    padding: 17px 30px;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+
+  &__logo {
+    -webkit-font-smoothing: antialiased;
+    color: $color-monochrome-1;
+    display: block;
+    font-family: belloscript;
+    font-size: $heading-primary-size--mobile;
+    padding: 12px 0 0;
+    text-align: center;
+    text-decoration: none;
+
+    @include desktop {
+      display: none;
+    }
+  }
+}
+
+.main-nav {
+  display: none;
+  padding: 70px 0 0;
+  text-align: center;
+  top: 50px;
+
+  @include tablet-max {
+    left: 0;
+    position: absolute;
+    right: 0;
+  }
+
+
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+    // margin-left: 12px;
+    padding: 0;
+    text-align: left;
+    top: 0;
+  }
+
+  &__link {
+    color: $color-monochrome-1;
+    display: block;
+    flex-direction: column;
+    font-family: $font-primary;
+    font-size: $default-font-size--mobile;
+    font-weight: 400;
+    margin: 0;
+    text-decoration: none;
+
+    @include desktop {
+      font-family: $font-primary;
+      font-size: $default-font-size;
+      font-weight: 300;
+    }
+  }
+
+  &__item {
+    margin: 26px auto;
+
+    &--active {
+      background-color: $color-monochrome-6;
+      border-radius: 4px;
+      height: 30px;
+      margin: 0 auto;
+      width: 150px;
+    }
+
+    @include desktop {
+      display: inline-block;
+      height: 30px;
+      line-height: 30px;
+      margin: auto;
+      padding: 0 18px;
+
+      &--active {
+        width: 110px;
+      }
+    }
+
+  }
+
+  &--open {
+    background-color: $color-primary;
+    display: block;
+    height: 100vh;
+  }
+}
+
+.profile {
+  background-color: $color-monochrome-1;
+  border-radius: 18px;
+  color: $color-monochrome-6;
+  display: none;
+  height: 36px;
+  width: 135px;
+
+  @include desktop {
+    display: block;
+  }
+
+  &__logo {
+    height: 10px;
+    margin: 13px 14px 13px 12px;
+    width: 75px;
+  }
+
+  &__avatar {
+    border-radius: 32px;
+    height: 32px;
+    margin: 2px 2px 2px 0;
+    width: 32px;
+  }
+}
+
+.menu-toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+
+  @include desktop {
+    display: none;
+  }
+
+  &__image {
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+  }
+}

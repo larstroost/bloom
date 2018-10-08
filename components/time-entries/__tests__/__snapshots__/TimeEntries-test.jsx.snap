@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`time entries should render without crashing 1`] = `
+<Fragment>
+  <PageHeader
+    options={
+      Array [
+        "Port of Rotterdam",
+        "Humanoids",
+        "Hike One",
+      ]
+    }
+    standardOption="All Clients"
+    subtitle="12 Entries"
+    title="Timesheets"
+  />
+  <NewTimeEntry
+    onAddTimeEntry={[Function]}
+  />
+  <div
+    className="time-entries-bundling-stamp"
+  >
+    <p
+      className="time-entries-bundling-stamp__date"
+    >
+      Saturday, 08/18
+    </p>
+    <p
+      className="time-entries-bundling-stamp__total-hours"
+    >
+      8
+    </p>
+  </div>
+  <TimeEntry
+    client="Humanoids"
+    id={1}
+    onDelete={[Function]}
+    startTime="2018-08-18T07:00:00.000Z"
+    stopTime="2018-08-18T15:00:00.000Z"
+  />
+</Fragment>
+`;

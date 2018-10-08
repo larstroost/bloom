@@ -1,0 +1,62 @@
+@import "mixins";
+
+html {
+  display: flex;
+  height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $font-primary;
+  font-size: $default-font-size--mobile;
+  font-weight: $font-weight-book;
+  letter-spacing: .5px;
+  width: 100%;
+
+  @include tablet {
+    font-size: $default-font-size;
+  }
+}
+
+input {
+  -webkit-appearance: none;
+  box-shadow: none;
+  font-family: $font-primary;
+  font-weight: $font-weight-book;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include heading-tertriary;
+  color: $header-color-primary;
+}
+
+h1 {
+  @include heading-primary;
+}
+
+h2 {
+  @include heading-secondary;
+}
+
+p {
+  @include paragraph;
+}
+
+button {
+  font-family: $font-primary;
+  font-weight: $font-weight-bold;
+}
+
+select {
+  font-family: $font-primary;
+
+  &::-ms-expand {
+    display: none;
+  }
+}

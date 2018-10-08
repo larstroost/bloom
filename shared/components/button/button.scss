@@ -1,0 +1,10 @@
+@import "../../styles/main";
+
+.button {
+  border-radius: 4px;
+  display: block;
+  font-family: $font-primary;
+  font-size: $default-font-size;
+  font-weight: 400;
+  height: 36px;
+}

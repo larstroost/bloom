@@ -1,0 +1,106 @@
+/* fonts */
+$font-primary: "proximanova";
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semi-bold: 500;
+$font-weight-bold: 600;
+
+$font-weight-black: $font-weight-bold;
+$font-weight-book: $font-weight-regular;
+
+/* colors */
+$color-primary: #4f88ef;
+$color-secondary: #39b54a;
+$color-tertriary: #f5f8fa;
+
+$color-accent: #249533;
+$color-accent2: #68768c;
+$color-accent3: #4b5464;
+
+$color-error: #fb6375;
+
+$color-monochrome-1: #fff;
+$color-monochrome-2: #7f8fa4;
+$color-monochrome-3: #e6eaee;
+$color-monochrome-4: #354052;
+$color-monochrome-5: #ced0da;
+$color-monochrome-6: #1166a5;
+$color-monochrome-7: #f5f7f9;
+$color-monochrome-8: #f8fafc;
+
+$color-accent-alt-1: #34aa44;
+$color-accent-alt-2: #f2f4f7;
+$color-accent-alt-3: #dfe3e9;
+$color-accent-alt-4: #f05a28;
+
+$facebook-1: #137ece;
+$facebook-2: #288bd5;
+
+$twitter-1: #2ea1f8;
+$twitter-2: #1a91ec;
+
+/* color specific */
+$header-color-primary: $color-monochrome-5;
+$paragraph-color-primary: $color-monochrome-3;
+
+/* media queries */
+$xs: (max-width: 599px);
+$gt-xs: (min-width: 600px);
+$sm: (min-width: 600px) and (max-width: 959px);
+$gt-sm: (min-width: 960px);
+$md: (min-width: 960px) and (max-width: 1279px);
+$gt-md: (min-width: 1280px);
+$lg: (min-width: 1280px) and (max-width: 1919px);
+$gt-lg: (min-width: 1920px);
+$xl: (min-width: 1920px);
+
+/* container sizes */
+$container-xs: 100%;
+$container-sm: 900px;
+$container-md: 1200px;
+$container-lg: 1400px;
+$container-xlg: 1600px;
+
+/* columns */
+$columns--1: 100%;
+$columns--2: 50% 50%;
+$columns--3: 33.3% 33.3% 33.3%;
+$columns--4: 25% 25% 25% 25%;
+$columns--5: 20% 20% 20% 20% 20%;
+$columns--6: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+$columns--7: 14.28% 14.28% 14.28% 14.28% 14.28% 14.28% 14.28%;
+$columns--8: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+$columns--9: 11.1% 11.1% 11.1% 11.1% 11.1% 11.1% 11.1% 11.1% 11.1%;
+$columns--10: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+$columns--11: 9.09% 9.09% 9.09% 9.09% 9.09% 9.09% 9.09% 9.09% 9.09% 9.09% 9.09%;
+$columns--12: 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3%;
+
+/* font sizes */
+$default-font-size: 14px;
+$default-font-size--mobile: 24px;
+$heading-primary-size: 36px;
+$heading-primary-size--mobile: 26px;
+$heading-secondary-size: 25px;
+$heading-secondary-size--mobile: 18px;
+$heading-tertriary-size: 18px;
+$heading-tertriary-size--mobile: 12px;
+$paragraph-size: 18px;
+$paragraph-size--mobile: 16px;
+
+/* component scheme"s */
+$scheme-primary: "primary";
+$scheme-secondary: "secondary";
+$scheme-accent: "accent";
+$scheme-accent--dark: "accent-dark";
+
+/* sizing */
+$main-navigation-height: 90px;
+$main-navigation-height--small: 70px;
+
+$subnav-height: 80px;
+$subnav-height--mobile: 72px;
+
+/* spacing */
+$padding: 20px;
+$default-grid-gutter: 10px;
