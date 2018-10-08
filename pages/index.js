@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Login from '../components/login/Login';
+import MainNav from '../components/header/Header';
 
 const Index = () => (
   <React.Fragment>
-    <Login />
+    <MainNav />
   </React.Fragment>
 );
 
