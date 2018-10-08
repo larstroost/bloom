@@ -81,18 +81,6 @@ class MainNav extends React.Component {
             />
           )}
         </button>
-        <div className="profile">
-          <img
-            alt="Humanoids logo"
-            className="profile__logo"
-            src="/static/icons/humanoids-logo.png"
-          />
-          <img
-            alt="Avatar"
-            className="profile__avatar"
-            src="/static/icons/avatar.png"
-          />
-        </div>
       </header>
 
     );
