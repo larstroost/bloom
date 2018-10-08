@@ -18,7 +18,7 @@ class MainNav extends React.Component {
       <header className="header">
         <Link href="/">
           <a className="header__logo">
-            team awesome
+            Bloom
           </a>
         </Link>
         <nav className={`
@@ -28,34 +28,34 @@ class MainNav extends React.Component {
         >
           <ul>
             <li className="main-nav__item main-nav__item--active">
-              <Link href="/timesheets">
+              <Link href="/">
                 <a className="main-nav__link main-nav__link--active">
-                  Timesheets
+                  Messen
                 </a>
               </Link>
             </li>
             <li className="main-nav__item">
-              <Link href="/team-members">
+              <Link href="/">
                 <a className="main-nav__link">
-                  Team Members
+                  Snijplanken
                 </a>
               </Link>
             </li>
             <li className="main-nav__item">
               <a href="/" className="main-nav__link">
-                Projects
+                Offerte Aanvragen
               </a>
             </li>
             <li className="main-nav__item">
-              <Link href="/clients">
+              <Link href="/">
                 <a className="main-nav__link">
-                  Clients
+                  Contact
                 </a>
               </Link>
             </li>
             <li className="main-nav__item">
               <a href="/" className="main-nav__link">
-                Documents
+                Placeholder
               </a>
             </li>
           </ul>
