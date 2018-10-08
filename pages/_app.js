@@ -6,7 +6,7 @@ import nextReduxSaga from 'next-redux-saga';
 
 import initializeStore from '../store';
 
-class TeamAwesome extends App {
+class Bloom extends App {
   render() {
     const { Component, store } = this.props;
 
@@ -20,4 +20,4 @@ class TeamAwesome extends App {
   }
 }
 
-export default withRedux(initializeStore)(nextReduxSaga(TeamAwesome));
+export default withRedux(initializeStore)(nextReduxSaga(Bloom));

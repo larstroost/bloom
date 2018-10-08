@@ -1,6 +1,4 @@
-import environments from '../../environments';
-
-const url = `${environments}/team-members`;
+const url = 'localhost:3001/team-members';
 
 export const fetchData = () => fetch(url)
   .then((response) => response.json());
