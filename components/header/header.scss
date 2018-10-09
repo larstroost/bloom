@@ -15,11 +15,8 @@
     align-items: center;
     height: 70px;
     justify-content: space-between;
-    left: 0;
     padding: 17px 30px;
     position: fixed;
-    right: 0;
-    top: 0;
   }
 
   &__logo {
@@ -31,33 +28,23 @@
     padding: 12px 0 0;
     text-align: center;
     text-decoration: none;
-
-    @include desktop {
-      display: none;
-    }
   }
 }
 
 .main-nav {
   display: none;
+  left: 0;
   padding: 70px 0 0;
+  position: absolute;
+  right: 0;
   text-align: center;
   top: 50px;
-
-  @include tablet-max {
-    left: 0;
-    position: absolute;
-    right: 0;
-  }
-
 
   @include desktop {
     display: flex;
     justify-content: space-between;
-    // margin-left: 12px;
     padding: 0;
-    text-align: left;
-    top: 0;
+    position: static;
   }
 
   &__link {
@@ -73,7 +60,7 @@
     @include desktop {
       font-family: $font-primary;
       font-size: $default-font-size;
-      font-weight: 300;
+      font-weight: 400;
     }
   }
 
@@ -81,11 +68,10 @@
     margin: 26px auto;
 
     &--active {
-      background-color: $color-monochrome-6;
-      border-radius: 4px;
-      height: 30px;
+      border-bottom: solid 5px $color-secondary;
+      // height: 30px;
       margin: 0 auto;
-      width: 150px;
+      width: 100%;
     }
 
     @include desktop {
@@ -95,9 +81,9 @@
       margin: auto;
       padding: 0 18px;
 
-      &--active {
-        width: 110px;
-      }
+      // &--active {
+      //   width: 110px;
+      // }
     }
 
   }
