@@ -71,7 +71,7 @@
       border-bottom: solid 5px $color-secondary;
       // height: 30px;
       margin: 0 auto;
-      width: 100%;
+      // width: 100%;
     }
 
     @include desktop {
@@ -92,32 +92,6 @@
     background-color: $color-primary;
     display: block;
     height: 100vh;
-  }
-}
-
-.profile {
-  background-color: $color-monochrome-1;
-  border-radius: 18px;
-  color: $color-monochrome-6;
-  display: none;
-  height: 36px;
-  width: 135px;
-
-  @include desktop {
-    display: block;
-  }
-
-  &__logo {
-    height: 10px;
-    margin: 13px 14px 13px 12px;
-    width: 75px;
-  }
-
-  &__avatar {
-    border-radius: 32px;
-    height: 32px;
-    margin: 2px 2px 2px 0;
-    width: 32px;
   }
 }
 
