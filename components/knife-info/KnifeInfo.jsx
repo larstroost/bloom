@@ -33,17 +33,17 @@ class KnifeInfo extends React.Component {
         <div className="knife-info__wrapper">
           <h2 className="knife-info__title">
             {title}
-          </ h2>
+          </h2>
 
           {!this.state.open && (
             <p className="knife-info__text">
               Placeholder basic info
-            </ p>
+            </p>
           )}
           {this.state.open && (
             <p className="knife-info__text">
               Placeholder tering veel tekst
-            </ p>
+            </p>
           )}
           {!open && (
             <img
@@ -59,8 +59,6 @@ class KnifeInfo extends React.Component {
               alt="Arrow Up"
             />
           )}
-
-
         </div>
       </section>
     );
