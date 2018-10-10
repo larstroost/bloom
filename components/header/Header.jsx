@@ -4,16 +4,16 @@ import Link from 'next/link';
 import './header.scss';
 
 class MainNav extends React.Component {
-  state = { open: false };
+  state = { isOpen: false };
 
   toggleMenu = () => {
     this.setState((prevState) => ({
-      open: !prevState.open
+      isOpen: !prevState.isOpen
     }));
   };
 
   render() {
-    const { open } = this.state;
+    const { isOpen } = this.state;
     return (
       <header className="header">
         <Link href="/">
@@ -23,7 +23,7 @@ class MainNav extends React.Component {
         </Link>
         <nav className={`
           main-nav
-          main-nav--${open ? 'open' : ''}
+          main-nav--${isOpen ? 'open' : ''}
         `}
         >
           <ul>
@@ -60,20 +60,19 @@ class MainNav extends React.Component {
             </li>
           </ul>
         </nav>
-
         <button
           className="menu-toggle"
           onClick={this.toggleMenu}
           type="button"
         >
-          {!open && (
+          {!isOpen && (
             <img
               alt="Open menu"
               className="menu-toggle__image menu-toggle__image--open"
               src="/static/icons/hamburger.svg"
             />
           )}
-          {open && (
+          {isOpen && (
             <img
               alt="Close menu"
               className="menu-toggle__image menu-toggle__image--close"
@@ -82,7 +81,6 @@ class MainNav extends React.Component {
           )}
         </button>
       </header>
-
     );
   }
 }

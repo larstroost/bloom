@@ -4,17 +4,17 @@ import './knife-info.scss';
 
 class KnifeInfo extends React.Component {
     //state en functies
-  state = { open: false };
+  state = { isOpen: false };
 
   toggleInfo = () => {
     this.setState((prevState) => ({
-      open: !prevState.open
+      isOpen: !prevState.isOpen
     }));
   };
 
   render() {
     //destructuring and props
-    const { open } = this.state;
+    const { isOpen } = this.state;
     const { title, src } = this.props;
     return (
       //HTML
@@ -34,25 +34,24 @@ class KnifeInfo extends React.Component {
           <h2 className="knife-info__title">
             {title}
           </h2>
-
-          {!this.state.open && (
+          {!this.state.isOpen && (
             <p className="knife-info__text">
               Placeholder basic info
             </p>
           )}
-          {this.state.open && (
+          {this.state.isOpen && (
             <p className="knife-info__text">
               Placeholder tering veel tekst
             </p>
           )}
-          {!open && (
+          {!isOpen && (
             <img
               className="knife-info__arrow"
               src="static/icons/arrow-down-2.svg"
               alt="Arrow Down"
             />
           )}
-          {open && (
+          {isOpen && (
             <img
               className="knife-info__arrow"
               src="static/icons/arrow-up.svg"
