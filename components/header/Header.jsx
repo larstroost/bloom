@@ -28,7 +28,7 @@ class MainNav extends React.Component {
         >
           <ul>
             <li className="main-nav__item main-nav__item--active">
-              <Link href="/">
+              <Link href="/messen">
                 <a className="main-nav__link main-nav__link--active">
                   Messen
                 </a>

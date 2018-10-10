@@ -23,11 +23,15 @@
     -webkit-font-smoothing: antialiased;
     color: $color-monochrome-1;
     display: block;
-    font-family: belloscript;
+    font-family: $font-primary;
     font-size: $heading-primary-size--mobile;
     padding: 12px 0 0;
     text-align: center;
     text-decoration: none;
+
+    @include desktop {
+      padding: 0;
+    }
   }
 }
 
