@@ -7,13 +7,13 @@
   display: flex;
   margin: 16px;
 
-  @include tablet {
-    background: $color-secondary;
-  }
+  // @include tablet {
+  //   background: $color-secondary;
+  // }
 
-  @include desktop {
-    background: $color-accent-alt-3;
-  }
+  // @include desktop {
+  //   background: $color-accent-alt-3;
+  // }
 
   &__image {
     border-bottom-left-radius: 4px;
