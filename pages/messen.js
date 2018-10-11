@@ -5,7 +5,7 @@ import KnifeInfo from '../components/knife-info/KnifeInfo';
 
 const Knives = () => (
   <React.Fragment>
-    <MainNav />
+    <MainNav page='messen' />
     <KnifeInfo title="Keukenmessen" src="/static/icons/kitchen-knife.jpg" />
     <KnifeInfo title="Koksmessen" src="/static/icons/chef-knife.jpeg" />
   </React.Fragment>

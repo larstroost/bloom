@@ -14,6 +14,7 @@ class MainNav extends React.Component {
 
   render() {
     const { isOpen } = this.state;
+    const { page } = this.props;
     return (
       <header className="header">
         <Link href="/">
@@ -27,16 +28,36 @@ class MainNav extends React.Component {
         `}
         >
           <ul>
-            <li className="main-nav__item main-nav__item--active">
+            <li
+              className={`
+                main-nav__item
+                main-nav__item--${page === 'messen' ? 'active' : ''}
+              `}
+            >
               <Link href="/messen">
-                <a className="main-nav__link main-nav__link--active">
+                <a
+                  className={`
+                    main-nav__link
+                    main-nav__link--${page === 'messen' ? 'active' : ''}
+                  `}
+                >
                   Messen
                 </a>
               </Link>
             </li>
-            <li className="main-nav__item">
+            <li
+              className={`
+                main-nav__item
+                main-nav__item--${page === 'snijplanken' ? 'active' : ''}
+              `}
+            >
               <Link href="/">
-                <a className="main-nav__link">
+                <a
+                  className={`
+                    main-nav__link
+                    main-nav__link--${page === 'snijplanken' ? 'active' : ''}
+                  `}
+                >
                   Snijplanken
                 </a>
               </Link>

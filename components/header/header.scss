@@ -38,17 +38,33 @@
 .main-nav {
   display: none;
   left: 0;
-  padding: 70px 0 0;
   position: absolute;
   right: 0;
   text-align: center;
-  top: 50px;
+  top: 49px;
+
+  @include tablet {
+    left: auto;
+    right: 0;
+  }
 
   @include desktop {
     display: flex;
     justify-content: space-between;
     padding: 0;
     position: static;
+  }
+
+  &--open {
+    background-color: $color-primary;
+    display: block;
+    height: 100vh;
+
+    @include tablet {
+      border-bottom-left-radius: 10px;
+      height: auto;
+      padding: 0 16px;
+    }
   }
 
   &__link {
@@ -61,6 +77,16 @@
     margin: 0;
     text-decoration: none;
 
+    &:hover {
+      border-bottom: solid 5px $color-monochrome-1;
+      transition: .2s;
+      transition-timing-function: ease-out;
+    }
+
+    &--active {
+      border-bottom: solid 5px $color-secondary;
+    }
+
     @include desktop {
       font-family: $font-primary;
       font-size: $default-font-size;
@@ -71,31 +97,14 @@
   &__item {
     margin: 26px auto;
 
-    &--active {
-      border-bottom: solid 5px $color-secondary;
-      // height: 30px;
-      margin: 0 auto;
-      // width: 100%;
-    }
-
     @include desktop {
       display: inline-block;
       height: 30px;
       line-height: 30px;
       margin: auto;
       padding: 0 18px;
-
-      // &--active {
-      //   width: 110px;
-      // }
+      width: auto;
     }
-
-  }
-
-  &--open {
-    background-color: $color-primary;
-    display: block;
-    height: 100vh;
   }
 }
 
@@ -117,6 +126,5 @@
     background-color: transparent;
     border: none;
     outline: none;
-
   }
 }
