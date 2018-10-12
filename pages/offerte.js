@@ -2,13 +2,13 @@ import React from 'react';
 
 import MainNav from '../components/header/Header';
 
-const CuttingBoards = () => (
+const Quotation = () => (
   <React.Fragment>
-    <MainNav page='snijplanken' />
+    <MainNav page='offerte' />
     <p>
       COMING SOON
     </p>
   </React.Fragment>
 );
 
-export default CuttingBoards;
+export default Quotation;
