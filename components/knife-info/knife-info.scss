@@ -6,6 +6,8 @@
   border-radius: 4px;
   display: flex;
   margin: 16px;
+  max-width: 1500px;
+  min-width: 288px;
 
   // @include tablet {
   //   background: $color-secondary;
@@ -43,9 +45,13 @@
     border-bottom: solid 1px $color-secondary;
     color: $color-secondary;
     font-family: $font-primary;
-    font-size: $default-font-size--mobile;
+    font-size: 16px;
     font-weight: 400;
     // text-align: right;
+
+    @include tablet {
+      font-size: $default-font-size--mobile;
+    }
   }
 
   &__text {
@@ -65,16 +71,20 @@
   }
 
   &__wrapper-linkage {
-    display: flex;
+    display: none;
     width: 100%;
+
+    @include tablet {
+      display: flex;
+    }
   }
 
   &__button {
-    height: 36px;
+    background: $color-monochrome-1;
     border: solid 1px $color-secondary;
     border-radius: 4px;
     color: $color-primary;
-    background: $color-monochrome-1;
+    height: 36px;
     width: 50%;
 
     &--left {
