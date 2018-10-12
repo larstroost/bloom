@@ -26,12 +26,28 @@ class KnifeInfo extends React.Component {
         onKeyDown={this.toggleInfo}
         tabIndex="0"
       >
-        <img
-          className="knife-info__image"
-          src={src}
-          alt="Kitchen Knife"
-        />
-        <div className="knife-info__wrapper-rechts">
+        <div className="knife-info__left-section">
+          <img
+            className="knife-info__image"
+            src={src}
+            alt="Kitchen Knife"
+          />
+          <Link href="/offerte">
+            <button className="knife-info__button knife-info__button--top">
+              <a className="knife-info__link">
+                Offerte Aanvragen
+              </a>
+            </button>
+          </Link>
+          <Link href="/contact">
+            <button className="knife-info__button knife-info__button--bottom">
+              <a className="knife-info__link">
+                Meer Informatie Opvragen
+              </a>
+            </button>
+          </Link>
+        </div>
+        <div className="knife-info__right-section">
           <div className="knife-info__wrapper">
             <h2 className="knife-info__title">
               {title}
@@ -60,22 +76,6 @@ class KnifeInfo extends React.Component {
                 alt="Arrow Up"
               />
             )}
-          </div>
-          <div className="knife-info__wrapper-linkage">
-            <Link href="/offerte">
-              <button className="knife-info__button knife-info__button--left">
-                <a className="knife-info__link">
-                  Offerte Aanvragen
-                </a>
-              </button>
-            </Link>
-            <Link href="/contact">
-              <button className="knife-info__button">
-                <a className="knife-info__link">
-                  Meer Informatie Opvragen
-                </a>
-              </button>
-            </Link>
           </div>
         </div>
       </section>
