@@ -9,14 +9,12 @@ const Knives = () => (
       <KnifeInfo
         title="Keukenmessen"
         src="/static/icons/kitchen-knife.jpg"
-        basicInfo="Basis informatie over keukenmessen"
-        extendedInfo="Uitgebreide informatie over keukenmessen"
+        info="Informatie over keukenmessen"
       />
       <KnifeInfo
         title="Koksmessen"
         src="/static/icons/chef-knife.jpeg"
-        basicInfo="Basis informatie over koksmessen"
-        extendedInfo="Uitgebreide informatie over koksmessen"
+        info="Informatie over koksmessen"
       />
   </React.Fragment>
 );

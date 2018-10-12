@@ -3,55 +3,94 @@
 .knife-info {
   background: $color-accent-alt-3;
   border: solid 1px $color-secondary;
+  border-left: solid 4px $color-primary;
   border-radius: 4px;
   display: flex;
+  flex-direction: column-reverse;
   margin: 16px;
   max-width: 1500px;
   min-width: 288px;
+  position: relative;
+
+  @include tablet {
+    border: solid 1px $color-secondary;
+    flex-direction: row;
+  }
 
   &__left-section {
     display: flex;
-    flex-direction: column;
-    width: 33%;
-  }
-
-  &__image {
-    border-bottom-left-radius: 4px;
-    border-top-left-radius: 4px;
+    flex-direction: row;
     width: 100%;
 
     @include tablet {
-      border-bottom-left-radius: 0;
+      display: flex;
+      flex-direction: column;
+      position: static;
+      width: 33%;
+    }
+  }
+
+  &__image {
+    display: none;
+
+    @include tablet {
+      border-top-left-radius: 4px;
+      display: block;
+      width: 100%;
     }
   }
 
   &__button {
     background: $color-monochrome-1;
     border: none;
+
     color: $color-primary;
-    display: none;
-    height: 36px;
-    width: 100%;
+    // display: none;
+    min-height: 36px;
+    width: 50%;
+
+    &--top {
+      border-bottom-left-radius: 4px;
+      // border-right: solid .5px $color-primary;
+      border-top: solid 1px $color-primary;
+
+      @include tablet {
+        border-bottom-left-radius: 0;
+        // border-right: none;
+        border-top: none;
+      }
+    }
 
     &--bottom {
-      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+      border-left: solid 1px $color-primary;
       border-top: solid 1px $color-primary;
-      margin-top: -1px;
+
+      @include tablet {
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 0;
+        border-left: none;
+        margin-top: -1px;
+      }
     }
 
     @include tablet {
       display: block;
+      width: 100%;
     }
   }
 
   &__right-section {
-    border-left: solid 1px $color-secondary;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
-    position: relative;
-    width: 67%;
+    width: 100%;
+
+    @include tablet {
+      border-left: solid 1px $color-secondary;
+      width: 67%;
+    }
   }
 
   &__wrapper {
@@ -67,9 +106,11 @@
     font-family: $font-primary;
     font-size: 16px;
     font-weight: 400;
+    // margin-right: 30px;
 
     @include tablet {
       font-size: $default-font-size--mobile;
+      // margin-right: 0;
     }
   }
 
@@ -79,10 +120,19 @@
     font-size: 14px;
     font-weight: 200;
     margin-top: 6px;
-    padding-right: 20px;
+    // padding-right: 20px;
+
+    &--open {
+      display: block;
+    }
+
+    @include tablet {
+      display: block;
+    }
   }
 
   &__arrow {
+    display: none;
     height: 12px;
     position: absolute;
     right: 10px;

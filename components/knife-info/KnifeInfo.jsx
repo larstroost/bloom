@@ -16,7 +16,7 @@ class KnifeInfo extends React.Component {
   render() {
     //destructuring and props
     const { isOpen } = this.state;
-    const { title, src, basicInfo, extendedInfo } = this.props;
+    const { title, src, info } = this.props;
     return (
       //HTML
       <section
@@ -52,16 +52,9 @@ class KnifeInfo extends React.Component {
             <h2 className="knife-info__title">
               {title}
             </h2>
-            {!this.state.isOpen && (
               <p className="knife-info__text">
-                {basicInfo}
-              </p>
-            )}
-            {this.state.isOpen && (
-              <p className="knife-info__text">
-                {extendedInfo}
-              </p>
-            )}
+              {info}
+            </p>
             {!isOpen && (
               <img
                 className="knife-info__arrow"
