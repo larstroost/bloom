@@ -1,14 +1,14 @@
 @import "../../shared/styles/main";
 
 .knife-info-plus {
+  border: solid 1px $color-secondary;
   border-radius: 4px;
   margin: 16px;
-  border: solid 1px $color-secondary;
 
   @include tablet {
-    max-width: 45%;
     display: flex;
     flex-direction: row;
+    max-width: 45%;
 
     &--open {
       max-width: 100%;
@@ -44,9 +44,9 @@
   }
 
   &__photo {
-    width: 100%;
     border-radius: 4px;
     margin-bottom: -5px;
+    width: 100%;
 
     &--open {
       border-bottom-left-radius: 0;
@@ -59,19 +59,22 @@
   }
 
   &__icon {
-    position: absolute;
-    left: 50%;
     bottom: 10px;
-    width: 20px;
+    left: 50%;
     opacity: .75;
-    transform: translate(-50%, 0)
+    position: absolute;
+    transform: translate(-50%, 0);
+    width: 20px;
   }
 
   &__wrapper-right {
     display: none;
+    justify-content: space-between;
+    position: relative;
 
     &--open {
-      display: block;
+      display: flex;
+      flex-direction: column;
     }
 
     @include tablet {
@@ -80,14 +83,19 @@
   }
 
   &__info {
+    height: 100%;
+    margin-top: 3px;
     overflow: scroll;
-    height: 100px;
+    padding: 3px;
     width: 100%;
+    margin-bottom: 36px;
   }
 
   &__link-wrapper {
     display: flex;
     flex-direction: column;
+    position: absolute;
+    bottom: 0;
 
     @include tablet {
       flex-direction: row;
@@ -95,6 +103,21 @@
   }
 
   &__button {
+    background: $color-primary;
+    border: none;
+    color: $color-monochrome-1;
     height: 36px;
+    width: 100%;
+
+    @include tablet {
+      width: 50%;
+    }
+
+    &--right {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      border-top: solid 1px $color-monochrome-1;
+      margin-top: -1px;
+    }
   }
 }
