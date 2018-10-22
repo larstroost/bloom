@@ -41,7 +41,7 @@ class MainNav extends React.Component {
                     main-nav__link--${page === 'messen' ? 'active' : ''}
                   `}
                 >
-                  Messen
+                  Messen Slijpen
                 </a>
               </Link>
             </li>
@@ -58,7 +58,7 @@ class MainNav extends React.Component {
                     main-nav__link--${page === 'snijplanken' ? 'active' : ''}
                   `}
                 >
-                  Snijplanken
+                  Snijplanken Vlakken
                 </a>
               </Link>
             </li>
