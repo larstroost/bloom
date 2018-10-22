@@ -18,7 +18,7 @@ class KnifeInfoPlus extends React.Component {
     const { isOpen } = this.state;
     return (
       //HTML
-      <section
+      <li
         className={`
           knife-info-plus
           knife-info-plus--${isOpen ? 'open' : 'closed'}
@@ -34,7 +34,12 @@ class KnifeInfoPlus extends React.Component {
             knife-info-plus__wrapper-left--${isOpen ? 'open' : 'closed'}
           `}
         >
-          <div className="knife-info-plus__opacity-bg">
+          <div
+            className={`
+              knife-info-plus__opacity-bg
+              knife-info-plus__opacity-bg--${isOpen ? 'open' : 'closed'}
+            `}
+          >
             <h2 className="knife-info-plus__titel">
               Lange Mes Titel
             </h2>
@@ -88,7 +93,7 @@ class KnifeInfoPlus extends React.Component {
             </Link>
           </div>
         </div>
-      </section>
+      </li>
     );
   }
 }
