@@ -1,0 +1,45 @@
+@import "../../shared/styles/main";
+
+.info-box {
+  // border: solid 1px $color-secondary;
+  // border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 16px;
+
+  &__wrapper {
+    width: 100%;
+  }
+
+  &__title {
+    color: $color-secondary;
+    font-size: 20px;
+    font-weight: 400;
+
+    @include tablet {
+      font-size: 24px;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 28px;
+    }
+  }
+
+  &__text {
+    color: $color-secondary;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  &__image {
+    display: none;
+    height: 40%;
+    width: 40%;
+
+    @include tablet {
+      display: block;
+      // opacity: .5;
+    }
+  }
+}
