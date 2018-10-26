@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 import './knife-info-container.scss';
-import KnifeInfoPlus from '../knife-info-plus/KnifeInfoPlus'
+import KnifeInfo from '../knife-info/KnifeInfo'
 import KnifeInfoText from '../knife-info-text/KnifeInfoText'
 
 class KnifeInfoContainer extends React.Component {
@@ -11,13 +11,13 @@ class KnifeInfoContainer extends React.Component {
         <React.Fragment>
           <KnifeInfoText />
           <ul className="knife-info-list">
-            <KnifeInfoPlus />
-            <KnifeInfoPlus />
-            <KnifeInfoPlus />
-            <KnifeInfoPlus />
-            <KnifeInfoPlus />
-            <KnifeInfoPlus />
-            <KnifeInfoPlus />
+            <KnifeInfo />
+            <KnifeInfo />
+            <KnifeInfo />
+            <KnifeInfo />
+            <KnifeInfo />
+            <KnifeInfo />
+            <KnifeInfo />
           </ul>
         </React.Fragment>
     );
