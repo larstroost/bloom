@@ -1,0 +1,9 @@
+@import "../../shared/styles/main";
+
+.knife-info-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 16px 16px 0;
+}

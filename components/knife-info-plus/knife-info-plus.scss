@@ -1,0 +1,138 @@
+@import "../../shared/styles/main";
+
+.knife-info-plus {
+  border: solid 1px $color-secondary;
+  border-radius: 4px;
+  margin-bottom: 16px;
+
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    max-width: 49%;
+
+    &--open {
+      max-width: 98%;
+    }
+  }
+
+  &__wrapper-left {
+    position: relative;
+    width: 100%;
+
+    &--open {
+      @include tablet {
+        width: 50%;
+      }
+    }
+  }
+
+  &__opacity-bg {
+    background: $color-tertriary;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    opacity: .9;
+    position: absolute;
+    width: 100%;
+
+    @include tablet {
+      &--open {
+        border-top-right-radius: 0;
+      }
+    }
+
+    &--closed {
+      border-top-right-radius: 4px;
+    }
+  }
+
+  &__titel {
+    color: $color-secondary;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 3px 0;
+    text-align: center;
+  }
+
+  &__photo {
+    border-radius: 4px;
+    margin-bottom: -5px;
+    width: 100%;
+
+    &--open {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+
+      @include tablet {
+        border-bottom-left-radius: 4px;
+        border-top-right-radius: 0;
+      }
+    }
+  }
+
+  &__icon {
+    bottom: 10px;
+    left: 50%;
+    opacity: .75;
+    position: absolute;
+    transform: translate(-50%, 0);
+    width: 20px;
+  }
+
+  &__wrapper-right {
+    display: none;
+    justify-content: space-between;
+
+    &--open {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @include tablet {
+      width: 55%;
+    }
+  }
+
+  &__info {
+    // max-height: 260px;
+    height: 260px;
+    margin-top: 3px;
+    overflow: scroll;
+    padding: 3px;
+    width: 100%;
+  }
+
+  &__link-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+
+  &__button {
+    background: $color-primary;
+    border: none;
+    color: $color-monochrome-1;
+    height: 36px;
+    width: 100%;
+
+    @include tablet {
+      width: 50%;
+    }
+
+    &--right {
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+      border-top: solid 1px $color-monochrome-1;
+      margin-top: -1px;
+
+      @include tablet {
+        border-bottom-left-radius: 0;
+        border-left: solid 1px $color-monochrome-1;
+        border-top: none;
+        margin-top: 0;
+      }
+    }
+  }
+}
