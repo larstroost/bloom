@@ -14,22 +14,26 @@
 
   &__title {
     color: $color-secondary;
-    font-size: 20px;
-    font-weight: 400;
+    font-size: $default-h1-mobile;
+    font-weight: 500;
 
     @include tablet {
-      font-size: 24px;
+      font-size: $default-h1-desktop;
     }
 
-    @media (min-width: 1024px) {
-      font-size: 28px;
-    }
+    // @media (min-width: 1024px) {
+    //   font-size: 28px;
+    // }
   }
 
   &__text {
     color: $color-secondary;
-    font-size: 14px;
-    font-weight: 300;
+    font-size: $default-mobile-font-size;
+    font-weight: 400;
+
+    @include tablet {
+      font-size: $default-desktop-font-size;
+    }
   }
 
   &__image {

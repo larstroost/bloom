@@ -3,11 +3,11 @@ import React from 'react';
 import MainNav from '../components/header/Header';
 import KnifeInfoContainer from '../components/knife-info-container/KnifeInfoContainer';
 
-const Knives = () => (
+const ChefsKnives = () => (
   <React.Fragment>
-    <MainNav page='messen' />
+    <MainNav page='koksmessen' />
       <KnifeInfoContainer />
   </React.Fragment>
 );
 
-export default Knives;
+export default ChefsKnives;

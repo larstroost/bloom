@@ -13,18 +13,19 @@
 
   @include desktop {
     align-items: center;
-    height: 70px;
+    height: 69px;
+    // fix voor rode rand even checke nog
     justify-content: space-between;
-    padding: 17px 30px;
+    padding: 0 30px;
     position: fixed;
   }
 
   &__logo {
     -webkit-font-smoothing: antialiased;
-    color: $color-monochrome-1;
+    color: $color-tertriary;
     display: block;
     font-family: $font-primary;
-    font-size: $heading-primary-size--mobile;
+    font-size: $default-h1-mobile;
     padding: 12px 0 0;
     text-align: center;
     text-decoration: none;
@@ -68,29 +69,34 @@
   }
 
   &__link {
-    color: $color-monochrome-1;
+    color: $color-tertriary;
     display: block;
     flex-direction: column;
     font-family: $font-primary;
-    font-size: $default-font-size--mobile;
+    font-size: $default-h2-mobile;
     font-weight: 400;
     margin: 0;
     text-decoration: none;
+    line-height: 70px;
 
     &:hover {
-      border-bottom: solid 5px $color-monochrome-1;
+      background: $color-tertriary;
+      color: $color-primary;
+      opacity: .8;
       transition: .2s;
       transition-timing-function: ease-out;
     }
 
     &--active {
-      border-bottom: solid 5px $color-secondary;
+      background: $color-tertriary;
+      color: $color-primary;
     }
 
     @include desktop {
       font-family: $font-primary;
-      font-size: $default-font-size;
+      // font-size: $default-desktop-font-size;
       font-weight: 400;
+      padding: 0 18px;
     }
   }
 
@@ -99,10 +105,8 @@
 
     @include desktop {
       display: inline-block;
-      height: 30px;
-      line-height: 30px;
+      height: 70px;
       margin: auto;
-      padding: 0 18px;
       width: auto;
     }
   }

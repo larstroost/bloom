@@ -31,17 +31,51 @@ class MainNav extends React.Component {
             <li
               className={`
                 main-nav__item
-                main-nav__item--${page === 'messen' ? 'active' : ''}
+                main-nav__item--${page === 'koksmessen' ? 'active' : ''}
               `}
             >
-              <Link href="/messen">
+              <Link href="/koksmessen">
                 <a
                   className={`
                     main-nav__link
-                    main-nav__link--${page === 'messen' ? 'active' : ''}
+                    main-nav__link--${page === 'koksmessen' ? 'active' : ''}
                   `}
                 >
-                  Messen Slijpen
+                  Koksmessen Slijpen
+                </a>
+              </Link>
+            </li>
+            <li
+              className={`
+                main-nav__item
+                main-nav__item--${page === 'tafelmessen' ? 'active' : ''}
+              `}
+            >
+              <Link href="/tafelmessen">
+                <a
+                  className={`
+                    main-nav__link
+                    main-nav__link--${page === 'tafelmessen' ? 'active' : ''}
+                  `}
+                >
+                  Tafelmessen Slijpen
+                </a>
+              </Link>
+            </li>
+            <li
+              className={`
+                main-nav__item
+                main-nav__item--${page === 'scharen' ? 'active' : ''}
+              `}
+            >
+              <Link href="/scharen">
+                <a
+                  className={`
+                    main-nav__link
+                    main-nav__link--${page === 'scharen' ? 'active' : ''}
+                  `}
+                >
+                  Scharen Slijpen
                 </a>
               </Link>
             </li>
@@ -65,23 +99,6 @@ class MainNav extends React.Component {
             <li
               className={`
                 main-nav__item
-                main-nav__item--${page === 'offerte' ? 'active' : ''}
-              `}
-            >
-              <Link href="/offerte">
-                <a
-                  className={`
-                    main-nav__link
-                    main-nav__link--${page === 'offerte' ? 'active' : ''}
-                  `}
-                >
-                  Offerte Aanvragen
-                </a>
-              </Link>
-            </li>
-            <li
-              className={`
-                main-nav__item
                 main-nav__item--${page === 'contact' ? 'active' : ''}
               `}
             >
@@ -93,6 +110,23 @@ class MainNav extends React.Component {
                   `}
                 >
                   Contact
+                </a>
+              </Link>
+            </li>
+            <li
+              className={`
+                main-nav__item
+                main-nav__item--${page === 'overOns' ? 'active' : ''}
+              `}
+            >
+              <Link href="/over-ons">
+                <a
+                  className={`
+                    main-nav__link
+                    main-nav__link--${page === 'overOns' ? 'active' : ''}
+                  `}
+                >
+                  Over Ons
                 </a>
               </Link>
             </li>
