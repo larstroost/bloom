@@ -16,8 +16,8 @@
     height: 69px;
     // fix voor rode rand even checke nog
     justify-content: space-between;
-    padding: 0 30px;
-    position: fixed;
+    // padding: 0 30px;
+    // position: fixed;
   }
 
   &__logo {
@@ -31,6 +31,7 @@
     text-decoration: none;
 
     @include desktop {
+      display: none;
       padding: 0;
     }
   }
@@ -96,7 +97,7 @@
       font-family: $font-primary;
       // font-size: $default-desktop-font-size;
       font-weight: 400;
-      padding: 0 18px;
+      padding: 0 15px;
     }
   }
 

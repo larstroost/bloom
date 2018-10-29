@@ -9,7 +9,7 @@ class KnifeInfoContainer extends React.Component {
   render() {
       return (
         <React.Fragment>
-          <KnifeInfoText />
+          <KnifeInfoText infoTitle="Koksmessen Informatie Pagina" />
           <ul className="knife-info-list">
             <KnifeInfo />
             <KnifeInfo />
