@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 import './header.scss';
+import TopHeader from '../desktop-header-bar/DesktopHeaderBar';
 
 class MainNav extends React.Component {
   state = { isOpen: false };
@@ -17,6 +18,7 @@ class MainNav extends React.Component {
     const { page } = this.props;
     return (
       <header className="header">
+        <TopHeader />
         <Link href="/">
           <a className="header__logo">
             Bloom
