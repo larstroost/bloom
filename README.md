@@ -11,7 +11,7 @@ Download Node.js from (https://nodejs.org/en/download/).
 ### Installing
 Run the npm command `npm i` in your terminal to install the dependencies and dev dependencies.
 
-## Running the application
+## Running the Application
 The application can be run with the npm command: `npm run dev`
 
 ## Built With
