@@ -10,9 +10,10 @@ $font-weight-black: $font-weight-bold;
 $font-weight-book: $font-weight-regular;
 
 /* colors */
-$color-primary: #c30;
-$color-secondary: #494c50;
-$color-tertriary: #f5f8fa;
+$color-primary: #a90909;
+$color-secondary: #4b5050;
+$color-tertriary: #f3f5d1;
+$color-border: #393d3f;
 
 $color-accent: #249533;
 $color-accent2: #68768c;
@@ -77,6 +78,15 @@ $columns--11: 9.09% 9.09% 9.09% 9.09% 9.09% 9.09% 9.09% 9.09% 9.09% 9.09% 9.09%;
 $columns--12: 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3% 8.3%;
 
 /* font sizes */
+$default-h1-mobile: 24px;
+$default-h2-mobile: 18px;
+$default-mobile-font-size: 16px;
+
+$default-h1-desktop: 32px;
+$default-h2-desktop: 22px;
+$default-desktop-font-size: 20px;
+
+
 $default-font-size: 16px;
 $default-font-size--mobile: 24px;
 $heading-primary-size: 36px;
