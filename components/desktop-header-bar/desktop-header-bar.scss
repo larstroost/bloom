@@ -1,0 +1,52 @@
+@import "../../shared/styles/main";
+
+.top-header {
+  background: $color-monochrome-1;
+  display: none;
+  justify-content: space-between;
+  padding: 15px;
+  width: 100%;
+
+  @include desktop {
+    display: flex;
+  }
+
+  &__logo {
+    height: 100px;
+    width: 168px;
+  }
+
+  &__slogan {
+    color: $color-secondary;
+    font-family: $font-primary;
+    font-size: $default-h1-desktop;
+    line-height: 100px;
+    text-align: center;
+  }
+
+  &__icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-around;
+    width: 168px;
+  }
+
+  &__phone-icon {
+    height: 30px;
+    margin-right: 10px;
+    width: auto;
+  }
+
+  &__contact-wrapper {
+    display: flex;
+  }
+
+  &__contact {
+    color: $color-primary;
+    font-family: $font-primary;
+    font-size: $default-h2-mobile;
+    font-weight: 500;
+    line-height: 30px;
+  }
+}

@@ -12,12 +12,11 @@
   z-index: 100;
 
   @include desktop {
-    align-items: center;
-    height: 69px;
-    // fix voor rode rand even checke nog
-    justify-content: space-between;
-    // padding: 0 30px;
-    // position: fixed;
+    align-items: start;
+    flex-direction: column;
+    height: auto;
+    // fix voor rode rand even checke nog heigth 69px
+
   }
 
   &__logo {
@@ -108,6 +107,7 @@
       display: inline-block;
       height: 70px;
       margin: auto;
+      margin-top: -1px;
       width: auto;
     }
   }
