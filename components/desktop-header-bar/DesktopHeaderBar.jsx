@@ -16,7 +16,10 @@ const TopHeader = () => (
       <i>Al uw messen worden voor u op locatie geslepen.</i>
     </p>
     <div className="top-header__icon-wrapper">
-      <div className="top-header__contact-wrapper">
+      <a
+        className="top-header__contact-wrapper"
+        href="tel:123456789"
+      >
         <img
           className="top-header__phone-icon"
           src="static/icons/phone.svg"
@@ -25,17 +28,20 @@ const TopHeader = () => (
         <p className="top-header__contact">
           078-XXXXXXX
         </p>
-      </div>
-      <div className="top-header__contact-wrapper">
+      </a>
+      <a
+        className="top-header__contact-wrapper"
+        href="mailto:someone@something.com"
+      >
         <img
           className="top-header__phone-icon"
           src="static/icons/envelope.svg"
           alt="Email Icon"
         />
-        <p className="top-header__contact">
+        <p className="top-header__contact" href="mailto:larstroost@upcmail.nl">
           info@bloom.nl
         </p>
-      </div>
+      </a>
     </div>
   </section>
 );
