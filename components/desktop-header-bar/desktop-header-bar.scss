@@ -1,6 +1,7 @@
 @import "../../shared/styles/main";
 
 .top-header {
+  align-items: center;
   background: $color-monochrome-1;
   display: none;
   justify-content: space-between;
@@ -20,16 +21,15 @@
     color: $color-secondary;
     font-family: $font-primary;
     font-size: $default-h1-desktop;
-    line-height: 100px;
+    line-height: 34px;
     text-align: center;
   }
 
   &__icon-wrapper {
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 100px;
     justify-content: space-around;
-    width: 168px;
   }
 
   &__phone-icon {

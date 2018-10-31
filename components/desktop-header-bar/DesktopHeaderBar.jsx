@@ -18,7 +18,7 @@ const TopHeader = () => (
     <div className="top-header__icon-wrapper">
       <a
         className="top-header__contact-wrapper"
-        href="tel:123456789"
+        href="tel:0786824977"
       >
         <img
           className="top-header__phone-icon"
@@ -26,7 +26,7 @@ const TopHeader = () => (
           alt="Phone Icon"
         />
         <p className="top-header__contact">
-          078-XXXXXXX
+          078-6824977
         </p>
       </a>
       <a
@@ -39,7 +39,7 @@ const TopHeader = () => (
           alt="Email Icon"
         />
         <p className="top-header__contact" href="mailto:larstroost@upcmail.nl">
-          info@bloom.nl
+          info@horecaslijperijbloom.nl
         </p>
       </a>
     </div>
