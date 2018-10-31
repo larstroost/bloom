@@ -1,6 +1,7 @@
 import React from 'react';
 
 import MainNav from '../components/header/Header';
+import Footer from '../components/footer/Footer';
 
 const CuttingBoards = () => (
   <React.Fragment>
@@ -8,6 +9,7 @@ const CuttingBoards = () => (
     <p>
       COMING SOON
     </p>
+    <Footer />
   </React.Fragment>
 );
 
