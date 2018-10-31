@@ -1,0 +1,67 @@
+@import "../../shared/styles/main";
+
+.footer {
+  background: $color-tertriary;
+  border-top: solid 1px $color-border;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+
+  @media (min-width: 630px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @include desktop {
+    flex-wrap: nowrap;
+  }
+
+  &__section {
+    min-width: 50%;
+    padding: 0 15px;
+
+    @include desktop {
+      min-width: 33%;
+    }
+  }
+
+  &__header {
+    color: $color-secondary;
+    font-family: $font-primary;
+    font-size: $default-h2-mobile;
+    font-weight: 500;
+
+    @include tablet {
+      font-size: $default-h2-desktop;
+    }
+  }
+
+  &__info {
+    color: $color-secondary;
+    font-family: $font-primary;
+    font-size: $default-mobile-font-size;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 5px;
+
+    @include tablet {
+      font-size: $default-desktop-font-size;
+      line-height: 30px;
+      margin-bottom: 0;
+    }
+  }
+
+  &__menu-link {
+    color: $color-secondary;
+    font-family: $font-primary;
+    font-size: $default-mobile-font-size;
+    font-weight: 300;
+    line-height: 24px;
+    text-decoration: none;
+
+    @include tablet {
+      font-size: $default-desktop-font-size;
+      line-height: 30px;
+    }
+  }
+}
