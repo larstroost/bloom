@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import './knife-info-text.scss';
 
-const KnifeInfoText = ({infoTitle, infoText, src, alt}) => (
+const KnifeInfoText = ({alt, infoText, infoTitle, src}) => (
   <div className="info-box">
     <div className="info-box__wrapper">
       <h1 className="info-box__title">
@@ -23,10 +23,10 @@ const KnifeInfoText = ({infoTitle, infoText, src, alt}) => (
 );
 
 KnifeInfoText.propTypes = {
-  infoTitle: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
   infoText: PropTypes.string.isRequired,
-  src: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired
+  infoTitle: PropTypes.string.isRequired,
+  src: PropTypes.string.isRequired
 };
 
 export default KnifeInfoText;
