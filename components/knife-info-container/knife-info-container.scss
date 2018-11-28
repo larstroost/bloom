@@ -1,16 +1,25 @@
 @import "../../shared/styles/main";
 
+.chefsknife-container {
+  margin: 0 auto;
+  padding: 16px 16px 0;
+
+  @media (min-width: 1600px) {
+    max-width: 1600px;
+    padding: 16px 0;
+  }
+}
+
 .knife-info-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 16px 16px 0;
+  // padding: 16px 16px 0;
 
-
-  @media (min-width: 1525px) {
-    max-width: 1525px;
+  @media (min-width: 1600px) {
+    max-width: 1600px;
     padding: 16px 0;
   }
 }

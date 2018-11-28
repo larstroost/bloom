@@ -1,17 +1,10 @@
 @import "../../shared/styles/main";
 
 .info-box {
-  // border: solid 1px $color-secondary;
-  // border-radius: 4px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 16px;
-  max-width: 1525px;
-
-  @media (min-width: 1525px) {
-    margin: 16px auto;
-  }
+  margin-bottom: 16px;
 
   &__wrapper {
     width: 100%;
@@ -22,13 +15,9 @@
     font-size: $default-h1-mobile;
     font-weight: 500;
 
-    @include tablet {
+    @include desktop {
       font-size: $default-h1-desktop;
     }
-
-    // @media (min-width: 1024px) {
-    //   font-size: 28px;
-    // }
   }
 
   &__text {
@@ -36,8 +25,9 @@
     font-size: $default-mobile-font-size;
     font-weight: 400;
 
-    @include tablet {
+    @include desktop {
       font-size: $default-desktop-font-size;
+      padding-right: 6px;
     }
   }
 
@@ -46,9 +36,8 @@
     height: 40%;
     width: 40%;
 
-    @include tablet {
+    @include desktop {
       display: block;
-      // opacity: .5;
     }
   }
 }

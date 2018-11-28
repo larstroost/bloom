@@ -44,16 +44,9 @@ class KnifeInfo extends React.Component {
           />
           {!isOpen && (
             <img
-              className="knife-info__icon"
+              className="knife-info__icon knife-info__icon--down"
               src="static/icons/arrow-down-2.svg"
               alt="Arrow Down"
-            />
-          )}
-          {isOpen && (
-            <img
-              className="knife-info__icon"
-              src="static/icons/arrow-up.svg"
-              alt="Arrow Up"
             />
           )}
         </div>
@@ -66,6 +59,20 @@ class KnifeInfo extends React.Component {
           <p className="knife-info__info">
             {info}
           </p>
+          {isOpen && (
+            <img
+              className="knife-info__icon knife-info__icon--up-left"
+              src="static/icons/arrow-up.svg"
+              alt="Arrow Up"
+            />
+          )}
+          {isOpen && (
+            <img
+              className="knife-info__icon knife-info__icon--up-right"
+              src="static/icons/arrow-up.svg"
+              alt="Arrow Up"
+            />
+          )}
           <Link href="/contact">
             <button className="knife-info__button knife-info__button--right">
               <a className="knife-info__link">
