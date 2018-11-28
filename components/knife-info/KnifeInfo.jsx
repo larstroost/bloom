@@ -4,7 +4,6 @@ import Link from 'next/link';
 import './knife-info.scss';
 
 class KnifeInfo extends React.Component {
-    //state en functies
   state = { isOpen: false };
 
   toggleInfo = () => {
@@ -14,10 +13,9 @@ class KnifeInfo extends React.Component {
   };
 
   render() {
-    //destructuring and props
     const { isOpen } = this.state;
+    const { title, info, photo} = this.props;
     return (
-      //HTML
       <li
         className={`
           knife-info
@@ -28,12 +26,7 @@ class KnifeInfo extends React.Component {
         onKeyDown={this.toggleInfo}
         tabIndex="0"
       >
-        <div
-          className={`
-            knife-info__wrapper-left
-            knife-info__wrapper-left--${isOpen ? 'open' : 'closed'}
-          `}
-        >
+        <div className="knife-info__wrapper-left">
           <div
             className={`
               knife-info__opacity-bg
@@ -41,15 +34,12 @@ class KnifeInfo extends React.Component {
             `}
           >
             <h2 className="knife-info__titel">
-              Lange Mes Titel
+              {title}
             </h2>
           </div>
           <img
-            className={`
-              knife-info__photo
-              knife-info__photo--${isOpen ? 'open' : 'closed'}
-            `}
-            src="static/icons/chef-knife.jpeg"
+            className="knife-info__photo"
+            src={photo}
             alt="Messen Foto"
           />
           {!isOpen && (
@@ -74,28 +64,25 @@ class KnifeInfo extends React.Component {
           `}
         >
           <p className="knife-info__info">
-            Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische letterzetting. Het is in de jaren '60 populair geworden met de introductie van Letraset vellen met Lorem Ipsum passages en meer recentelijk door desktop publishing software zoals Aldus PageMaker die versies van Lorem Ipsum bevatten.
+            {info}
           </p>
-          <div className="knife-info__link-wrapper">
-            <Link href="/offerte">
-              <button className="knife-info__button knife-info__button--left">
-                <a className="knife-info__link">
-                  Offerte Aanvragen
-                </a>
-              </button>
-            </Link>
-            <Link href="/contact">
-              <button className="knife-info__button knife-info__button--right">
-                <a className="knife-info__link">
-                  Meer Informatie Opvragen
-                </a>
-              </button>
-            </Link>
-          </div>
+          <Link href="/contact">
+            <button className="knife-info__button knife-info__button--right">
+              <a className="knife-info__link">
+                Meer Informatie Opvragen
+              </a>
+            </button>
+          </Link>
         </div>
       </li>
     );
   }
 }
+
+KnifeInfo.propTypes = {
+  title: PropTypes.string.isRequired,
+  info: PropTypes.string.isRequired,
+  photo: PropTypes.string.isRequired
+};
 
 export default KnifeInfo;

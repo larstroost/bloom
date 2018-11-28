@@ -4,6 +4,13 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0 auto;
   padding: 16px 16px 0;
+
+
+  @media (min-width: 1525px) {
+    max-width: 1525px;
+    padding: 16px 0;
+  }
 }

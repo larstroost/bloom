@@ -4,45 +4,31 @@
   border: solid 1px $color-secondary;
   border-radius: 4px;
   margin-bottom: 16px;
+  position: relative;
 
   @include tablet {
     display: flex;
     flex-direction: row;
-    max-width: 49%;
+    max-width: 50%;
+  }
 
-    &--open {
-      max-width: 98%;
-    }
+  @include desktop {
+    max-width: 33%;
+    width: 500px;
   }
 
   &__wrapper-left {
     position: relative;
     width: 100%;
-
-    &--open {
-      @include tablet {
-        width: 50%;
-      }
-    }
   }
 
   &__opacity-bg {
     background: $color-tertriary;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-    opacity: .9;
+    opacity: .75;
     position: absolute;
     width: 100%;
-
-    @include tablet {
-      &--open {
-        border-top-right-radius: 0;
-      }
-    }
-
-    &--closed {
-      border-top-right-radius: 4px;
-    }
   }
 
   &__titel {
@@ -57,16 +43,6 @@
     border-radius: 4px;
     margin-bottom: -5px;
     width: 100%;
-
-    &--open {
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
-
-      @include tablet {
-        border-bottom-left-radius: 4px;
-        border-top-right-radius: 0;
-      }
-    }
   }
 
   &__icon {
@@ -79,60 +55,40 @@
   }
 
   &__wrapper-right {
-    display: none;
+    background: $color-tertriary;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 36px;
+    transition: .2s;
+    transition-timing-function: ease-out;
 
     &--open {
-      display: flex;
-      flex-direction: column;
-    }
-
-    @include tablet {
-      width: 55%;
+      opacity: .75;
+      transition: .2s;
+      transition-timing-function: ease-out;
     }
   }
 
   &__info {
-    // max-height: 260px;
-    height: 260px;
     margin-top: 3px;
     overflow: scroll;
     padding: 3px;
     width: 100%;
   }
 
-  &__link-wrapper {
-    display: flex;
-    flex-direction: column;
-
-    @include tablet {
-      flex-direction: row;
-    }
-  }
-
   &__button {
     background: $color-primary;
     border: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
     color: $color-monochrome-1;
     height: 36px;
     width: 100%;
-
-    @include tablet {
-      width: 50%;
-    }
-
-    &--right {
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
-      border-top: solid 1px $color-monochrome-1;
-      margin-top: -1px;
-
-      @include tablet {
-        border-bottom-left-radius: 0;
-        border-left: solid 1px $color-monochrome-1;
-        border-top: none;
-        margin-top: 0;
-      }
-    }
   }
 }

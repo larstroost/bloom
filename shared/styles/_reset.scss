@@ -26,10 +26,6 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite
 
 body {
   padding-top: 50px;
-  // padding: 50px 15px 0;
-  // max-width: 1170px;
-  margin: 0 auto;
-  // position: relative;
 
   @include desktop {
     padding-top: 200px;
