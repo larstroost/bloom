@@ -20,8 +20,8 @@ const Footer = () => (
         Contact
       </p>
       <p className="footer__info">
-        Email<br />
-        Telefoonnummer
+        info@horecaslijperijbloom.nl<br />
+        078-6824977
       </p>
     </div>
     <ul className="footer__section">

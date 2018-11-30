@@ -15,8 +15,6 @@
     align-items: start;
     flex-direction: column;
     height: auto;
-    // fix voor rode rand even checke nog heigth 69px
-
   }
 
   &__logo {
@@ -47,13 +45,14 @@
   @include tablet {
     left: 0;
     right: auto;
+    width: 50%;
   }
 
   @include desktop {
     display: flex;
-    justify-content: space-between;
-    padding: 0;
+    // justify-content: space-between;
     position: static;
+    width: 100%;
   }
 
   &--open {
@@ -64,7 +63,7 @@
     @include tablet {
       border-bottom-right-radius: 10px;
       height: auto;
-      padding: 0 16px;
+      // padding: 0 16px;
     }
   }
 

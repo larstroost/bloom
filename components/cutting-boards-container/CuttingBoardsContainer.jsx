@@ -12,13 +12,13 @@ class CuttingBoardsContainer extends React.Component {
         <InfoSection
           infoTitle="Snijplanken Vlakken Informatie Pagina"
           infoText="Informatie over snijplanken vlakken."
-          src="../../static/icons/kitchen-knife.jpg"
+          src="../../static/photos/chef-knives/kitchen-knife.jpg"
           alt="Snijplanken"
         />
         <InfoSectionReversed
           infoTitle="Snijplanken Vlakken Informatie Pagina"
           infoText="Informatie over snijplanken vlakken."
-          src="../../static/icons/kitchen-knife.jpg"
+          src="../../static/photos/chef-knives/kitchen-knife.jpg"
           alt="Snijplanken"
         />
       </div>

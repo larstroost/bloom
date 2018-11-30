@@ -6,7 +6,7 @@ const Workflow = () => (
   <div>
     <img
       className="workflow"
-      src="static/icons/concept-workflow.png"
+      src="static/photos/index/concept-workflow.png"
     />
   </div>
 );

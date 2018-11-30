@@ -13,14 +13,14 @@ class IndexContainer extends React.Component {
         <InfoSection
           infoTitle="Wie zijn wij"
           infoText="Informatie over Bloom."
-          src="../../static/icons/kitchen-knife.jpg"
+          src="../../static/photos/chef-knives/kitchen-knife.jpg"
           alt="Snijplanken"
         />
         <Workflow />
         <InfoSectionReversed
           infoTitle="Onze Geschiedenis"
           infoText="Informatie over de geschiedenis"
-          src="../../static/icons/kitchen-knife.jpg"
+          src="../../static/photos/chef-knives/kitchen-knife.jpg"
           alt="Snijplanken"
         />
       </div>
