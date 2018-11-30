@@ -1,0 +1,14 @@
+@import "../../shared/styles/main";
+
+.about-us {
+
+  &__container {
+    margin: 0 auto;
+    max-width: 1600px;
+    padding: 16px 16px 0;
+
+    @media (min-width: 1600px) {
+      padding: 16px 0;
+    }
+  }
+}

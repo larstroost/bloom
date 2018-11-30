@@ -2,9 +2,9 @@ import React from 'react';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
 
-import './knife-info-text.scss';
+import './info-section.scss';
 
-const KnifeInfoText = ({alt, infoText, infoTitle, src}) => (
+const InfoSection = ({alt, infoText, infoTitle, src}) => (
   <div className="info-box">
     <div className="info-box__wrapper">
       <h1 className="info-box__title">
@@ -22,11 +22,11 @@ const KnifeInfoText = ({alt, infoText, infoTitle, src}) => (
   </div>
 );
 
-KnifeInfoText.propTypes = {
+InfoSection.propTypes = {
   alt: PropTypes.string.isRequired,
   infoText: PropTypes.string.isRequired,
   infoTitle: PropTypes.string.isRequired,
   src: PropTypes.string.isRequired
 };
 
-export default KnifeInfoText;
+export default InfoSection;

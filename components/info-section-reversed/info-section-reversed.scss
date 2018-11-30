@@ -1,0 +1,46 @@
+@import "../../shared/styles/main";
+
+.info-section-reversed {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 16px;
+
+  &__wrapper {
+    width: 100%;
+
+    @include desktop {
+      padding-left: 6px;
+    }
+  }
+
+  &__title {
+    color: $color-secondary;
+    font-size: $default-h1-mobile;
+    font-weight: 500;
+
+    @include desktop {
+      font-size: $default-h1-desktop;
+    }
+  }
+
+  &__text {
+    color: $color-secondary;
+    font-size: $default-mobile-font-size;
+    font-weight: 400;
+
+    @include desktop {
+      font-size: $default-desktop-font-size;
+    }
+  }
+
+  &__image {
+    display: none;
+    height: 40%;
+    width: 40%;
+
+    @include desktop {
+      display: block;
+    }
+  }
+}

@@ -1,13 +1,14 @@
 import React from 'react';
 
 import MainNav from '../components/header/Header';
+import IndexContainer from '../components/index-container/IndexContainer';
 import Footer from '../components/footer/Footer';
-import Workflow from '../components/workflow/Workflow';
+
 
 const Index = () => (
   <React.Fragment>
     <MainNav />
-    <Workflow />
+    <IndexContainer />
     <Footer />
   </React.Fragment>
 );

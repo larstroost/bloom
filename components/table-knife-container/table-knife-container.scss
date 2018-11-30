@@ -1,0 +1,21 @@
+@import "../../shared/styles/main";
+
+.table-knife {
+
+  &__container {
+    margin: 0 auto;
+    max-width: 1600px;
+    padding: 16px 16px 0;
+
+    @media (min-width: 1600px) {
+      padding: 16px 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

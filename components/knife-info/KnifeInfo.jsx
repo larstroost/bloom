@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import PropTypes from 'prop-types';
 
 import './knife-info.scss';
 
@@ -14,7 +15,7 @@ class KnifeInfo extends React.Component {
 
   render() {
     const { isOpen } = this.state;
-    const { title, info, photo} = this.props;
+    const { title, info, photo, alt } = this.props;
     return (
       <li
         className={`
@@ -40,7 +41,7 @@ class KnifeInfo extends React.Component {
           <img
             className="knife-info__photo"
             src={photo}
-            alt="Messen Foto"
+            alt={alt}
           />
           {!isOpen && (
             <img
@@ -86,10 +87,15 @@ class KnifeInfo extends React.Component {
   }
 }
 
+KnifeInfo.defaultProps = {
+  alt: 'Foto van messensoort'
+};
+
 KnifeInfo.propTypes = {
   title: PropTypes.string.isRequired,
   info: PropTypes.string.isRequired,
-  photo: PropTypes.string.isRequired
+  photo: PropTypes.string.isRequired,
+  alt: PropTypes.string
 };
 
 export default KnifeInfo;

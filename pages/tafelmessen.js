@@ -1,16 +1,13 @@
 import React from 'react';
 
 import MainNav from '../components/header/Header';
-import KnifeInfoText from '../components/knife-info-text/KnifeInfoText';
+import TableKnifeContainer from '../components/table-knife-container/TableKnifeContainer';
 import Footer from '../components/footer/Footer';
 
 const TableKnives = () => (
   <React.Fragment>
     <MainNav page='tafelmessen' />
-    <KnifeInfoText infoTitle="Tafelmessen" />
-    <p>
-      COMING SOON
-    </p>
+    <TableKnifeContainer />
     <Footer />
   </React.Fragment>
 );

@@ -7,7 +7,7 @@ const Contact = () => (
   <React.Fragment>
     <MainNav page='contact' />
     <p>
-      COMING SOON
+      Alze gij contact wilte opnemen met ons bedrijfke, dan wachte gij maar effe lekker totdat deze pagina ook af is. <b>Of nie dan...</b>
     </p>
     <Footer />
   </React.Fragment>

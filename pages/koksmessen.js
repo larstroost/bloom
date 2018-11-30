@@ -1,13 +1,13 @@
 import React from 'react';
 
 import MainNav from '../components/header/Header';
-import KnifeInfoContainer from '../components/knife-info-container/KnifeInfoContainer';
+import ChefKnifeContainer from '../components/chef-knife-container/ChefKnifeContainer';
 import Footer from '../components/footer/Footer';
 
 const ChefsKnives = () => (
   <React.Fragment>
     <MainNav page='koksmessen' />
-    <KnifeInfoContainer />
+    <ChefKnifeContainer />
     <Footer />
   </React.Fragment>
 );
