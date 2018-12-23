@@ -111,16 +111,27 @@
   }
 }
 
-.menu-toggle {
+.toggle {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  left: 10px;
   line-height: 0;
   outline: none;
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
+
+  &--menu {
+    left: 10px;
+  }
+
+  &--phone {
+    right: 10px;
+  }
+
+  &--email {
+    right: 50px;
+  }
 
   @include desktop {
     display: none;
@@ -130,5 +141,36 @@
     background-color: transparent;
     border: none;
     outline: none;
+
+    &--phone {
+      height: 20px;
+    }
+
+    &--email {
+      height: 22px;
+    }
+  }
+
+  &__dropdown {
+    background: $color-primary;
+    display: flex;
+    height: 36px;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 50px;
+
+    @include desktop {
+      display: none;
+    }
+  }
+
+  &__dropdown-text {
+    color: $color-monochrome-1;
+    display: block;
+    font-family: $font-primary;
+    font-size: $default-h2-mobile;
+    font-weight: 400;
   }
 }

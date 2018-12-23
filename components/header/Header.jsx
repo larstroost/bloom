@@ -5,7 +5,11 @@ import './header.scss';
 import TopHeader from '../desktop-header-bar/DesktopHeaderBar';
 
 class MainNav extends React.Component {
-  state = { isOpen: false };
+  state = {
+    isOpen: false,
+    showingPhone: false,
+    showingEmail: false
+  };
 
   toggleMenu = () => {
     this.setState((prevState) => ({
@@ -13,8 +17,26 @@ class MainNav extends React.Component {
     }));
   };
 
+  togglePhone = () => {
+    this.setState((prevState) => ({
+      showingPhone: !prevState.showingPhone
+    }));
+    this.setState(() => ({
+      showingEmail: false
+    }));
+  };
+
+  toggleEmail = () => {
+    this.setState((prevState) => ({
+      showingEmail: !prevState.showingEmail
+    }));
+    this.setState(() => ({
+      showingPhone: false
+    }));
+  };
+
   render() {
-    const { isOpen } = this.state;
+    const { isOpen, showingPhone, showingEmail } = this.state;
     const { page } = this.props;
     return (
       <header className="header">
@@ -135,25 +157,61 @@ class MainNav extends React.Component {
           </ul>
         </nav>
         <button
-          className="menu-toggle"
+          className="toggle toggle--menu"
           onClick={this.toggleMenu}
           type="button"
         >
           {!isOpen && (
             <img
               alt="Open menu"
-              className="menu-toggle__image menu-toggle__image--open"
+              className="toggle__image toggle__image--open"
               src="/static/icons/hamburger.svg"
             />
           )}
           {isOpen && (
             <img
               alt="Close menu"
-              className="menu-toggle__image menu-toggle__image--close"
+              className="toggle__image toggle__image--close"
               src="/static/icons/close.svg"
             />
           )}
         </button>
+        <button
+          className="toggle toggle--phone"
+          onClick={this.togglePhone}
+          type="button"
+        >
+          <img
+            alt="Phone icon"
+            className="toggle__image toggle__image--phone"
+            src="/static/icons/phone-white.svg"
+          />
+        </button>
+        {showingPhone && (
+          <div className="toggle__dropdown">
+            <p className="toggle__dropdown-text">
+              078 682 4977
+            </p>
+          </div>
+        )}
+        <button
+          className="toggle toggle--email"
+          onClick={this.toggleEmail}
+          type="button"
+        >
+          <img
+            alt="Email icon"
+            className="toggle__image toggle__image--email"
+            src="/static/icons/envelope-white.svg"
+          />
+        </button>
+        {showingEmail && (
+          <div className="toggle__dropdown">
+            <p className="toggle__dropdown-text">
+              info@horecaslijperijbloom.nl
+            </p>
+          </div>
+        )}
       </header>
     );
   }
