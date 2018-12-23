@@ -1,0 +1,85 @@
+@import "../../shared/styles/main";
+
+.contact-info {
+  margin-bottom: 16px;
+  width: 100%;
+
+  @include desktop {
+    padding-right: 10px;
+    width: 50%;
+  }
+
+  &__photo-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__location-photo {
+    display: none;
+
+    @include tablet {
+      display: block;
+      height: 49%;
+      width: 49%;
+    }
+  }
+
+  &__link {
+    height: 100%;
+    width: 100%;
+
+    @include tablet {
+      display: block;
+      height: 49%;
+      width: 49%;
+    }
+  }
+
+  &__map-photo {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__info-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__address-contact {
+    min-width: 49%;
+  }
+
+  &__hours {
+    min-width: 49%;
+  }
+
+  &__title {
+    color: $color-secondary;
+    font-family: $font-primary;
+    font-size: $default-h2-mobile;
+    font-weight: 500;
+    margin-top: 5px;
+
+    @include desktop {
+      font-size: $default-desktop-font-size;
+    }
+  }
+
+  &__text {
+    color: $color-secondary;
+    font-family: $font-primary;
+    font-size: $default-mobile-font-size;
+    font-weight: 400;
+
+    @include desktop {
+      font-size: $default-h2-mobile;
+    }
+  }
+}

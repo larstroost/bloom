@@ -1,0 +1,21 @@
+@import "../../shared/styles/main";
+
+.contact {
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1600px;
+    padding: 16px 16px 0;
+
+    @include desktop {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    @media (min-width: 1632px) {
+      padding: 16px 0;
+    }
+  }
+}
