@@ -10,9 +10,9 @@ const Footer = () => (
         Adres
       </p>
       <p className="footer__info">
-        Bloom<br />
-        Straat Nummer<br />
-        Postcode Hendrik-Ido-Ambacht
+        Horeca Slijperij Bloom B.V.<br />
+        De Plaats 22<br />
+        3342 GL Hendrik-Ido-Ambacht
       </p>
     </div>
     <div className="footer__section">
@@ -20,8 +20,8 @@ const Footer = () => (
         Contact
       </p>
       <p className="footer__info">
-        info@horecaslijperijbloom.nl<br />
-        078-6824977
+        078 682 4977<br />
+        info@horecaslijperijbloom.nl
       </p>
     </div>
     <ul className="footer__section">

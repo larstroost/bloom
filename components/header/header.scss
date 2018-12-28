@@ -19,7 +19,7 @@
 
   &__logo {
     -webkit-font-smoothing: antialiased;
-    color: $color-tertriary;
+    color: $color-monochrome-1;
     display: block;
     font-family: $font-primary;
     font-size: $default-h1-mobile;
@@ -68,7 +68,7 @@
   }
 
   &__link {
-    color: $color-tertriary;
+    color: $color-monochrome-1;
     display: block;
     flex-direction: column;
     font-family: $font-primary;
@@ -79,7 +79,7 @@
     text-decoration: none;
 
     &:hover {
-      background: $color-tertriary;
+      background: $color-monochrome-1;
       color: $color-primary;
       opacity: .8;
       transition: .2s;
@@ -87,7 +87,7 @@
     }
 
     &--active {
-      background: $color-tertriary;
+      background: $color-monochrome-1;
       color: $color-primary;
     }
 

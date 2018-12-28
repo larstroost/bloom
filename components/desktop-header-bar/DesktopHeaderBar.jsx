@@ -26,7 +26,7 @@ const TopHeader = () => (
           alt="Phone Icon"
         />
         <p className="top-header__contact">
-          078-6824977
+          078 682 4977
         </p>
       </a>
       <a

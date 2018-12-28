@@ -32,7 +32,7 @@ class ContactInformation extends React.Component {
               Adres
             </h2>
             <p className="contact-info__text">
-              Bloom<br />
+              Horeca Slijperij Bloom B.V.<br />
               De Plaats 22<br />
               3342 GL Hendrik-Ido-Ambacht
             </p>
@@ -45,18 +45,30 @@ class ContactInformation extends React.Component {
             </p>
           </div>
           <div className="contact-info__hours">
-          <h2 className="contact-info__title">
+            <h2 className="contact-info__title">
               Openingstijden
             </h2>
-            <p className="contact-info__text">
-              Maandag: 8:30 - 17:00<br />
-              Dinsdag: 8:30 - 17:00<br />
-              Woensdag: 8:30 - 17:00<br />
-              Donderdag: 8:30 - 17:00<br />
-              Vrijdag: 8:30 - 17:00<br />
-              Zaterdag: Gesloten<br />
-              Zondag: Gesloten
-            </p>
+            <div className="test">
+              <p className="contact-info__text">Maandag:</p><p className="contact-info__text">8:30 - 17:00</p>
+            </div>
+            <div className="test">
+              <p className="contact-info__text">Dinsdag:</p><p className="contact-info__text">8:30 - 17:00</p>
+            </div>
+            <div className="test">
+              <p className="contact-info__text">Woensdag:</p><p className="contact-info__text">8:30 - 17:00</p>
+            </div>
+            <div className="test">
+              <p className="contact-info__text">Donderdag:</p><p className="contact-info__text">8:30 - 17:00</p>
+            </div>
+            <div className="test">
+              <p className="contact-info__text">Vrijdag:</p><p className="contact-info__text">8:30 - 17:00</p>
+            </div>
+            <div className="test">
+              <p className="contact-info__text">Zaterdag:</p><p className="contact-info__text">Gesloten</p>
+            </div>
+            <div className="test">
+              <p className="contact-info__text">Zondag:</p><p className="contact-info__text">Gesloten</p>
+            </div>
           </div>
         </div>
       </section>

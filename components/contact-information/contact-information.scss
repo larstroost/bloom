@@ -1,5 +1,11 @@
 @import "../../shared/styles/main";
 
+.test {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .contact-info {
   margin-bottom: 16px;
   width: 100%;
@@ -77,6 +83,11 @@
     font-family: $font-primary;
     font-size: $default-mobile-font-size;
     font-weight: 400;
+
+    &--tab {
+      padding-left: 10px;
+      text-align: right;
+    }
 
     @include desktop {
       font-size: $default-h2-mobile;

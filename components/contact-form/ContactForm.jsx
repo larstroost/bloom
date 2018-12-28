@@ -132,7 +132,7 @@ class ContactForm extends React.Component {
                 `}
                 id="contactName"
                 name="contactName"
-                placeholder="Voornaam Achternaam"
+                placeholder="Jan Jansen"
                 required
                 title="Vul aub uw naam in"
                 type="text"
