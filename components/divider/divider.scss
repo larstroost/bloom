@@ -1,0 +1,9 @@
+@import "../../shared/styles/main";
+
+.divider {
+  background: $color-monochrome-5;
+  border-radius: .5px;
+  height: 1px;
+  margin: 25px 0;
+  width: 100%;
+}

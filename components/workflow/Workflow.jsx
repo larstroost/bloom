@@ -1,14 +1,20 @@
 import React from 'react';
+import Link from 'next/link';
+import PropTypes from 'prop-types';
 
 import './workflow.scss';
 
 const Workflow = () => (
-  <div>
+  <article className="workflow">
     <img
-      className="workflow"
-      src="static/photos/index/concept-workflow.png"
+      className="workflow__image"
+      src="/static/photos/index/busje.png"
+      alt="Busje"
     />
-  </div>
+    <p className="workflow__text">
+      <i>Wij komen naar uw locatie toe</i>
+    </p>
+  </article>
 );
 
 export default Workflow;

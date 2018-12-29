@@ -8,6 +8,10 @@
 
   &__wrapper {
     width: 100%;
+
+    @include desktop {
+      padding-right: 16px;
+    }
   }
 
   &__title {
@@ -27,7 +31,6 @@
 
     @include desktop {
       font-size: $default-desktop-font-size;
-      padding-right: 6px;
     }
   }
 

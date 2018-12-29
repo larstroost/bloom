@@ -73,6 +73,10 @@
       font-size: $default-h2-mobile;
     }
 
+    &::placeholder {
+      color: $color-monochrome-2;
+    }
+
     &--message {
       height: 100px;
       resize: none;

@@ -4,16 +4,22 @@ import Link from 'next/link';
 import './index-container.scss';
 import InfoSection from '../info-section/InfoSection'
 import Workflow from '../workflow/Workflow';
-import InfoSectionReversed from '../info-section-reversed/InfoSectionReversed'
+import InfoSectionReversed from '../info-section-reversed/InfoSectionReversed';
+import Divider from '../divider/Divider';
 
 class IndexContainer extends React.Component {
   render() {
     return (
       <div className="index__container">
-
-        <Workflow //Alles in een (paar) uur klaar (ipv één dag)
-        />
-
+        <div className="wrapper-test">
+          <Workflow //Alles in een (paar) uur klaar (ipv één dag)
+          />
+          <Workflow />
+          <Workflow />
+          <Workflow />
+          <Workflow />
+        </div>
+        <Divider />
         <InfoSectionReversed
           infoTitle="Over Horecaslijperij Bloom B.V."
           infoText="Sinds 1985 is Horecaslijperij Bloom actief vanuit Hendrik Ido ambacht. Onze specialisten slijpen uw messen en diverse keukenapparaten op locatie in heel Nederland en in Noord België. Hiervoor berekenen we doorgaans geen voorrijkosten. Buiten het slijpen koksmessen, tafelmessen, scharen en diverse keukenapparatuur vlakken wij ook snijplanken, zodat u weer met een vlakke hygiënische plank uw werk kan blijven uitvoeren. Onze bussen zijn naast slijpapparatuur ook voorzien van een klein winkeltje met een divers aanbod van nieuwe scherpe koksmessen."
