@@ -4,23 +4,17 @@ import PropTypes from 'prop-types';
 
 import './workflow.scss';
 
-const Workflow = ({alt, src, text}) => (
+const Workflow = () => (
   <article className="workflow">
     <img
       className="workflow__image"
-      src={src}
-      alt={alt}
+      src="/static/photos/index/workflow-1.jpg"
+      alt="Busje"
     />
     <p className="workflow__text">
-      <i>{text}</i>
+      <i>Wij komen naar uw locatie toe</i>
     </p>
   </article>
 );
-
-Workflow.propTypes = {
-  alt: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
-  src: PropTypes.string.isRequired
-};
 
 export default Workflow;

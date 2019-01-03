@@ -4,6 +4,11 @@
   background: $color-monochrome-5;
   border-radius: .5px;
   height: 1px;
-  margin: 25px 0;
+  margin: 16px 0;
+  opacity: .9;
   width: 100%;
+
+  @include desktop {
+    margin: 25px 0;
+  }
 }

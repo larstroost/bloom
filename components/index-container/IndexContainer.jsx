@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import './index-container.scss';
 import InfoSection from '../info-section/InfoSection'
-import Workflow from '../workflowProp/Workflow'
+import Workflow from '../workflow/Workflow'
 import InfoSectionReversed from '../info-section-reversed/InfoSectionReversed';
 import Divider from '../divider/Divider';
 
