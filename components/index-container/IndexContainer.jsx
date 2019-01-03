@@ -13,27 +13,27 @@ class IndexContainer extends React.Component {
       <div className="index__container">
         <div className="wrapper-test">
           <Workflow
-            src="../../static/photos/index/workflow-1.jpg"
+            src="../../static/photos/index/workflow-1.png"
             alt="Wij komen naar uw locatie toe"
             text="Wij komen naar uw locatie toe"
           />
           <Workflow
-            src="../../static/photos/index/workflow-2.jpg"
+            src="../../static/photos/index/workflow-2.png"
             alt="Messen Inleveren"
             text="U levert uw te slijpen messen bij ons in"
           />
           <Workflow
-            src="../../static/photos/index/workflow-3.jpg"
+            src="../../static/photos/index/workflow-3.png"
             alt="Vervangende set"
             text="U krijgt een vervangende set"
           />
           <Workflow
-            src="../../static/photos/index/workflow-4.jpg"
+            src="../../static/photos/index/workflow-4.png"
             alt="Slijpen op locatie"
             text="Wij slijpen op uw locatie"
           />
           <Workflow
-            src="../../static/photos/index/workflow-5.jpg"
+            src="../../static/photos/index/workflow-5.png"
             alt="Binnen een paar uur klaar"
             text="Binnen enkele uren klaar"
           />
