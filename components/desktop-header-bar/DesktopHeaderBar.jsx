@@ -8,7 +8,7 @@ const TopHeader = () => (
     <Link href="/">
       <img
         className="top-header__logo"
-        src="static/logos/bloom-logo.jpg"
+        src="static/logos/logo bloom.png"
         alt="Bloom Logo"
       />
     </Link>
