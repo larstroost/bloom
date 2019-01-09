@@ -2,8 +2,9 @@ import React from 'react';
 import Link from 'next/link';
 
 import './cutting-boards-container.scss';
-import InfoSection from '../info-section/InfoSection'
-import InfoSectionReversed from '../info-section-reversed/InfoSectionReversed'
+import InfoSection from '../info-section/InfoSection';
+import InfoSectionReversed from '../info-section-reversed/InfoSectionReversed';
+import Divider from '../divider/Divider';
 
 class CuttingBoardsContainer extends React.Component {
   render() {
@@ -15,6 +16,7 @@ class CuttingBoardsContainer extends React.Component {
           src="../../static/photos/chef-knives/kitchen-knife.jpg"
           alt="Snijplanken"
         />
+        <Divider />
         <InfoSectionReversed
           infoTitle="Snijplanken Vlakken Informatie Pagina"
           infoText="Informatie over snijplanken vlakken."

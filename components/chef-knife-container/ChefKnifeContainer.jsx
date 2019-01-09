@@ -4,6 +4,7 @@ import Link from 'next/link';
 import './chef-knife-container.scss';
 import KnifeInfo from '../knife-info/KnifeInfo'
 import InfoSection from '../info-section/InfoSection'
+import Divider from '../divider/Divider';
 
 class ChefKnifeContainer extends React.Component {
   render() {
@@ -15,6 +16,7 @@ class ChefKnifeContainer extends React.Component {
           src="../../static/photos/chef-knives/kitchen-knife.jpg"
           alt="Koksmessen"
         />
+        <Divider />
         <ul className="chef-knife__list">
           <KnifeInfo
             title="Koksmes"

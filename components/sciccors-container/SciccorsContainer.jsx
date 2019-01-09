@@ -2,8 +2,9 @@ import React from 'react';
 import Link from 'next/link';
 
 import './sciccors-container.scss';
-import KnifeInfo from '../knife-info/KnifeInfo'
-import InfoSection from '../info-section/InfoSection'
+import KnifeInfo from '../knife-info/KnifeInfo';
+import InfoSection from '../info-section/InfoSection';
+import Divider from '../divider/Divider';
 
 class SciccorsContainer extends React.Component {
   render() {
@@ -15,6 +16,7 @@ class SciccorsContainer extends React.Component {
           src="../../static/photos/chef-knives/kitchen-knife.jpg"
           alt="Scissors"
         />
+        <Divider />
         <ul className="sciccors__list">
           <KnifeInfo
             title="Normale Schaar"

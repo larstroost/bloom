@@ -3,17 +3,31 @@
 .footer {
   background: $color-monochrome-3;
   border-top: solid 1px $color-border;
-  display: flex;
-  flex-direction: column;
-  padding: 15px 0;
+  // display: flex;
+  // justify-content: center;
 
-  @media (min-width: 630px) {
-    flex-direction: row;
-    flex-wrap: wrap;
+  @media (min-width: 1632px) {
+    align-items: center;
   }
 
-  @include desktop {
-    flex-wrap: nowrap;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1632px;
+    padding: 15px 0;
+
+    @media (min-width: 630px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    @include desktop {
+      flex-wrap: nowrap;
+    }
+
+    @media (min-width: 1632px) {
+      margin: 0 auto;
+    }
   }
 
   &__section {
