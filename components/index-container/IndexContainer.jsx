@@ -40,8 +40,8 @@ class IndexContainer extends React.Component {
         </div>
         <Divider />
         <InfoSectionReversed
-          infoTitle="Over Horecaslijperij Bloom B.V."
-          infoText="Sinds 1985 is Horecaslijperij Bloom actief vanuit Hendrik Ido ambacht. Onze specialisten slijpen uw messen en diverse keukenapparaten op locatie in heel Nederland en in Noord België. Hiervoor berekenen we doorgaans geen voorrijkosten. Buiten het slijpen koksmessen, tafelmessen, scharen en diverse keukenapparatuur vlakken wij ook snijplanken, zodat u weer met een vlakke hygiënische plank uw werk kan blijven uitvoeren. Onze bussen zijn naast slijpapparatuur ook voorzien van een klein winkeltje met een divers aanbod van nieuwe scherpe koksmessen."
+          infoTitle="Horecaslijperij Bloom B.V."
+          infoText="Door middel van uitstekend uitgeruste mobiele slijpunits kunnen wij bijna alle voorkomende slijpwerkzaamheden bij u als klant ter plaatse uitvoeren. Tijdens het slijpen kunt u gebruik maken van een leenset messen, zodat de werkzaamheden in de keuken gewoon door kunnen gaan. Ook op onze locatie in Hendrik-Ido-Ambacht is het mogelijk messen en andere te slijpen spullen in te leveren. Elke dag zitten onze planners klaar om uw vragen te beantwoorden. Wilt u een afspraak maken? Neem dan even contact met ons op."
           src="../../static/photos/index/bussen.jpg"
           alt="Bussen"
 

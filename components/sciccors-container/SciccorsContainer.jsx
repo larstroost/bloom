@@ -11,8 +11,8 @@ class SciccorsContainer extends React.Component {
     return (
       <div className="sciccors__container">
         <InfoSection
-          infoTitle="Scharen Informatie Pagina"
-          infoText="Deze pagina moet veel tekst gaan bevatten over het slijpen van scharen. Buiten messen slijpt Horeca Slijperij Bloom ook scharen. Grote scharen, kleine scharen, botte scharen, minder scherpe scharen, scharen voor vlees, scharen voor takken, bomen, bladeren, groenten, plastic etc. Lever uw schaar in en wij slijpen het knipvlak weer scherp."
+          infoTitle="Overige"
+          infoText="Of het nu gaat om koksmessen, brood(kartel)messen, keukenmessen, tafelmessen of machinemessen, elk mes heeft zijn eigen specifieke vorm en functie. Omdat elke functie een verschillende gebruiksdiscipline vereist, is het van groot belang dat het mes ook na het slijpen zijn specifieke vorm en functie behoudt. Bovendien voorkomt het werken met echt scherpe messen een hoop ongerief en ergernis."
           src="../../static/photos/chef-knives/kitchen-knife.jpg"
           alt="Scissors"
         />
