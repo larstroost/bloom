@@ -86,23 +86,7 @@ class MainNav extends React.Component {
                 </a>
               </Link>
             </li>
-            <li
-              className={`
-                main-nav__item
-                main-nav__item--${page === 'scharen' ? 'active' : ''}
-              `}
-            >
-              <Link href="/scharen">
-                <a
-                  className={`
-                    main-nav__link
-                    main-nav__link--${page === 'scharen' ? 'active' : ''}
-                  `}
-                >
-                  Scharen
-                </a>
-              </Link>
-            </li>
+
             <li
               className={`
                 main-nav__item
@@ -117,6 +101,23 @@ class MainNav extends React.Component {
                   `}
                 >
                   Snijplanken Vlakken
+                </a>
+              </Link>
+            </li>
+            <li
+              className={`
+                main-nav__item
+                main-nav__item--${page === 'scharen' ? 'active' : ''}
+              `}
+            >
+              <Link href="/scharen">
+                <a
+                  className={`
+                    main-nav__link
+                    main-nav__link--${page === 'scharen' ? 'active' : ''}
+                  `}
+                >
+                  Overige
                 </a>
               </Link>
             </li>

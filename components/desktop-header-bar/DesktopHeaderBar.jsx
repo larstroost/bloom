@@ -13,7 +13,7 @@ const TopHeader = () => (
       />
     </Link>
     <p className="top-header__slogan">
-      <i>Al uw messen worden voor u op locatie geslepen.</i>
+      <i>Voor beroepsmatig en particulier gebruik.</i>
     </p>
     <div className="top-header__icon-wrapper">
       <a

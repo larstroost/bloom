@@ -12,7 +12,7 @@ class TableKnifeContainer extends React.Component {
       <div className="table-knife__container">
         <InfoSection
           infoTitle="Tafelmessen Informatie Pagina"
-          infoText="Zoekt u speciaal vakmanschap om uw tafelmessen te slijpen? Wilt u uw dure bestek het liefst toevertrouwen aan het bedrijf met de meeste deskundigheid? Dan bent u bij Horecaslijperij Bloom BV aan het juiste adres. Al 30 jaar zijn wij bedreven in het slijpen van alle soorten messen. Het ene tafelmes is het andere niet en de ene gebruiker is ook anders dan de andere. Wij slijpen altijd precies op de manier zoals het hoort en houden daarbij altijd rekening met de eisen van de klant. Tafelmessen slijpen is geen sinecure. Het kan heel onprettig aanvoelen wanneer een mes net iets te bot of net iets te scherp is. Als één van de weinige bedrijven in Nederland kunnen wij snel al uw tafelmessen op locatie komen slijpen. Waar u bij andere bedrijven de messen een paar dagen kwijt bent, zorgen wij ervoor dat u uw messen niet hoeft te missen. Dat is de service waarmee wij uniek zijn en die de kracht van ons bedrijf vormt. Neem contact met ons op via de contactpagina als u vragen heeft of als u een afspraak wilt maken."
+          infoText="Tafelmessen zijn er in tientallen verschillende soorten, maten en merken. Met of zonder kartel, dik of dun, lang of kort. Wij kunnen ze allemaal slijpen. Wij maken uw messen weer scherp en voorzien ze weer van nieuwe kartels, zodat brood en vlees weer makkelijk te snijden zijn."
           src="../../static/photos/chef-knives/kitchen-knife.jpg"
           alt="Tafelmessen"
         />
