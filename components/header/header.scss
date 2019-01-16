@@ -89,6 +89,7 @@
     &--active {
       background: $color-monochrome-1;
       color: $color-primary;
+      opacity: .95;
     }
 
     @include desktop {
