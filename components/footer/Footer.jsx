@@ -32,21 +32,14 @@ const Footer = () => (
         <li className="footer__menu-item">
           <Link href="/koksmessen">
             <a className="footer__menu-link">
-              Koksmessen Slijpen
+              Koksmessen
             </a>
           </Link>
         </li>
         <li className="footer__menu-item">
           <Link href="/tafelmessen">
             <a className="footer__menu-link">
-              Tafelmessen Slijpen
-            </a>
-          </Link>
-        </li>
-        <li className="footer__menu-item">
-          <Link href="/scharen">
-            <a className="footer__menu-link">
-              Scharen Slijpen
+              Tafelmessen
             </a>
           </Link>
         </li>
@@ -54,6 +47,13 @@ const Footer = () => (
           <Link href="/snijplanken">
             <a className="footer__menu-link">
               Snijplanken Vlakken
+            </a>
+          </Link>
+        </li>
+        <li className="footer__menu-item">
+          <Link href="/overige">
+            <a className="footer__menu-link">
+              Overige
             </a>
           </Link>
         </li>
