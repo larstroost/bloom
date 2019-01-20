@@ -11,7 +11,7 @@ class IndexContainer extends React.Component {
   render() {
     return (
       <div className="index__container">
-        <div className="wrapper-test">
+        <div className="index__wrapper-workflow">
           <Workflow
             src="../../static/photos/index/workflow-1.svg"
             alt="Wij komen naar uw locatie toe"

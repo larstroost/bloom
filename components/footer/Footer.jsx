@@ -30,6 +30,13 @@ const Footer = () => (
           Menu
         </p>
         <li className="footer__menu-item">
+          <Link href="/">
+            <a className="footer__menu-link">
+              Home
+            </a>
+          </Link>
+        </li>
+        <li className="footer__menu-item">
           <Link href="/koksmessen">
             <a className="footer__menu-link">
               Koksmessen

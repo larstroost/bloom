@@ -4,30 +4,38 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  // margin-bottom: 16px;
-  width: 19%;
+  margin-bottom: 5px;
+  width: 45%;
+
+  @include tablet {
+    width: 31%;
+  }
+
+  @media (min-width: 1232px) {
+    width: 19%;
+  }
 
   &__text {
     color: $color-primary;
-    font-size: 30px;
+    font-size: $default-h2-mobile;
     font-weight: 400;
-    margin: -30px 0 0;
+    line-height: 24px;
+    padding: 0 4px;
     text-align: center;
-    // width: 20%;
+
+    @include tablet {
+      font-size: $default-h1-mobile;
+      line-height: 30px;
+    }
 
     @include desktop {
-      font-size: 36px;
+      font-size: $default-h1-desktop;
+      line-height: 36px;
     }
   }
 
   &__image {
-    display: none;
-    // height: 20%;
-    //margin-top: -75px;
+    display: block;
     width: 100%;
-
-    @include desktop {
-      display: block;
-    }
   }
 }

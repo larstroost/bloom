@@ -11,10 +11,22 @@
       padding: 16px 0;
     }
   }
-}
 
-.wrapper-test {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  &__wrapper-workflow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @media (min-width: 1232px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
 }
