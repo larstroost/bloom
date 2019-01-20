@@ -42,8 +42,13 @@ class MainNav extends React.Component {
       <header className="header">
         <TopHeader />
         <Link href="/">
-          <a className="header__logo">
+          <a className="header__logo header__logo--mobile">
             Bloom
+          </a>
+        </Link>
+        <Link href="/">
+          <a className="header__logo header__logo--tablet">
+            Horeca Slijperij Bloom
           </a>
         </Link>
         <nav className={`

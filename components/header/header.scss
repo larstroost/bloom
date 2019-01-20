@@ -28,8 +28,25 @@
     text-decoration: none;
 
     @include desktop {
-      display: none;
       padding: 0;
+    }
+
+    &--mobile {
+      @include tablet {
+        display: none;
+      }
+    }
+
+    &--tablet {
+      display: none;
+
+      @include tablet {
+        display: block;
+      }
+
+      @include desktop {
+        display: none;
+      }
     }
   }
 }
