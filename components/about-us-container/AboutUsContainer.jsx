@@ -13,7 +13,7 @@ class AboutUsContainer extends React.Component {
         <InfoSection
           infoTitle="Wie zijn wij"
           infoText="Door de kennis en vaardigheid van het uitstekend opgeleide personeel te combineren met de in eigen beheer ontwikkelde slijpapparatuur, heeft Horeca Slijperij Bloom een kwalitatief zeer hoogwaardig slijpproces ontwikkeld. Hierdoor hebben wij een gevarieerd en vast klantenbestand met klanten door heel Nederland en Noord België weten op te bouwen."
-          src="../../static/photos/chef-knives/kitchen-knife.jpg"
+          src="../../static/photos/etc/SlijpenGrayScale2.png"
           alt="Snijplanken"
         />
         <Divider />
