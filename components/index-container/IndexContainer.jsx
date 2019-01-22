@@ -30,12 +30,12 @@ class IndexContainer extends React.Component {
           <Workflow
             src="../../static/photos/index/workflow-4.svg"
             alt="Slijpen op locatie"
-            text="Wij slijpen op uw locatie"
+            text="Wij slijpen bij u op locatie"
           />
           <Workflow
             src="../../static/photos/index/workflow-5.svg"
             alt="Binnen een paar uur klaar"
-            text="Binnen enkele uren klaar"
+            text="Binnen 1 à 2 uur klaar"
           />
         </div>
         <Divider />
