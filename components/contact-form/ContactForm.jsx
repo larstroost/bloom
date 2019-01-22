@@ -92,8 +92,10 @@ class ContactForm extends React.Component {
           </button>
         </div>
         <form
-          className="contact-form__form"
+          className="gform contact-form__form"
           ref={this.formRef}
+          method="POST"
+          action="https://script.google.com/macros/s/AKfycbwfuYCQvZ9IJ31zi51P_VEt26BPRrHkcbmCubPJJg/exec"
         >
           <div className="">
             {isBusiness && (
@@ -218,6 +220,7 @@ class ContactForm extends React.Component {
             Versturen
           </button>
         </form>
+        <script data-cfasync="false" type="text/javascript" src="../../form-submission-handler.js"></script>
       </section>
     );
   }
