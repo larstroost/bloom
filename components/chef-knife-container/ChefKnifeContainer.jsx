@@ -14,49 +14,49 @@ class ChefKnifeContainer extends React.Component {
           infoTitle="Koksmessen Slijpen"
           infoText="Er zijn veel verschillende soorten messen die koksmessen genoemd worden. Uiteraard slijpen wij al deze messen. Zowel de Westerse als de Oosterse messen worden met alle zorg en expertise behandeld. Naast het multifunctionele koksmes, slijpen wij ook uitbeenmessen, fileermessen, officemessen, tourneermessen, slagersmessen, hakmessen, kaaswiegen, broodmessen en natuurlijk tafelmessen. Een Usuba, Nakiri, Yanagiba, Takohiki, Santoku of Sushikiri kunt u gewoon bij ons inleveren en wij slijpen het lemmet weer naar perfecte scherpte. Wij letten bij ieder mes op de oorspronkelijke vorm en functie en slijpen deze op locatie weer naar de juiste scherpte. Ook voor een magimix of groentecutter bent u bij ons aan het juiste adres"
           //Of het nu gaat om koksmessen, brood(katrtel)messen, keukenmessen, tafelmessen of machinemessen, elk mes heeft zijn eigen specifieke vorm en functie. Omdat elke functie een verschillende gebruiksdiscipline vereist, is het van groot belang dat het mes ook na het slijpen zijn specifieke vorm en functie behoudt. Bovendien voorkomt het werken met echt scherpe messen een hoop ongerief en ergernis.
-          src="../../static/photos/chef-knives/kitchen-knife.jpg"
+          src="../../static/photos/chef-knives/MainPhoto3.png"
           alt="Koksmessen"
         />
         <Divider />
         <ul className="chef-knife__list">
           <KnifeInfo
             title="Koksmes"
-            info="Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische letterzetting. Het is in de jaren '60 populair geworden met de introductie van Letraset vellen met Lorem Ipsum passages en meer recentelijk door desktop publishing software zoals Aldus PageMaker die versies van Lorem Ipsum bevatten."
+            info="Een mes met een glad lemmet van ongeveer 20 a 26 centimeter, een multifunctionele alleskunner, welke gebruikt wordt voor alles van het hakken van kruiden, snijden van groenten tot het uitbenen van kip."
             photo="static/photos/chef-knives/Koksmessen.jpg"
           />
           <KnifeInfo
             title="Fileermes"
-            info="Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische letterzetting. Het is in de jaren '60 populair geworden met de introductie van Letraset vellen met Lorem Ipsum passages en meer recentelijk door desktop publishing software zoals Aldus PageMaker die versies van Lorem Ipsum bevatten."
+            info="Een mes van ongeveer 15 centimeter met een glad lemmet, gebruikt voor het fileren van vlees, vis en gevogelte."
             photo="static/photos/chef-knives/Fileermessen.jpg"
           />
           <KnifeInfo
             title="Broodmes"
-            info="Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische letterzetting. Het is in de jaren '60 populair geworden met de introductie van Letraset vellen met Lorem Ipsum passages en meer recentelijk door desktop publishing software zoals Aldus PageMaker die versies van Lorem Ipsum bevatten."
+            info="Een groot mes met een gekarteld lemmet van ongeveer 21 centimeter, gebruikt voor het snijden van broden."
             photo="static/photos/chef-knives/Broodmessen2.jpg"
           />
           <KnifeInfo
             title="Slagersmes"
-            info="Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische letterzetting. Het is in de jaren '60 populair geworden met de introductie van Letraset vellen met Lorem Ipsum passages en meer recentelijk door desktop publishing software zoals Aldus PageMaker die versies van Lorem Ipsum bevatten."
+            info="Een groot mes met een lichtgekromd glad lemmet van ongeveer 20 tot 26 centimeter, gebruikt voor het snijden van vlees met botten."
             photo="static/photos/chef-knives/Slagersmes2.jpg"
           />
           <KnifeInfo
             title="Officemes"
-            info="Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische letterzetting. Het is in de jaren '60 populair geworden met de introductie van Letraset vellen met Lorem Ipsum passages en meer recentelijk door desktop publishing software zoals Aldus PageMaker die versies van Lorem Ipsum bevatten."
+            info="Klein mes met een glad lemmet van ongeveer 10 centimeter, gebruikt voor voornamelijk schillen, pellen en snijden van groenten en fruit."
             photo="static/photos/chef-knives/Officemes.jpg"
           />
           <KnifeInfo
             title="Schilmes"
-            info="Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische letterzetting. Het is in de jaren '60 populair geworden met de introductie van Letraset vellen met Lorem Ipsum passages en meer recentelijk door desktop publishing software zoals Aldus PageMaker die versies van Lorem Ipsum bevatten."
+            info="Klein mes met een glad lemmet van ongeveer 6 a 8 centimeter, gebruikt voor schillen, pellen en snijden van aardappels, groenten en fruit."
             photo="static/photos/chef-knives/Schilmesjes.jpg"
           />
           <KnifeInfo
             title="Japans mes"
-            info="Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische letterzetting. Het is in de jaren '60 populair geworden met de introductie van Letraset vellen met Lorem Ipsum passages en meer recentelijk door desktop publishing software zoals Aldus PageMaker die versies van Lorem Ipsum bevatten."
+            info="Mes van harder staal dan westerse messen. Het afgebeelde mes is een 'Gyuto', de Japanse interpretatie van het Westerse koksmes."
             photo="static/photos/chef-knives/Japans_mes.jpg"
           />
           <KnifeInfo
             title="Hakmes"
-            info="Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische letterzetting. Het is in de jaren '60 populair geworden met de introductie van Letraset vellen met Lorem Ipsum passages en meer recentelijk door desktop publishing software zoals Aldus PageMaker die versies van Lorem Ipsum bevatten."
+            info="Een groot mes met glad lemmet van ongeveer 27 centimeter met als voornaamste gebruiksdoel het openbreken van karkassen, doorhakken van gewrichten en het snijden van vlees."
             photo="static/photos/chef-knives/Hakmes.jpg"
           />
         </ul>

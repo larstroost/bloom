@@ -20,17 +20,17 @@ class TableKnifeContainer extends React.Component {
         <ul className="table-knife__list">
           <KnifeInfo
             title="Tafelmessen"
-            info="Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische letterzetting. Het is in de jaren '60 populair geworden met de introductie van Letraset vellen met Lorem Ipsum passages en meer recentelijk door desktop publishing software zoals Aldus PageMaker die versies van Lorem Ipsum bevatten."
+            info="Standaard tafelmessen met een kleine kartel in het lemmet, geschikt voor vrijwel alle groenten en vlees die je thuis of in een restaurant geserveerd krijgt."
             photo="static/photos/table-knives/Tafelmes_normaal.jpg"
           />
           <KnifeInfo
             title="Steakmes"
-            info="Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische letterzetting. Het is in de jaren '60 populair geworden met de introductie van Letraset vellen met Lorem Ipsum passages en meer recentelijk door desktop publishing software zoals Aldus PageMaker die versies van Lorem Ipsum bevatten."
+            info="Een tafelmes met iets grovere kartel in het lemmet, zoals de naam al zegt voornamelijk gebruikt voor steak, en andere hoogwaardige stukken vlees waar een normaal mes met moeite doorheen komt."
             photo="static/photos/table-knives/Tafelmes_steak.jpg"
           />
           <KnifeInfo
-            title="Broodmes"
-            info="Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische letterzetting. Het is in de jaren '60 populair geworden met de introductie van Letraset vellen met Lorem Ipsum passages en meer recentelijk door desktop publishing software zoals Aldus PageMaker die versies van Lorem Ipsum bevatten."
+            title="Tafelmes"
+            info="Tafelmes met een grove kartel in het lemmet, voornamelijk gebruikt voor het snijden van hardere korsten (bijvoorbeeld stokbrood en pizza)."
             photo="static/photos/table-knives/Tafelmes_brood.jpg"
           />
 
