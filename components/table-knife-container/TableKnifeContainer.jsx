@@ -29,8 +29,8 @@ class TableKnifeContainer extends React.Component {
             photo="static/photos/table-knives/Tafelmes_steak.jpg"
           />
           <KnifeInfo
-            title="Broodmes"
-            info="Tafelmes met een grove kartel in het lemmet, voornamelijk gebruikt voor het snijden van brood en dergelijke op tafel."
+            title="Tafelmes"
+            info="Tafelmes met een grove kartel in het lemmet, voornamelijk gebruikt voor het snijden van hardere korsten (bijvoorbeeld stokbrood en pizza)."
             photo="static/photos/table-knives/Tafelmes_brood.jpg"
           />
 
