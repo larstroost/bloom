@@ -23,41 +23,49 @@ class ChefKnifeContainer extends React.Component {
             title="Koksmes"
             info="Een mes met een glad lemmet van ongeveer 20 a 26 centimeter, een multifunctionele alleskunner, welke gebruikt wordt voor alles van het hakken van kruiden, snijden van groenten tot het uitbenen van kip."
             photo="static/photos/chef-knives/Koksmessen.jpg"
+            className="four-a-row"
           />
           <KnifeInfo
             title="Fileermes"
             info="Een mes van ongeveer 15 centimeter met een glad lemmet, gebruikt voor het fileren van vlees, vis en gevogelte."
             photo="static/photos/chef-knives/Fileermessen.jpg"
+            className="four-a-row"
           />
           <KnifeInfo
             title="Broodmes"
             info="Een groot mes met een gekarteld lemmet van ongeveer 21 centimeter, gebruikt voor het snijden van broden."
             photo="static/photos/chef-knives/Broodmessen2.jpg"
+            className="four-a-row"
           />
           <KnifeInfo
             title="Slagersmes"
             info="Een groot mes met een lichtgekromd glad lemmet van ongeveer 20 tot 26 centimeter, gebruikt voor het snijden van vlees met botten."
             photo="static/photos/chef-knives/Slagersmes2.jpg"
+            className="four-a-row"
           />
           <KnifeInfo
             title="Officemes"
             info="Klein mes met een glad lemmet van ongeveer 10 centimeter, gebruikt voor voornamelijk schillen, pellen en snijden van groenten en fruit."
             photo="static/photos/chef-knives/Officemes.jpg"
+            className="four-a-row"
           />
           <KnifeInfo
             title="Schilmes"
             info="Klein mes met een glad lemmet van ongeveer 6 a 8 centimeter, gebruikt voor schillen, pellen en snijden van aardappels, groenten en fruit."
             photo="static/photos/chef-knives/Schilmesjes.jpg"
+            className="four-a-row"
           />
           <KnifeInfo
             title="Japans mes"
             info="Mes van harder staal dan westerse messen. Het afgebeelde mes is een 'Gyuto', de Japanse interpretatie van het Westerse koksmes."
             photo="static/photos/chef-knives/Japans_mes.jpg"
+            className="four-a-row"
           />
           <KnifeInfo
             title="Hakmes"
             info="Een groot mes met glad lemmet van ongeveer 27 centimeter met als voornaamste gebruiksdoel het openbreken van karkassen, doorhakken van gewrichten en het snijden van vlees."
             photo="static/photos/chef-knives/Hakmes.jpg"
+            className="four-a-row"
           />
         </ul>
       </div>

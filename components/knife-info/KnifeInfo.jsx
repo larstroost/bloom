@@ -15,12 +15,13 @@ class KnifeInfo extends React.Component {
 
   render() {
     const { isOpen } = this.state;
-    const { title, info, photo, alt } = this.props;
+    const { title, info, photo, alt, className } = this.props;
     return (
       <li
         className={`
           knife-info
           knife-info--${isOpen ? 'open' : 'closed'}
+          knife-info--${className}
         `}
         onClick={this.toggleInfo}
         role="button"
@@ -34,12 +35,20 @@ class KnifeInfo extends React.Component {
               knife-info__opacity-bg--${isOpen ? 'open' : 'closed'}
             `}
           >
-            <h2 className="knife-info__titel">
+            <h2
+              className={`
+                knife-info__titel
+                knife-info__titel--${isOpen ? 'open' : 'closed'}
+              `}
+            >
               {title}
             </h2>
           </div>
           <img
-            className="knife-info__photo"
+            className={`
+              knife-info__photo
+              knife-info__photo--${isOpen ? 'open' : 'closed'}
+            `}
             src={photo}
             alt={alt}
           />
@@ -88,14 +97,16 @@ class KnifeInfo extends React.Component {
 }
 
 KnifeInfo.defaultProps = {
-  alt: 'Foto van messensoort'
+  alt: 'Foto van messensoort',
+  className: ''
 };
 
 KnifeInfo.propTypes = {
   title: PropTypes.string.isRequired,
   info: PropTypes.string.isRequired,
   photo: PropTypes.string.isRequired,
-  alt: PropTypes.string
+  alt: PropTypes.string,
+  className: PropTypes.string
 };
 
 export default KnifeInfo;
