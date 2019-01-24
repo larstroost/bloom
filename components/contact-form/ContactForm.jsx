@@ -6,6 +6,7 @@ import './contact-form.scss';
 class ContactForm extends React.Component {
   static initialState = {
     isBusiness: true,
+    confirmation: false,
     contactForm: {
       companyName: '',
       contactName: '',
@@ -58,8 +59,28 @@ class ContactForm extends React.Component {
     }));
   }
 
+  handleSubmit = (event) => {
+    event.preventDefault();
+    const data = new FormData(event.target);
+
+    fetch('https://script.google.com/macros/s/AKfycbwfuYCQvZ9IJ31zi51P_VEt26BPRrHkcbmCubPJJg/exec', {
+      method: 'POST',
+      body: data,
+    });
+    this.setState({ ...ContactForm.initialState });
+    this.setState(() => ({
+      confirmation: true
+    }));
+  }
+
+  confirmSendEmail = () => {
+    this.setState(() => ({
+      confirmation: false
+    }));
+  }
+
   render() {
-    const { isBusiness, contactForm, validity } = this.state;
+    const { isBusiness, contactForm, validity, confirmation } = this.state;
     const {
       companyName,
       contactName,
@@ -92,8 +113,10 @@ class ContactForm extends React.Component {
           </button>
         </div>
         <form
-          className="contact-form__form"
+          className="gform contact-form__form"
           ref={this.formRef}
+          method="POST"
+          onSubmit={this.handleSubmit}
         >
           <div className="">
             {isBusiness && (
@@ -218,6 +241,20 @@ class ContactForm extends React.Component {
             Versturen
           </button>
         </form>
+        {confirmation && (
+          <div className="confirm">
+            <p className="confirm__text">
+              Bedankt voor uw bericht. We zullen zo spoedig mogelijk contact met u opnemen.
+            </p>
+            <button
+              onClick={this.confirmSendEmail}
+              type="button"
+              className="confirm__button"
+            >
+              Akkoord
+            </button>
+          </div>
+        )}
       </section>
     );
   }
