@@ -13,7 +13,7 @@ class ContactInformation extends React.Component {
             src="static/photos/index/locatie2.png"
             alt="Locatie foto"
           />
-          <Link href="https://www.google.com/maps/dir/51.8414336,4.6276608/bloom+horeca+slijperij/@51.8398494,4.6208692,16z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x47c42e80d213833b:0x5f3cd128335d056d!2m2!1d4.6220539!2d51.8393255">
+          <Link href="https://www.google.com/maps/dir//bloom/@51.8272175,4.6025496,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47c42e80d213833b:0x5f3cd128335d056d!2m2!1d4.6220539!2d51.8393255">
             <a
               className="contact-info__link"
               target="_blank"

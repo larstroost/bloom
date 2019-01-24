@@ -23,6 +23,7 @@
   }
 
   &__location-photo {
+    border-radius: 4px;
     display: none;
 
     @include tablet {
@@ -44,6 +45,7 @@
   }
 
   &__map-photo {
+    border-radius: 4px;
     height: 100%;
     width: 100%;
   }
