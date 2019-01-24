@@ -58,6 +58,17 @@ class ContactForm extends React.Component {
     }));
   }
 
+  handleSubmit = (event) => {
+    event.preventDefault();
+    const data = new FormData(event.target);
+
+    fetch('https://script.google.com/macros/s/AKfycbwfuYCQvZ9IJ31zi51P_VEt26BPRrHkcbmCubPJJg/exec', {
+      method: 'POST',
+      body: data,
+    });
+    this.setState({ ...ContactForm.initialState });
+  }
+
   render() {
     const { isBusiness, contactForm, validity } = this.state;
     const {
@@ -95,7 +106,7 @@ class ContactForm extends React.Component {
           className="gform contact-form__form"
           ref={this.formRef}
           method="POST"
-          action="https://script.google.com/macros/s/AKfycbwfuYCQvZ9IJ31zi51P_VEt26BPRrHkcbmCubPJJg/exec"
+          onSubmit={this.handleSubmit}
         >
           <div className="">
             {isBusiness && (
@@ -220,7 +231,6 @@ class ContactForm extends React.Component {
             Versturen
           </button>
         </form>
-        <script data-cfasync="false" type="text/javascript" src="../../form-submission-handler.js"></script>
       </section>
     );
   }
