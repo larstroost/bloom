@@ -55,7 +55,7 @@ class KnifeInfo extends React.Component {
           {!isOpen && (
             <img
               className="knife-info__icon knife-info__icon--down"
-              src="static/icons/arrow-down-2.svg"
+              src="../../static/icons/arrow-down-2.svg"
               alt="Arrow Down"
             />
           )}
@@ -72,14 +72,14 @@ class KnifeInfo extends React.Component {
           {isOpen && (
             <img
               className="knife-info__icon knife-info__icon--up-left"
-              src="static/icons/arrow-up.svg"
+              src="../../static/icons/arrow-up.svg"
               alt="Arrow Up"
             />
           )}
           {isOpen && (
             <img
               className="knife-info__icon knife-info__icon--up-right"
-              src="static/icons/arrow-up.svg"
+              src="../../static/icons/arrow-up.svg"
               alt="Arrow Up"
             />
           )}

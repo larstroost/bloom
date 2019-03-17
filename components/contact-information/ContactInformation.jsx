@@ -10,7 +10,7 @@ class ContactInformation extends React.Component {
         <div className="contact-info__photo-wrapper">
           <img
             className="contact-info__location-photo"
-            src="static/photos/index/locatie2.png"
+            src="../../static/photos/index/locatie2.png"
             alt="Locatie foto"
           />
           <Link href="https://www.google.com/maps/dir//bloom/@51.8272175,4.6025496,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47c42e80d213833b:0x5f3cd128335d056d!2m2!1d4.6220539!2d51.8393255">
@@ -20,7 +20,7 @@ class ContactInformation extends React.Component {
             >
               <img
                 className="contact-info__map-photo"
-                src="static/photos/index/maps2.png"
+                src="../../static/photos/index/maps2.png"
                 alt="Locatie foto"
               />
             </a>

@@ -21,17 +21,17 @@ class RemainderContainer extends React.Component {
           <KnifeInfo
             title="Schaar"
             info="Normale schaar voor alledaagse knipwerkzaamheden in het huis."
-            photo="static/photos/remainder/Overig_schaar.jpg"
+            photo="../../static/photos/remainder/Overig_schaar.jpg"
           />
           <KnifeInfo
             title="Snoeischaar"
             info="Gebruikt voor het knippen en snoeien van kleinere takken in boompjes en heggen in de tuin."
-            photo="static/photos/remainder/Overig_snoeischaar.jpg"
+            photo="../../static/photos/remainder/Overig_snoeischaar.jpg"
           />
           <KnifeInfo
             title="Heggenschaar"
             info="Grote schaar voor het snoeien en in vorm knippen van heggen."
-            photo="static/photos/remainder/Overig_heggenschaar.jpg"
+            photo="../../static/photos/remainder/Overig_heggenschaar.jpg"
           />
 
         </ul>

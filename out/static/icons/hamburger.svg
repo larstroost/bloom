@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="16px" viewBox="0 0 18 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="teamawesome-timesheets-mobile" transform="translate(-341.000000, -57.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Header">
+                <g id="navigation-drawer-2" transform="translate(341.000000, 57.000000)">
+                    <g id="Filled_Icons_1_">
+                        <g id="Filled_Icons">
+                            <g id="Group">
+                                <path d="M17.5,0 L0.5,0 C0.224,0 0,0.224 0,0.5 L0,3.5 C0,3.776 0.224,4 0.5,4 L17.5,4 C17.776,4 18,3.776 18,3.5 L18,0.5 C18,0.224 17.776,0 17.5,0 Z" id="Shape"></path>
+                                <path d="M17.5,6 L0.5,6 C0.224,6 0,6.224 0,6.5 L0,9.5 C0,9.776 0.224,10 0.5,10 L17.5,10 C17.776,10 18,9.776 18,9.5 L18,6.5 C18,6.224 17.776,6 17.5,6 Z" id="Shape"></path>
+                                <path d="M17.5,12 L0.5,12 C0.224,12 0,12.224 0,12.5 L0,15.5 C0,15.776 0.224,16 0.5,16 L17.5,16 C17.776,16 18,15.776 18,15.5 L18,12.5 C18,12.224 17.776,12 17.5,12 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

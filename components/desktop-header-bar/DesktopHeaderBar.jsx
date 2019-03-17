@@ -8,7 +8,7 @@ const TopHeader = () => (
     <Link href="/">
       <img
         className="top-header__logo"
-        src="static/logos/bloom-logo.png"
+        src="../../static/logos/bloom-logo.png"
         alt="Bloom Logo"
       />
     </Link>
@@ -22,7 +22,7 @@ const TopHeader = () => (
       >
         <img
           className="top-header__phone-icon"
-          src="static/icons/phone.svg"
+          src="../../static/icons/phone.svg"
           alt="Phone Icon"
         />
         <p className="top-header__contact">
@@ -35,7 +35,7 @@ const TopHeader = () => (
       >
         <img
           className="top-header__phone-icon"
-          src="static/icons/envelope.svg"
+          src="../../static/icons/envelope.svg"
           alt="Email Icon"
         />
         <p className="top-header__contact" href="mailto:larstroost@upcmail.nl">
