@@ -1,0 +1,49 @@
+@import "../../shared/styles/main";
+
+.info-box-test {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 7px;
+  overflow: hidden;
+  position: relative;
+
+  &__wrapper {
+    padding: 16px;
+    width: 100%;
+    z-index: 100;
+
+    @include desktop {
+      padding-right: 16px;
+    }
+  }
+
+  &__title {
+    color: $color-secondary;
+    font-size: $default-h1-mobile;
+    font-weight: 300;
+    // text-shadow: 2px 2px 8px $color-secondary;
+
+    @include desktop {
+      font-size: $default-h1-desktop;
+    }
+  }
+
+  &__text {
+    color: $color-secondary;
+    font-size: $default-mobile-font-size;
+    font-weight: 300;
+
+    @include desktop {
+      font-size: $default-desktop-font-size;
+    }
+  }
+
+  &__image {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

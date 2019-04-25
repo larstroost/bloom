@@ -60,6 +60,23 @@ class MainNav extends React.Component {
             <li
               className={`
                 main-nav__item
+                main-nav__item--${page === 'index' ? 'active' : ''}
+              `}
+            >
+              <Link href="/">
+                <a
+                  className={`
+                    main-nav__link
+                    main-nav__link--${page === 'index' ? 'active' : ''}
+                  `}
+                >
+                  Home
+                </a>
+              </Link>
+            </li>
+            <li
+              className={`
+                main-nav__item
                 main-nav__item--${page === 'koksmessen' ? 'active' : ''}
               `}
             >

@@ -7,7 +7,7 @@ import Footer from '../components/footer/Footer';
 
 const Index = () => (
   <React.Fragment>
-    <MainNav />
+    <MainNav page='index' />
     <IndexContainer />
     <Footer />
   </React.Fragment>

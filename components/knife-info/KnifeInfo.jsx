@@ -69,27 +69,34 @@ class KnifeInfo extends React.Component {
           <p className="knife-info__info">
             {info}
           </p>
-          {isOpen && (
-            <img
-              className="knife-info__icon knife-info__icon--up-left"
-              src="../../static/icons/arrow-up.svg"
-              alt="Arrow Up"
-            />
-          )}
-          {isOpen && (
-            <img
-              className="knife-info__icon knife-info__icon--up-right"
-              src="../../static/icons/arrow-up.svg"
-              alt="Arrow Up"
-            />
-          )}
-          <Link href="/contact">
-            <button className="knife-info__button knife-info__button--right">
-              <a className="knife-info__link">
-                Meer Informatie Opvragen
-              </a>
-            </button>
-          </Link>
+          <div className="knife-info__wrapper-button">
+            {isOpen && (
+              <img
+                className="knife-info__icon knife-info__icon--up-left"
+                src="../../static/icons/arrow-up.svg"
+                alt="Arrow Up"
+              />
+            )}
+            {isOpen && (
+              <img
+                className="knife-info__icon knife-info__icon--up-right"
+                src="../../static/icons/arrow-up.svg"
+                alt="Arrow Up"
+              />
+            )}
+            <Link href="/contact">
+              <button
+                className={`
+                  knife-info__button
+                  knife-info__button--${isOpen ? 'open' : 'closed'}
+                `}
+              >
+                <a className="knife-info__link">
+                  Meer Informatie Opvragen
+                </a>
+              </button>
+            </Link>
+          </div>
         </div>
       </li>
     );

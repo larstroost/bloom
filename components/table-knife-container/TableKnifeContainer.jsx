@@ -33,6 +33,11 @@ class TableKnifeContainer extends React.Component {
             info="Tafelmes met een grove kartel in het lemmet, voornamelijk gebruikt voor het snijden van hardere korsten (bijvoorbeeld stokbrood en pizza)."
             photo="../../static/photos/table-knives/Tafelmes_brood.jpg"
           />
+          <KnifeInfo
+            title="Overige tafelmessen"
+            info="Natuurlijk zijn er nog veel andere soorten tafelmessen die wij ook slijpen. Vraag gerust naar onze mogelijkheden."
+            photo="../../static/photos/table-knives/Tafelmessen.jpg"
+          />
         </ul>
       </div>
     );

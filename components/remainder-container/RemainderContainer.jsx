@@ -33,7 +33,11 @@ class RemainderContainer extends React.Component {
             info="Grote schaar voor het snoeien en in vorm knippen van heggen."
             photo="../../static/photos/remainder/Overig_heggenschaar.jpg"
           />
-
+          <KnifeInfo
+            title="Overige"
+            info="Bijna alles wat een scherpe rand heeft kunnen wij slijpen. Vraag gerust naar onze mogelijkheden."
+            photo="../../static/photos/remainder/Overig_heggenschaar.jpg"
+          />
         </ul>
       </div>
     );

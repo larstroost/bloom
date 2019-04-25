@@ -48,6 +48,11 @@
         display: none;
       }
     }
+
+    &--test {
+      height: 50px;
+      width: 100%;
+    }
   }
 }
 
@@ -58,6 +63,10 @@
   right: 0;
   text-align: center;
   top: 49px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   @include tablet {
     left: 0;
@@ -76,6 +85,7 @@
     background-color: $color-primary;
     display: block;
     height: 100vh;
+    overflow: scroll;
 
     @include tablet {
       border-bottom-right-radius: 10px;
