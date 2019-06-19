@@ -3,6 +3,7 @@ import Link from 'next/link';
 
 import './header.scss';
 import TopHeader from '../desktop-header-bar/DesktopHeaderBar';
+import Header2 from '../header2/Header2';
 
 class MainNav extends React.Component {
   state = {
@@ -15,6 +16,12 @@ class MainNav extends React.Component {
     this.setState((prevState) => ({
       isOpen: !prevState.isOpen
     }));
+    this.setState(() => ({
+      showingPhone: false
+    }));
+    this.setState(() => ({
+      showingEmail: false
+    }));
   };
 
   togglePhone = () => {
@@ -23,6 +30,9 @@ class MainNav extends React.Component {
     }));
     this.setState(() => ({
       showingEmail: false
+    }));
+    this.setState(() => ({
+      isOpen: false
     }));
   };
 
@@ -33,6 +43,9 @@ class MainNav extends React.Component {
     this.setState(() => ({
       showingPhone: false
     }));
+    this.setState(() => ({
+      isOpen: false
+    }));
   };
 
   render() {
@@ -42,24 +55,26 @@ class MainNav extends React.Component {
       <header className="header">
         <TopHeader />
         <Link href="/">
-          <a className="header__logo header__logo--mobile">
-            Bloom
-          </a>
-        </Link>
-        <Link href="/">
-          <a className="header__logo header__logo--tablet">
-            Horeca Slijperij Bloom
-          </a>
+          <img
+            className="header__logo"
+            src="../../static/logos/Bloom-wit-volledig.png"
+            alt="Bloom Logo"
+          />
         </Link>
         <nav className={`
           main-nav
           main-nav--${isOpen ? 'open' : ''}
         `}
         >
+          <img
+            className="main-nav__background"
+            src="../../static/photos/about-us/PortretHJ.jpeg"
+          />
           <ul>
             <li
               className={`
                 main-nav__item
+                main-nav__item--first
                 main-nav__item--${page === 'index' ? 'active' : ''}
               `}
             >
@@ -187,14 +202,14 @@ class MainNav extends React.Component {
           {!isOpen && (
             <img
               alt="Open menu"
-              className="toggle__image toggle__image--open"
+              className="toggle__image"
               src="/static/icons/hamburger.svg"
             />
           )}
           {isOpen && (
             <img
               alt="Close menu"
-              className="toggle__image toggle__image--close"
+              className="toggle__image"
               src="/static/icons/close.svg"
             />
           )}

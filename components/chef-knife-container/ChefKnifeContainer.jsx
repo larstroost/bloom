@@ -15,7 +15,7 @@ class ChefKnifeContainer extends React.Component {
           infoText="Er zijn veel verschillende soorten messen die koksmessen genoemd worden. Uiteraard slijpen wij al deze messen. Zowel de Westerse als de Oosterse messen worden met alle zorg en expertise behandeld. Naast het multifunctionele koksmes, slijpen wij ook uitbeenmessen, fileermessen, officemessen, tourneermessen, slagersmessen, hakmessen, kaaswiegen, broodmessen en natuurlijk tafelmessen. Een Usuba, Nakiri, Yanagiba, Takohiki, Santoku of Sushikiri kunt u gewoon bij ons inleveren en wij slijpen het lemmet weer naar perfecte scherpte. Wij letten bij ieder mes op de oorspronkelijke vorm en functie en slijpen deze op locatie weer naar de juiste scherpte. Ook voor een magimix of groentecutter bent u bij ons aan het juiste adres."
           //Of het nu gaat om koksmessen, brood(katrtel)messen, keukenmessen, tafelmessen of machinemessen, elk mes heeft zijn eigen specifieke vorm en functie. Omdat elke functie een verschillende gebruiksdiscipline vereist, is het van groot belang dat het mes ook na het slijpen zijn specifieke vorm en functie behoudt. Bovendien voorkomt het werken met echt scherpe messen een hoop ongerief en ergernis.
           src="../../static/photos/index/banner23.svg"
-          alt="Koksmessen"
+          alt="Banner"
         />
         <ul className="chef-knife__list">
           <KnifeInfo

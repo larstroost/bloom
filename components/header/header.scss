@@ -18,40 +18,13 @@
   }
 
   &__logo {
-    -webkit-font-smoothing: antialiased;
-    color: $color-monochrome-1;
     display: block;
-    font-family: $font-primary;
-    font-size: $default-h1-mobile;
-    padding: 12px 0 0;
-    text-align: center;
-    text-decoration: none;
+    height: 50px;
+    margin-top: -1px;
+    z-index: 200;
 
     @include desktop {
-      padding: 0;
-    }
-
-    &--mobile {
-      @include tablet {
-        display: none;
-      }
-    }
-
-    &--tablet {
       display: none;
-
-      @include tablet {
-        display: block;
-      }
-
-      @include desktop {
-        display: none;
-      }
-    }
-
-    &--test {
-      height: 50px;
-      width: 100%;
     }
   }
 }
@@ -62,35 +35,58 @@
   position: absolute;
   right: 0;
   text-align: center;
-  top: 49px;
 
   &::-webkit-scrollbar {
     display: none;
   }
 
   @include tablet {
+    box-shadow: 2px 0 5px $color-secondary;
     left: 0;
     right: auto;
+    top: 50px;
     width: 50%;
   }
 
   @include desktop {
+    box-shadow: none;
     display: flex;
-    // justify-content: space-between;
     position: static;
+    text-align: left;
     width: 100%;
   }
 
+  &__background {
+    bottom: 0;
+    filter: brightness(60%);
+    height: 100vh;
+    left: 0;
+    min-width: 100vw;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -100;
+
+    @include tablet {
+      min-width: 50vw;
+    }
+
+    @include desktop {
+      display: none;
+    }
+  }
+
   &--open {
-    background-color: $color-primary;
     display: block;
     height: 100vh;
     overflow: scroll;
 
     @include tablet {
       border-bottom-right-radius: 10px;
+    }
+
+    @include desktop {
       height: auto;
-      // padding: 0 16px;
     }
   }
 
@@ -99,42 +95,65 @@
     display: block;
     flex-direction: column;
     font-family: $font-primary;
-    font-size: $default-h2-mobile;
-    font-weight: 400;
+    font-size: $default-h1-desktop;
+    font-weight: 300;
     line-height: 70px;
     margin: 0;
     text-decoration: none;
+    text-shadow: 2px 2px 8px $color-monochrome-8;
+
 
     &:hover {
-      background: $color-monochrome-1;
-      color: $color-primary;
-      opacity: .8;
+      font-size: 34px;
       transition: .2s;
       transition-timing-function: ease-out;
+
+      @include desktop {
+        background: $color-monochrome-1;
+        color: $color-primary;
+        font-size: $default-h2-mobile;
+        opacity: .8;
+      }
     }
 
     &--active {
-      background: $color-monochrome-1;
-      color: $color-primary;
-      opacity: .95;
+
+      @include desktop {
+        background: $color-monochrome-1;
+        color: $color-primary;
+        font-size: $default-h2-mobile;
+        opacity: .95;
+      }
     }
 
     @include desktop {
       font-family: $font-primary;
-      // font-size: $default-desktop-font-size;
+      font-size: $default-h2-mobile;
       font-weight: 400;
       padding: 0 15px;
+      text-shadow: none;
     }
   }
 
   &__item {
-    margin: 26px auto;
 
     @include desktop {
       display: inline-block;
       height: 70px;
       margin: auto;
       width: auto;
+    }
+
+    &--first {
+      margin-top: 60px;
+
+      @include tablet {
+        margin-top: 10px;
+      }
+
+      @include desktop {
+        margin-top: 0;
+      }
     }
   }
 }

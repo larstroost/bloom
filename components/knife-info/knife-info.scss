@@ -26,6 +26,8 @@
 
   &__opacity-bg {
     position: absolute;
+    transition: .2s;
+    transition-timing-function: ease-out;
     width: 100%;
     z-index: 100;
 
@@ -39,13 +41,13 @@
 
   &__titel {
     color: $color-tertriary;
-    font-size: 32px;
+    font-size: $default-h1-desktop;
     font-weight: 300;
     height: 80px;
     line-height: 30px;
     padding: 100px 0 0;
     text-align: center;
-    text-shadow: 2px 2px 8px black;
+    text-shadow: 2px 2px 8px $color-monochrome-8;
     transition: .2s;
     transition-timing-function: ease-out;
 
@@ -58,6 +60,8 @@
 
   &__photo {
     margin-bottom: -5px;
+    transition: .2s;
+    transition-timing-function: ease-out;
     width: 100%;
 
     &--open {
