@@ -12,6 +12,7 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <script src="https://www.google.com/recaptcha/api.js?explicit&hl=nl" async defer></script>
         </body>
       </html>
     );

@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Recaptcha from 'react-recaptcha';
 
 import './contact-form.scss';
 
@@ -12,7 +13,7 @@ class ContactForm extends React.Component {
       contactName: '',
       email: '',
       phoneNumber: '',
-      message: ''
+      message: '',
     },
     validity: {
       companyName: true,
@@ -20,7 +21,8 @@ class ContactForm extends React.Component {
       email: true,
       phoneNumber: true,
       message: true
-    }
+    },
+    recaptcha: false
   }
 
   constructor(props) {
@@ -62,15 +64,31 @@ class ContactForm extends React.Component {
   handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.target);
+    if (this.state.recaptcha) {
+      fetch('https://script.google.com/macros/s/AKfycbwfuYCQvZ9IJ31zi51P_VEt26BPRrHkcbmCubPJJg/exec', {
+        method: 'POST',
+        body: data,
+      });
+      this.setState({ ...ContactForm.initialState });
+      this.setState(() => ({
+        confirmation: true
+      }));
+    } else {
+      alert('Vink alsjeblieft aan dat je geen robot bent');
+    }
+  }
 
-    fetch('https://script.google.com/macros/s/AKfycbwfuYCQvZ9IJ31zi51P_VEt26BPRrHkcbmCubPJJg/exec', {
-      method: 'POST',
-      body: data,
-    });
-    this.setState({ ...ContactForm.initialState });
-    this.setState(() => ({
-      confirmation: true
-    }));
+  recaptchaLoaded = () => {
+    console.log('recaptcha loaded');
+  }
+
+  verifyCallback = (response) => {
+    if (response) {
+      console.log('verified')
+      this.setState(() => ({
+        recaptcha: true
+      }));
+    }
   }
 
   confirmSendEmail = () => {
@@ -231,6 +249,12 @@ class ContactForm extends React.Component {
               />
             </label>
           </div>
+          <Recaptcha
+             sitekey="6LeDBp4UAAAAAHmHHFKXGR7h1WVjqsbYLtcdkDYs"
+             render="explicit"
+             onloadCallback={this.recaptchaLoaded}
+             verifyCallback={this.verifyCallback}
+           />
           <button
             className={`
               contact-form__button

@@ -1,0 +1,56 @@
+@import "../../shared/styles/main";
+
+.header-two {
+  // align-items: center;
+  display: none;
+  height: 250px;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 15px;
+  position: relative;
+  width: 100%;
+
+  @include desktop {
+    display: flex;
+  }
+
+  &__header {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: -375px;
+    width: 100%;
+    z-index: -100;
+  }
+
+  &__logo {
+    height: 100px;
+  }
+
+  &__icon-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-around;
+  }
+
+  &__phone-icon {
+    height: 30px;
+    margin-right: 10px;
+    width: auto;
+  }
+
+  &__contact-wrapper {
+    display: flex;
+    text-decoration: none;
+  }
+
+  &__contact {
+    color: $color-monochrome-1;
+    font-family: $font-primary;
+    font-size: $default-h2-mobile;
+    font-weight: 500;
+    line-height: 30px;
+  }
+}
