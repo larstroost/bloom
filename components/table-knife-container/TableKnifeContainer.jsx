@@ -12,7 +12,7 @@ class TableKnifeContainer extends React.Component {
       <div className="table-knife__container">
         <InfoSectionTest
           infoTitle="TAFELMESSEN SLIJPEN"
-          infoText="Tafelmessen zijn er in tientallen verschillende soorten, maten en merken. Met of zonder kartel, dik of dun, lang of kort. Wij kunnen ze allemaal slijpen. Wij maken uw messen weer scherp en voorzien ze weer van nieuwe kartels, zodat brood en vlees weer makkelijk te snijden zijn."
+          infoText="Tafelmessen zijn er in tientallen verschillende soorten, maten en merken. Met of zonder kartel, dik of dun, lang of kort. Wij kunnen ze allemaal slijpen. Wij maken uw messen weer scherp en voorzien ze weer van nieuwe kartels, zodat brood en vlees weer makkelijk te snijden zijn. Ook Laguiole messen zijn voor ons geen probleem."
           src="../../static/photos/index/banner23.svg"
           alt="Banner"
         />

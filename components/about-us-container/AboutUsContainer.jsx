@@ -11,15 +11,15 @@ class AboutUsContainer extends React.Component {
     return (
       <div className="about-us__container">
         <InfoSection
-          infoTitle="Wie zijn wij"
-          infoText="Door de kennis en vaardigheid van het uitstekend opgeleide personeel te combineren met de in eigen beheer ontwikkelde slijpapparatuur, heeft Horeca Slijperij Bloom een kwalitatief zeer hoogwaardig slijpproces ontwikkeld. Hierdoor hebben wij een gevarieerd en vast klantenbestand met klanten door heel Nederland en Noord België weten op te bouwen."
+          infoTitle="Over ons"
+          infoText="Door de kennis en vaardigheid van het uitstekend opgeleide personeel te combineren met de in eigen beheer ontwikkelde slijpapparatuur, heeft Horecaslijperij Bloom een kwalitatief zeer hoogwaardig slijpproces ontwikkeld. Hierdoor hebben wij een gevarieerd en vast klantenbestand met klanten door heel Nederland en Noord België."
           src="../../static/photos/about-us/PortretHJ3.png"
           alt="Snijplanken"
         />
         <Divider />
         <InfoSectionReversed
           infoTitle="Onze Geschiedenis"
-          infoText="De messenslijperij van Dhr. Bloom is sinds 1985 een begrip in de horeca. Door de exclusieve opleidingen die Dhr. Bloom aan de beroemde Solingen Messerfabrieken in Duitsland heeft gevolgd, heeft hij de juiste kennis in huis om dit vakmanschap in Nederland uit te oefenen. Het bedrijf Bloom Staalwaren was gevestigd. Met twee externe slijpers in dienst, welke door Dhr. Bloom zijn opgeleid, slijpen zij de messen bij de klanten op lokatie. Vanaf 1 januari 2006 voert dit bedrijf verder onder de naam: Horeca Slijperij Bloom B.V. Hoewel Dhr. Bloom geen deel meer uitmaakt van de dagelijkse werkzaamheden, begeleidt hij nog wel de slijpers. Door de kennis en vaardigheid van het uitstekend opgeleide personeel te combineren met de in eigen beheer ontwikkelde slijpapparatuur, heeft Horeca Slijperij Bloom een kwalitatief zeer hoogwaardig slijpproces ontwikkeld. Hierdoor hebben wij een gevarieerd en vast klantenbestand met klanten door heel Nederland en Noord België weten op te bouwen."
+          infoText="In 1985 heeft de heer Bloom, nadat hij een exclusieve opleiding had genoten aan de beroemde Solingen Messerfabrieken in Duitsland, het bedrijf Bloom Staalwaren opgericht. De eerste jaren was hij te vinden op markten met een mobiele slijperij. Maar ook in zijn bedrijfspand was hij actief. In die tijd werd er nog veel zilverwerk verwerkt, waarbij niet alleen geslepen werd maar ook handvaten opnieuw aan het lemmet werden gezet. In 2006 is de het bedrijf verder gegaan onder de huidige naam: 'Horecaslijperij Bloom BV'. Zilverwerk is sindsdien wat naar de achtergrond geraakt. // Inmiddels rijden we met 5 mobiele slijpunits in heel Nederland. Ook kunnen wij u van dienst zijn in ons bedrijfspand in Hendrik Ido Ambacht, waar wij buiten het slijpen, u ook kunnen helpen met het vlakken van snijplanken."
           src="../../static/photos/about-us/SlijpenGrayScale-5x4.png"
           alt="Snijplanken"
         />
