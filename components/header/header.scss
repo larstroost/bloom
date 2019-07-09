@@ -56,6 +56,15 @@
     width: 100%;
   }
 
+  &__list {
+    width: auto;
+
+    @include desktop {
+      margin: auto;
+      width: 1188px;
+    }
+  }
+
   &__background {
     bottom: 0;
     filter: brightness(60%);
@@ -111,25 +120,24 @@
       @include desktop {
         background: $color-monochrome-1;
         color: $color-primary;
-        font-size: $default-h2-mobile;
+        font-size: $default-mobile-font-size;
         opacity: .8;
       }
     }
 
     &--active {
-
       @include desktop {
         background: $color-monochrome-1;
         color: $color-primary;
-        font-size: $default-h2-mobile;
+        font-size: $default-mobile-font-size;
         opacity: .95;
       }
     }
 
     @include desktop {
       font-family: $font-primary;
-      font-size: $default-h2-mobile;
-      font-weight: 400;
+      font-size: $default-mobile-font-size;
+      font-weight: 500;
       padding: 0 15px;
       text-shadow: none;
     }

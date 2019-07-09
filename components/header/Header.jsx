@@ -3,7 +3,6 @@ import Link from 'next/link';
 
 import './header.scss';
 import TopHeader from '../desktop-header-bar/DesktopHeaderBar';
-import Header2 from '../header2/Header2';
 
 class MainNav extends React.Component {
   state = {
@@ -70,7 +69,7 @@ class MainNav extends React.Component {
             className="main-nav__background"
             src="../../static/photos/about-us/PortretHJ.jpeg"
           />
-          <ul>
+          <ul className="main-nav__list">
             <li
               className={`
                 main-nav__item
@@ -85,7 +84,7 @@ class MainNav extends React.Component {
                     main-nav__link--${page === 'index' ? 'active' : ''}
                   `}
                 >
-                  Home
+                  HOME
                 </a>
               </Link>
             </li>
@@ -102,7 +101,7 @@ class MainNav extends React.Component {
                     main-nav__link--${page === 'koksmessen' ? 'active' : ''}
                   `}
                 >
-                  Koksmessen
+                  KOKSMESSEN
                 </a>
               </Link>
             </li>
@@ -119,7 +118,7 @@ class MainNav extends React.Component {
                     main-nav__link--${page === 'tafelmessen' ? 'active' : ''}
                   `}
                 >
-                  Tafelmessen
+                  TAFELMESSEN
                 </a>
               </Link>
             </li>
@@ -137,7 +136,7 @@ class MainNav extends React.Component {
                     main-nav__link--${page === 'snijplanken' ? 'active' : ''}
                   `}
                 >
-                  Snijplanken Vlakken
+                  SNIJPLANKEN
                 </a>
               </Link>
             </li>
@@ -154,7 +153,7 @@ class MainNav extends React.Component {
                     main-nav__link--${page === 'overige' ? 'active' : ''}
                   `}
                 >
-                  Overige
+                  OVERIGE
                 </a>
               </Link>
             </li>
@@ -171,7 +170,7 @@ class MainNav extends React.Component {
                     main-nav__link--${page === 'contact' ? 'active' : ''}
                   `}
                 >
-                  Contact
+                  CONTACT
                 </a>
               </Link>
             </li>
@@ -188,7 +187,7 @@ class MainNav extends React.Component {
                     main-nav__link--${page === 'overOns' ? 'active' : ''}
                   `}
                 >
-                  Over Ons
+                  OVER ONS
                 </a>
               </Link>
             </li>

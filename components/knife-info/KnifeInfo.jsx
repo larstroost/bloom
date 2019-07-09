@@ -92,7 +92,7 @@ class KnifeInfo extends React.Component {
                 `}
               >
                 <a className="knife-info__link">
-                  Meer Informatie Opvragen
+                  Meer Informatie
                 </a>
               </button>
             </Link>
