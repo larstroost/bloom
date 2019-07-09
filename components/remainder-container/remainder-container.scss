@@ -4,14 +4,14 @@
 
   &__container {
     margin: 0 auto;
-    max-width: 1600px;
+    max-width: 1188px;
     padding: 7px 0 0;
 
     @include desktop {
       padding: 16px 16px 9px;
     }
 
-    @media (min-width: 1632px) {
+    @media (min-width: 1220px) {
       padding: 16px 0 9px;
     }
   }

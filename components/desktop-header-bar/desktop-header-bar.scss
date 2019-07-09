@@ -1,15 +1,29 @@
 @import "../../shared/styles/main";
 
 .top-header {
-  align-items: center;
   background: $color-monochrome-1;
   display: none;
-  justify-content: space-between;
-  padding: 15px;
   width: 100%;
 
   @include desktop {
-    display: flex;
+    display: block;
+  }
+
+  &__wrapper {
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 15px;
+    width: 100%;
+
+    @media (min-width: 1220px) {
+      padding: 15px 0;
+      width: 1188px;
+    }
+
+    @include desktop {
+      display: flex;
+    }
   }
 
   &__logo {

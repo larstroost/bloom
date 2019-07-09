@@ -11,35 +11,35 @@
   &__container {
     display: flex;
     flex-direction: column;
-    max-width: 1632px;
+    max-width: 1188px;
     padding: 15px 0;
 
     @media (min-width: 630px) {
       flex-direction: row;
-      flex-wrap: wrap;
+      justify-content: space-between;
     }
 
     @include desktop {
       flex-wrap: nowrap;
     }
 
-    @media (min-width: 1632px) {
+    @media (min-width: 1188px) {
       margin: 0 auto;
     }
   }
 
   &__section {
-    min-width: 50%;
     padding: 0 15px;
     text-align: center;
-
-    @include desktop {
-      min-width: 33%;
-    }
 
     @media (min-width: 630px) {
       text-align: left;
     }
+
+    @media (min-width: 1220px) {
+      padding: 0;
+    }
+
   }
 
   &__header {

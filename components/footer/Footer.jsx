@@ -53,7 +53,7 @@ const Footer = () => (
         <li className="footer__menu-item">
           <Link href="/snijplanken">
             <a className="footer__menu-link">
-              Snijplanken Vlakken
+              Snijplanken
             </a>
           </Link>
         </li>
