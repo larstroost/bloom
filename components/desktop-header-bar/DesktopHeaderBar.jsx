@@ -13,7 +13,7 @@ const TopHeader = () => (
       />
     </Link>
     <p className="top-header__slogan">
-      <i>Voor beroepsmatig en particulier gebruik.</i>
+      <i>De slijper voor al uw messen.</i>
     </p>
     <div className="top-header__icon-wrapper">
       <div className="top-header__contact-wrapper">
