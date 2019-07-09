@@ -13,7 +13,7 @@ const Footer = () => (
         <p className="footer__info">
           Horeca Slijperij Bloom B.V.<br />
           De Plaats 22<br />
-          3342 GL Hendrik-Ido-Ambacht TEST
+          3342 GL Hendrik-Ido-Ambacht
         </p>
       </div>
       <div className="footer__section">
