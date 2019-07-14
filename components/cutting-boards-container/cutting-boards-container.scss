@@ -5,10 +5,21 @@
   &__container {
     margin: 0 auto;
     max-width: 1188px;
-    padding: 16px 16px 0;
+    padding: 16px;
 
     @media (min-width: 1220px) {
       padding: 16px 0;
     }
+  }
+
+  &__photo-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+
+  &__photo {
+    border-radius: 4px;
+    width: 49%;
   }
 }

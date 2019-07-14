@@ -4,13 +4,13 @@ import Link from 'next/link';
 import './chef-knife-container.scss';
 import KnifeInfo from '../knife-info/KnifeInfo'
 import InfoSection from '../info-section/InfoSection'
-import InfoSectionTest from '../info-section-test/InfoSectionTest'
+import InfoHeader from '../info-header/InfoHeader'
 
 class ChefKnifeContainer extends React.Component {
   render() {
     return (
       <div className="chef-knife__container">
-        <InfoSectionTest
+        <InfoHeader
           infoTitle="KEUKENMESSEN SLIJPEN"
           infoText="Er zijn veel verschillende soorten messen die vallen onder de term keukenmessen. Westerse messen zoals het koksmes, fileermes, hakmes, kartel of broodmes en slagersmes. Japanse messen zoals Santuko, Deba en Gyuto. Uiteraard slijpen wij al deze messen. Zowel de Westerse als de Oosterse messen worden met alle zorg en expertise behandeld. Wij letten bij ieder mes op de oorspronkelijke vorm en functie en slijpen deze, op locatie, weer naar de perfecte scherpte. Ook voor een kaasmes, kaaswieg, pizzaroller, magimix of groentecutter bent u bij ons aan het juiste adres."
           src="../../static/photos/index/banner23.svg"
