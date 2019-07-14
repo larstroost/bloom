@@ -20,22 +20,22 @@ class TableKnifeContainer extends React.Component {
           <KnifeInfo
             title="TAFELMESSEN"
             info="Standaard tafelmessen met een kleine kartel in het lemmet, geschikt voor vrijwel alle groenten en vlees die je thuis of in een restaurant geserveerd krijgt."
-            photo="../../static/photos/table-knives/Tafelmes_normaal.jpg"
+            photo="../../static/photos/table-knives/Tafelmessen.png"
           />
           <KnifeInfo
             title="STEAKMES"
             info="Een tafelmes met iets grovere kartel in het lemmet, zoals de naam al zegt voornamelijk gebruikt voor steak, en andere hoogwaardige stukken vlees waar een normaal mes met moeite doorheen komt."
-            photo="../../static/photos/table-knives/Tafelmes_steak.jpg"
+            photo="../../static/photos/table-knives/Steakmes.png"
           />
           <KnifeInfo
-            title="TAFELMES"
+            title="LAGUIOLE"
             info="Tafelmes met een grove kartel in het lemmet, voornamelijk gebruikt voor het snijden van hardere korsten (bijvoorbeeld stokbrood en pizza)."
-            photo="../../static/photos/table-knives/Tafelmes_brood.jpg"
+            photo="../../static/photos/table-knives/Laguiole.png"
           />
           <KnifeInfo
             title="OVERIGE"
             info="Natuurlijk zijn er nog veel andere soorten tafelmessen die wij ook slijpen. Vraag gerust naar onze mogelijkheden."
-            photo="../../static/photos/table-knives/Tafelmessen.jpg"
+            photo="../../static/photos/table-knives/Kaasmes.png"
           />
         </ul>
       </div>

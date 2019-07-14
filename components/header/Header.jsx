@@ -101,7 +101,7 @@ class MainNav extends React.Component {
                     main-nav__link--${page === 'koksmessen' ? 'active' : ''}
                   `}
                 >
-                  KOKSMESSEN
+                  KEUKENMESSEN
                 </a>
               </Link>
             </li>
