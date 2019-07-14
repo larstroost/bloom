@@ -33,6 +33,7 @@
     color: $color-secondary;
     font-size: $default-mobile-font-size;
     font-weight: 300;
+    text-align: justify;
 
     @include desktop {
       font-size: $default-desktop-font-size;
