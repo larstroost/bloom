@@ -2,31 +2,31 @@ import React from 'react';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
 
-import './info-section-test.scss';
+import './info-header.scss';
 
-const InfoSectionTest = ({alt, infoText, infoTitle, src}) => (
-  <div className="info-box-test">
-    <div className="info-box-test__wrapper">
-      <h1 className="info-box-test__title">
+const InfoHeader = ({alt, infoText, infoTitle, src}) => (
+  <div className="info-header">
+    <div className="info-header__wrapper">
+      <h1 className="info-header__title">
         {infoTitle}
       </h1>
-      <p className="info-box-test__text">
+      <p className="info-header__text">
         {infoText}
       </p>
     </div>
     <img
-      className="info-box-test__image"
+      className="info-header__image"
       src={src}
       alt={alt}
     />
   </div>
 );
 
-InfoSectionTest.propTypes = {
+InfoHeader.propTypes = {
   alt: PropTypes.string.isRequired,
   infoText: PropTypes.string.isRequired,
   infoTitle: PropTypes.string.isRequired,
   src: PropTypes.string.isRequired
 };
 
-export default InfoSectionTest;
+export default InfoHeader;

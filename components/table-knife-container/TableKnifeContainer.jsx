@@ -3,14 +3,14 @@ import Link from 'next/link';
 
 import './table-knife-container.scss';
 import KnifeInfo from '../knife-info/KnifeInfo'
-import InfoSectionTest from '../info-section-test/InfoSectionTest'
+import InfoHeader from '../info-header/InfoHeader'
 import Divider from '../divider/Divider';
 
 class TableKnifeContainer extends React.Component {
   render() {
     return (
       <div className="table-knife__container">
-        <InfoSectionTest
+        <InfoHeader
           infoTitle="TAFELMESSEN SLIJPEN"
           infoText="Tafelmessen zijn er in tientallen verschillende soorten, maten en merken. Met of zonder kartel, dik of dun, lang of kort. Wij kunnen ze allemaal slijpen. Wij maken uw messen weer scherp en voorzien ze weer van nieuwe kartels, zodat brood en vlees weer makkelijk te snijden zijn. Ook Laguiole messen zijn voor ons geen probleem."
           src="../../static/photos/index/banner23.svg"

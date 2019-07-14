@@ -3,14 +3,14 @@ import Link from 'next/link';
 
 import './remainder-container.scss';
 import KnifeInfo from '../knife-info/KnifeInfo';
-import InfoSectionTest from '../info-section-test/InfoSectionTest';
+import InfoHeader from '../info-header/InfoHeader';
 import Divider from '../divider/Divider';
 
 class RemainderContainer extends React.Component {
   render() {
     return (
       <div className="remainder__container">
-        <InfoSectionTest
+        <InfoHeader
           infoTitle="OVERIGE"
           infoText="Buiten het slijpen van messen kunnen wij nog veel andere spullen voor u slijpen. Scharen, snoeischaren, heggenscharen, zakmessen, maar ook magimixen, pizzarollers, vleesmachines of groentecutters zijn voor ons geen probleem. Heeft u een voorwerp met een snijvlak welke u graag weer scherp geslepen zou willen hebben? Vraag dan gerust naar de mogelijkheden."
           src="../../static/photos/index/banner23.svg"
