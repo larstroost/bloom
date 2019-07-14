@@ -4,10 +4,12 @@ import Link from 'next/link';
 import './index-container.scss';
 import InfoSection from '../info-section/InfoSection'
 import Workflow from '../workflow/Workflow'
-import InfoSectionReversed from '../info-section-reversed/InfoSectionReversed';
+import KnifeInfoTest from '../knife-info-test/KnifeInfoTest';
 import Divider from '../divider/Divider';
+import InfoSectionText from '../info-section-text/InfoSectionText';
 
 class IndexContainer extends React.Component {
+
   render() {
     return (
       <div className="index__container">
@@ -39,13 +41,21 @@ class IndexContainer extends React.Component {
           />
         </div>
         <Divider />
-        <InfoSectionReversed
-          infoTitle="Horecaslijperij Bloom B.V."
-          infoText="Of het nu gaat om koksmessen, japanse messen, kartel(brood)messen, tafelmessen, of machinemessen. Wij kunnen het voor u slijpen. // Elk mes heeft zijn eigen specifieke vorm en functie. Het is daarom van belang dat na het slijpen het mes zijn vorm behoudt of juist weer terug krijgt. // Is er een punt of een stukje van het lemmet afgebroken, niet weggooien, dit kunnen wij voor u herstellen. Door middel van uitstekend uitgeruste mobiele slijpunits kunnen wij bijna alle voorkomende slijpwerkzaamheden bij u ter plaatse uitvoeren. Tijdens het slijpen kunt u gebruik maken van een leenset messen, zodat de werkzaamheden in de keuken gewoon door kunnen gaan. // Ook op onze locatie in Hendrik-Ido-Ambacht is het mogelijk messen en andere te slijpen spullen in te leveren. // Elke dag zitten onze planners klaar om uw vragen te beantwoorden. Wilt u een afspraak maken? Neem dan even contact met ons op."
-          src="../../static/photos/index/bussen-resize.png"
-          alt="Bussen"
-
-        />
+        <ul className="index__ul-test">
+          <KnifeInfoTest
+            title="Horecaslijperij Bloom B.V."
+            photo="../../static/photos/index/bussen-resize.png"
+            info="Of het nu gaat om koksmessen, japanse messen, kartel(brood)messen, tafelmessen, of machinemessen. Wij kunnen het voor u slijpen. // Elk mes heeft zijn eigen specifieke vorm en functie. Het is daarom van belang dat na het slijpen het mes zijn vorm behoudt of juist weer terug krijgt. // Is er een punt of een stukje van het lemmet afgebroken, niet weggooien, dit kunnen wij voor u herstellen. Door middel van uitstekend uitgeruste mobiele slijpunits kunnen wij bijna alle voorkomende slijpwerkzaamheden bij u ter plaatse uitvoeren. Tijdens het slijpen kunt u gebruik maken van een leenset messen, zodat de werkzaamheden in de keuken gewoon door kunnen gaan. // Ook op onze locatie in Hendrik-Ido-Ambacht is het mogelijk messen en andere te slijpen spullen in te leveren. // Elke dag zitten onze planners klaar om uw vragen te beantwoorden. Wilt u een afspraak maken? Neem dan even contact met ons op."
+          />
+          <KnifeInfoTest
+            title="Horecaslijperij Bloom B.V."
+            photo="../../static/photos/index/bussen-resize.png"
+          />
+          <KnifeInfoTest
+            title="Horecaslijperij Bloom B.V."
+            photo="../../static/photos/index/bussen-resize.png"
+          />
+        </ul>
       </div>
     );
   }

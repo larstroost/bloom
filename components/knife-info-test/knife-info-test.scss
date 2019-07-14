@@ -1,0 +1,81 @@
+@import "../../shared/styles/main";
+
+.knife-info-test {
+  flex-direction: column;
+  margin-bottom: 7px;
+  max-width: 100%;
+  min-width: 265px;
+  position: relative;
+
+  @media (min-width: 550px) {
+    display: flex;
+    max-width: 49.5%;
+  }
+
+  @media (min-width: 900px) {
+    max-width: 33%;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 15px;
+    max-width: 32.5%;
+  }
+
+  &__wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  &__title-wrapper {
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+  }
+
+  &__title {
+    color: $color-tertriary;
+    font-size: $default-h1-desktop;
+    font-weight: 300;
+    height: 80px;
+    line-height: 30px;
+    padding: 100px 0 0;
+    text-align: center;
+    text-shadow: 2px 2px 8px $color-monochrome-8;
+  }
+
+  &__photo {
+    margin-bottom: -5px;
+    width: 100%;
+  }
+
+  &__icon {
+    bottom: 10px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 0);
+    width: 20px;
+  }
+
+  &__info {
+    color: $color-secondary;
+    font-size: $default-mobile-font-size;
+    font-weight: 400;
+    padding: 3px 8px 5px;
+    text-align: justify;
+    width: 100%;
+
+    &--closed {
+      display: flex;
+      height: 150px;
+      overflow: hidden;
+    }
+
+    &--open {
+      height: 100%;
+    }
+
+    @include desktop {
+      font-size: $default-h2-mobile;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@import "../../shared/styles/main";
+
+.info-section-text {
+  margin-bottom: 7px;
+  max-width: 100%;
+  min-width: 265px;
+  position: relative;
+
+  @media (min-width: 550px) {
+    display: flex;
+    flex-direction: row;
+    max-width: 49.5%;
+  }
+
+  @media (min-width: 900px) {
+    max-width: 33%;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 15px;
+    max-width: 100%;
+  }
+
+  &--two {
+    order: 2;
+
+    @include desktop {
+      order: 4;
+    }
+  }
+
+  &--open {
+    display: flex;
+  }
+
+  &--closed {
+    display: none;
+  }
+
+  &__info {
+    color: $color-secondary;
+    font-size: $default-mobile-font-size;
+    font-weight: 400;
+    overflow: auto;
+    padding: 3px 8px 5px;
+    text-align: justify;
+    width: 100%;
+
+    @include desktop {
+      font-size: $default-h2-mobile;
+    }
+  }
+}
