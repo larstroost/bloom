@@ -17,10 +17,10 @@ export default class MyDocument extends Document {
           </script>
         </Head>
         <body>
+          <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8D5JQF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <Main />
           <NextScript />
           <script src="https://www.google.com/recaptcha/api.js?explicit&hl=nl" async defer></script>
-          <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8D5JQF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </body>
       </html>
     );
