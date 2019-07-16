@@ -1,13 +1,13 @@
 @import "../../shared/styles/main";
 
 .knife-info-test {
+  display: flex;
   flex-direction: column;
   margin-bottom: 15px;
   max-width: 100%;
   min-width: 265px;
 
   @media (min-width: 550px) {
-    display: flex;
     max-width: 49.5%;
   }
 
@@ -67,8 +67,13 @@
     background: none;
     border: none;
     line-height: 36px;
+    margin: auto;
     padding: 0;
-    width: 100%;
+    width: 95%;
+
+    @include desktop {
+      width: 100%;
+    }
   }
 
   &__info {
