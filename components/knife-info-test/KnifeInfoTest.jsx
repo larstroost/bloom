@@ -1,33 +1,19 @@
 import React from 'react';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
-import InfoSectionText from '../info-section-text/InfoSectionText';
 
 import './knife-info-test.scss';
 
 class KnifeInfoTest extends React.Component {
-  state = { isOpen: false };
-
-  toggleInfo = () => {
-    this.setState((prevState) => ({
-      isOpen: !prevState.isOpen
-    }));
-  };
 
   render() {
-    const { isOpen } = this.state;
-    const { title, info, photo, alt, className } = this.props;
+    const { title, info, photoOne, photoTwo, altOne, altTwo, className, link } = this.props;
     return (
       <li
         className={`
           knife-info-test
-          knife-info-test--${isOpen ? 'open' : 'closed'}
           knife-info-test--${className}
         `}
-        onClick={this.toggleInfo}
-        role="button"
-        onKeyDown={this.toggleInfo}
-        tabIndex="0"
       >
         <div className="knife-info-test__wrapper">
           <div
@@ -38,48 +24,46 @@ class KnifeInfoTest extends React.Component {
             </h2>
           </div>
           <img
-            className="knife-info-test__photo"
-            src={photo}
-            alt={alt}
+            className="knife-info-test__photo knife-info-test--one"
+            src={photoOne}
+            alt={altOne}
           />
-          {!isOpen && (
-            <img
-              className="knife-info-test__icon"
-              src="../../static/icons/arrow-down-2.svg"
-              alt="Arrow Down"
-            />
-          )}
-          {isOpen && (
-            <img
-              className="knife-info-test__icon"
-              src="../../static/icons/arrow-up.svg"
-              alt="Arrow Up"
-            />
-          )}
+          <img
+            className="knife-info-test__photo knife-info-test--two"
+            src={photoTwo}
+            alt={altTwo}
+          />
         </div>
-        <p
-          className={`
-            knife-info-test__info
-            knife-info-test__info--${isOpen ? 'open' : 'closed'}
-          `}
+        <button
+          className="knife-info-test__button"
+          tabIndex="0"
+          type="button"
         >
-          {info}
-        </p>
+          <Link href={link}>
+            <a className="knife-info-test__info">
+              {info}
+            </a>
+          </Link>
+        </button>
       </li>
     );
   }
 }
 
 KnifeInfoTest.defaultProps = {
-  alt: 'Foto van messensoort',
+  altOne: 'Foto',
+  altTwo: 'Foto',
   className: ''
 };
 
 KnifeInfoTest.propTypes = {
   title: PropTypes.string.isRequired,
   info: PropTypes.string.isRequired,
-  photo: PropTypes.string.isRequired,
-  alt: PropTypes.string,
+  photoOne: PropTypes.string.isRequired,
+  photoTwo: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+  altOne: PropTypes.string,
+  altTwo: PropTypes.string,
   className: PropTypes.string
 };
 
