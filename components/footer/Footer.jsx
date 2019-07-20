@@ -37,9 +37,9 @@ const Footer = () => (
           </Link>
         </li>
         <li className="footer__menu-item">
-          <Link href="/koksmessen">
+          <Link href="/keukenmessen">
             <a className="footer__menu-link">
-              Koksmessen
+              Keukenmessen
             </a>
           </Link>
         </li>

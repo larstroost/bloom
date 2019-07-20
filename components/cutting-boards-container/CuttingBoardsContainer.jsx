@@ -24,7 +24,7 @@ class CuttingBoardsContainer extends React.Component {
             alt="Cutting Board Before"
           />
           <img
-            className="cutting-boards__photo"
+            className="cutting-boards__photo cutting-boards__photo--cutoff"
             src="../../static/photos/cuttingboards/Cuttingboards_cutoff.jpg"
             alt="Cutting Cut Off"
           />

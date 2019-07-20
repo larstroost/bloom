@@ -18,12 +18,33 @@
 
   &__photo-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin-top: 16px;
+
+    @include tablet {
+      flex-direction: row;
+    }
   }
 
   &__photo {
-    // border-radius: 4px;
-    width: 32.5%;
+    margin-bottom: 7px;
+    width: 100%;
+
+    @include tablet {
+      width: 49.5%;
+    }
+
+    @include desktop {
+      width: 32.5%;
+    }
+
+    &--cutoff {
+      display: none;
+
+      @include desktop {
+        display: block;
+      }
+    }
   }
 }

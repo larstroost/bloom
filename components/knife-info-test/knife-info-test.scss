@@ -9,10 +9,18 @@
 
   @media (min-width: 550px) {
     max-width: 49.5%;
+
+    &--last {
+      margin: 0 auto 15px;
+    }
   }
 
   @media (min-width: 900px) {
     max-width: 32.5%;
+
+    &--last {
+      margin: inherit;
+    }
   }
 
   &__wrapper {

@@ -5,10 +5,90 @@
   &__container {
     margin: 0 auto;
     max-width: 1188px;
-    padding: 16px 16px 0;
+    padding: 7px 0 0;
+
+    @include desktop {
+      padding: 16px 16px 9px;
+    }
 
     @media (min-width: 1220px) {
-      padding: 16px 0;
+      padding: 16px 0 9px;
+    }
+  }
+
+  &__h2 {
+    color: $color-secondary;
+    font-family: $font-primary;
+    font-size: $default-h2-mobile;
+    font-weight: 500;
+    margin-top: 5px;
+    padding: 3px 8px 0;
+    width: 100%;
+
+    @include desktop {
+      font-size: $default-desktop-font-size;
+    }
+  }
+
+  &__p {
+    color: $color-secondary;
+    font-size: $default-mobile-font-size;
+    font-weight: 400;
+    overflow: auto;
+    padding: 3px 8px 5px;
+    text-align: justify;
+    width: 100%;
+
+    @include desktop {
+      font-size: $default-h2-mobile;
+    }
+  }
+
+  &__photo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 16px;
+
+    @include tablet {
+      flex-direction: row;
+    }
+  }
+
+  &__photo {
+    margin-bottom: 7px;
+    width: 100%;
+
+    @include tablet {
+      width: 49.5%;
+    }
+
+    @include desktop {
+      width: 32.5%;
+    }
+
+    &--middle {
+      display: none;
+
+      @include desktop {
+        display: block;
+      }
+    }
+
+    &--last {
+      display: none;
+
+      @include tablet {
+        display: block;
+      }
+    }
+
+    &--mobile-only {
+      display: block;
+
+      @include tablet {
+        display: none;
+      }
     }
   }
 }

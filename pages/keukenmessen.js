@@ -6,7 +6,7 @@ import Footer from '../components/footer/Footer';
 
 const ChefsKnives = () => (
   <React.Fragment>
-    <MainNav page='koksmessen' />
+    <MainNav page='keukenmessen' />
     <ChefKnifeContainer />
     <Footer />
   </React.Fragment>
