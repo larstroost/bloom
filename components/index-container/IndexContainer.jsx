@@ -4,10 +4,11 @@ import Link from 'next/link';
 import './index-container.scss';
 import InfoSection from '../info-section/InfoSection'
 import Workflow from '../workflow/Workflow'
-import InfoSectionReversed from '../info-section-reversed/InfoSectionReversed';
+import KnifeInfoTest from '../knife-info-test/KnifeInfoTest';
 import Divider from '../divider/Divider';
 
 class IndexContainer extends React.Component {
+
   render() {
     return (
       <div className="index__container">
@@ -39,13 +40,55 @@ class IndexContainer extends React.Component {
           />
         </div>
         <Divider />
-        <InfoSectionReversed
-          infoTitle="Horecaslijperij Bloom B.V."
-          infoText="Of het nu gaat om koksmessen, japanse messen, kartel(brood)messen, tafelmessen, of machinemessen. Wij kunnen het voor u slijpen. // Elk mes heeft zijn eigen specifieke vorm en functie. Het is daarom van belang dat na het slijpen het mes zijn vorm behoudt of juist weer terug krijgt. // Is er een punt of een stukje van het lemmet afgebroken, niet weggooien, dit kunnen wij voor u herstellen. Door middel van uitstekend uitgeruste mobiele slijpunits kunnen wij bijna alle voorkomende slijpwerkzaamheden bij u ter plaatse uitvoeren. Tijdens het slijpen kunt u gebruik maken van een leenset messen, zodat de werkzaamheden in de keuken gewoon door kunnen gaan. // Ook op onze locatie in Hendrik-Ido-Ambacht is het mogelijk messen en andere te slijpen spullen in te leveren. // Elke dag zitten onze planners klaar om uw vragen te beantwoorden. Wilt u een afspraak maken? Neem dan even contact met ons op."
-          src="../../static/photos/index/bussen-resize.png"
-          alt="Bussen"
-
-        />
+        <div>
+          <h2 className="index__h2">
+            Wat doet Horecaslijperij Bloom?
+          </h2>
+          <p className="index__p-test">
+            Wij slijpen alles wat een scherpe rand hoort te hebben. Of het nu gaat om koksmessen, Japanse messen, kartel(brood)messen, tafelmessen, of machinemessen wij kunnen het voor u slijpen. Natuurlijk heeft elk mes een specifieke vorm en functie en daar houden onze ervaren slijpers ook rekening mee.
+            <br />
+            Is je favoriete mes ernstig beschadigd, is er een punt of een stukje van het lemmet afgebroken of zijn de kartels van je broodmes niet meer zichtbaar? Gooi je mes dan niet weg. Dit kunnen wij namelijk allemaal voor je herstellen.
+          </p>
+          <h2 className="index__h2">
+            Hoe doen we dat?
+          </h2>
+          <p className="index__p-test">
+            Wij komen naar je toe met onze uitstekend uitgeruste mobiele slijp-units, waardoor bijna alle voorkomende slijpwerkzaamheden bij je ter plaatse uitgevoerd kunnen worden. Tijdens het slijpen kun je gebruik maken van een leen-set messen, zodat de werkzaamheden in de keuken gewoon door kunnen gaan.
+            <br />
+            Ook op onze locatie in Hendrik-Ido-Ambacht is het mogelijk messen en andere te slijpen spullen in te leveren.
+          </p>
+          <h2 className="index__h2">
+            Afspraak maken of meer informatie nodig?
+          </h2>
+          <p className="index__p-test">
+            Elke werkdag zitten wij klaar om al je vragen te beantwoorden. Wil je een afspraak maken of meer informatie? Neem dan gerust <Link href="/contact"><a className="index__link"><b>contact</b></a></Link> met ons op.
+          </p>
+        </div>
+        <Divider />
+        <ul className="index__ul-test">
+          <KnifeInfoTest
+            title="MESSEN SLIJPEN"
+            photoOne="../../static/photos/index/knives-one.png"
+            photoTwo="../../static/photos/index/knives-two.jpg"
+            link="/keukenmessen"
+            info="Meer informatie"
+          />
+          <KnifeInfoTest
+            title="SNIJPLANKEN VLAKKEN"
+            photoOne="../../static/photos/cuttingboards/White1-voor.png"
+            photoTwo="../../static/photos/cuttingboards/White1-na.png"
+            link="/snijplanken"
+            info="Meer informatie"
+          />
+          <KnifeInfoTest
+            title="OVER ONS"
+            photoOne="../../static/photos/index/bussen-resize.png"
+            photoTwo="../../static/photos/index/old-school-photo.jpg"
+            link="/over-ons"
+            info="Meer informatie"
+            className="last"
+          />
+        </ul>
       </div>
     );
   }

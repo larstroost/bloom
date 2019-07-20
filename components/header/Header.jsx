@@ -91,14 +91,14 @@ class MainNav extends React.Component {
             <li
               className={`
                 main-nav__item
-                main-nav__item--${page === 'koksmessen' ? 'active' : ''}
+                main-nav__item--${page === 'keukenmessen' ? 'active' : ''}
               `}
             >
-              <Link href="/koksmessen">
+              <Link href="/keukenmessen">
                 <a
                   className={`
                     main-nav__link
-                    main-nav__link--${page === 'koksmessen' ? 'active' : ''}
+                    main-nav__link--${page === 'keukenmessen' ? 'active' : ''}
                   `}
                 >
                   KEUKENMESSEN
