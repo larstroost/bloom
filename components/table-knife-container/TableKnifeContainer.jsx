@@ -29,7 +29,7 @@ class TableKnifeContainer extends React.Component {
           />
           <KnifeInfo
             title="LAGUIOLE"
-            info="Tafelmes met een grove kartel in het lemmet, voornamelijk gebruikt voor het snijden van hardere korsten (bijvoorbeeld stokbrood en pizza)."
+            info="Tafelmes dat het midden heeft tussen een steakmes en een zakmes. De unieke vorm van de Laguiole is zeer herkenbaar en het mes wordt vaak als een soort steakmes gebruikt. De Laguiole heeft over het algemeen een glad lemmet, maar er kan een kartel in geslepen worden zodat het mes langer scherp blijft."
             photo="../../static/photos/table-knives/Laguiole.png"
           />
           <KnifeInfo

@@ -1,5 +1,4 @@
 import React from 'react';
-
 import MainNav from '../components/header/Header';
 import ContactContainer from '../components/contact-container/ContactContainer';
 import Footer from '../components/footer/Footer';

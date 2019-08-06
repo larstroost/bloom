@@ -12,14 +12,14 @@ class ChefKnifeContainer extends React.Component {
       <div className="chef-knife__container">
         <InfoHeader
           infoTitle="KEUKENMESSEN SLIJPEN"
-          infoText="Er zijn veel verschillende soorten messen die vallen onder de term keukenmessen. Westerse messen zoals het koksmes, fileermes, hakmes, kartel of broodmes en slagersmes. Japanse messen zoals Santuko, Deba en Gyuto. Uiteraard slijpen wij al deze messen. Zowel de Westerse als de Oosterse messen worden met alle zorg en expertise behandeld. Wij letten bij ieder mes op de oorspronkelijke vorm en functie en slijpen deze, op locatie, weer naar de perfecte scherpte. Ook voor een kaasmes, kaaswieg, pizzaroller, magimix of groentecutter bent u bij ons aan het juiste adres."
+          infoText="Er zijn veel verschillende soorten messen die vallen onder de term keukenmessen. Westerse messen zoals het koksmes, fileermes, hakmes, kartel- of broodmes en het slagersmes. Daarnaast Japanse messen zoals de Santuko, Deba en Gyuto. Uiteraard slijpen wij al deze messen. Zowel de Westerse als de Oosterse messen worden met alle zorg en expertise behandeld. Wij letten bij ieder mes op de oorspronkelijke vorm en functie en slijpen deze, op locatie, weer naar de perfecte scherpte. Ook voor een kaasmes, kaaswieg, pizzaroller, magimix of groentecutter bent u bij ons aan het juiste adres. Hieronder kunt u vinden hoe wij de meestvoorkomende messen die wij onder handen krijgen categoriseren."
           src="../../static/photos/index/banner23.svg"
           alt="Banner"
         />
         <ul className="chef-knife__list">
           <KnifeInfo
             title="KOKSMES"
-            info="Een mes met een glad lemmet van ongeveer 20 a 26 centimeter, een multifunctionele alleskunner, welke gebruikt wordt voor alles van het hakken van kruiden, snijden van groenten tot het uitbenen van kip."
+            info="Een mes met een glad lemmet van ongeveer 16 tot 30 centimeter, een multifunctionele alleskunner, welke gebruikt wordt voor alles van het hakken van kruiden, snijden van groenten tot het uitbenen van kip."
             photo="../../static/photos/chef-knives/Koksmes.png"
           />
           <KnifeInfo
@@ -29,12 +29,12 @@ class ChefKnifeContainer extends React.Component {
           />
           <KnifeInfo
             title="BROODMES"
-            info="Een groot mes met een gekarteld lemmet van ongeveer 21 centimeter, gebruikt voor het snijden van broden."
+            info="Een groot mes met een gekarteld lemmet van ongeveer 16 tot 30 centimeter, gebruikt voor het snijden van broden."
             photo="../../static/photos/chef-knives/Broodmes.png"
           />
           <KnifeInfo
             title="SCHILMES"
-            info="Klein mes met een glad lemmet van ongeveer 6 a 8 centimeter, gebruikt voor schillen, pellen en snijden van aardappels, groenten en fruit."
+            info="Klein mes met een glad lemmet van ongeveer 6 tot 8 centimeter, gebruikt voor schillen, pellen en snijden van aardappels, groenten en fruit."
             photo="../../static/photos/chef-knives/Schilmes1.png"
           />
           <KnifeInfo
@@ -44,7 +44,7 @@ class ChefKnifeContainer extends React.Component {
           />
           <KnifeInfo
             title="SLAGERSMES"
-            info="Een groot mes met een lichtgekromd glad lemmet van ongeveer 20 tot 26 centimeter, gebruikt voor het snijden van vlees met botten."
+            info="Een groot mes met een lichtgekromd glad lemmet van ongeveer 20 tot 30 centimeter, gebruikt voor het snijden van vlees met botten."
             photo="../../static/photos/chef-knives/Slagersmes.png"
           />
           <KnifeInfo
@@ -54,7 +54,7 @@ class ChefKnifeContainer extends React.Component {
           />
           <KnifeInfo
             title="TOMATENMES"
-            info="Klein mes met een glad lemmet van ongeveer 6 a 8 centimeter, gebruikt voor schillen, pellen en snijden van aardappels, groenten en fruit."
+            info="Klein mes met een glad lemmet van ongeveer 6 tot 8 centimeter, gebruikt voor schillen, pellen en snijden van aardappels, groenten en fruit."
             photo="../../static/photos/chef-knives/Tomatenmes.png"
           />
           <KnifeInfo

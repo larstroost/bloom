@@ -69,7 +69,7 @@ class IndexContainer extends React.Component {
           <KnifeInfoTest
             title="MESSEN SLIJPEN"
             photoOne="../../static/photos/index/knives-one.png"
-            photoTwo="../../static/photos/index/knives-two.jpg"
+            photoTwo="../../static/photos/index/knives-two.png"
             link="/keukenmessen"
             info="Meer informatie"
           />
