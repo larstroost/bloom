@@ -9,18 +9,18 @@ class ContactForm extends React.Component {
     isBusiness: true,
     confirmation: false,
     contactForm: {
-      companyName: '',
-      contactName: '',
+      bedrijfsnaam: '',
+      contactpersoon: '',
       email: '',
-      phoneNumber: '',
-      message: '',
+      telefoonnummer: '',
+      bericht: '',
     },
     validity: {
-      companyName: true,
-      contactName: true,
+      bedrijfsnaam: true,
+      contactpersoon: true,
       email: true,
-      phoneNumber: true,
-      message: true
+      telefoonnummer: true,
+      bericht: true
     },
     recaptcha: false
   }
@@ -35,7 +35,8 @@ class ContactForm extends React.Component {
   checkInputValidity = (element) => element.validity.valid
 
   checkFormValidity = () => this.formRef.current
-    && Array.from(this.formRef.current.elements).every(this.checkInputValidity);
+    && Array.from(this.formRef.current.elements).every(this.checkInputValidity)
+    && this.state.recaptcha === true;
 
   toggleBusinessPrivate = () => {
     this.setState((prevState) => ({
@@ -65,7 +66,7 @@ class ContactForm extends React.Component {
     event.preventDefault();
     const data = new FormData(event.target);
     if (this.state.recaptcha) {
-      fetch('https://script.google.com/macros/s/AKfycbwfuYCQvZ9IJ31zi51P_VEt26BPRrHkcbmCubPJJg/exec', {
+      fetch('https://script.google.com/macros/s/AKfycbx-w9tUQsFZZmKAUZSSZKJZakKAjsvSvjAvokfOyLE6aSkvWjFq/exec', {
         method: 'POST',
         body: data,
       });
@@ -74,7 +75,7 @@ class ContactForm extends React.Component {
         confirmation: true
       }));
     } else {
-      alert('Vink alsjeblieft aan dat je geen robot bent');
+      alert('Vink alsjeblieft aan dat je geen robot bent.');
     }
   }
 
@@ -100,11 +101,11 @@ class ContactForm extends React.Component {
   render() {
     const { isBusiness, contactForm, validity, confirmation } = this.state;
     const {
-      companyName,
-      contactName,
+      bedrijfsnaam,
+      contactpersoon,
       email,
-      phoneNumber,
-      message
+      telefoonnummer,
+      bericht
     } = contactForm;
     return (
       <section className="contact-form">
@@ -140,21 +141,21 @@ class ContactForm extends React.Component {
             {isBusiness && (
               <label
                 className="contact-form__label"
-                htmlFor="companyName"
+                htmlFor="bedrijfsnaam"
               >
                 Bedrijf
                 <input
                   className={`
                     contact-form__input
-                    contact-form__input--${validity.companyName ? '' : 'invalid'}
+                    contact-form__input--${validity.bedrijfsnaam ? '' : 'invalid'}
                   `}
-                  id="companyName"
-                  name="companyName"
+                  id="bedrijfsnaam"
+                  name="bedrijfsnaam"
                   placeholder="Bedrijf B.V."
                   required
                   title=""
                   type="text"
-                  value={companyName}
+                  value={bedrijfsnaam}
                   onChange={this.handleChange}
                   onBlur={this.handleBlur}
                 />
@@ -163,21 +164,21 @@ class ContactForm extends React.Component {
 
             <label
               className="contact-form__label"
-              htmlFor="contactName"
+              htmlFor="contactpersoon"
             >
               Contactpersoon
               <input
                 className={`
                   contact-form__input
-                  contact-form__input--${validity.contactName ? '' : 'invalid'}
+                  contact-form__input--${validity.contactpersoon ? '' : 'invalid'}
                 `}
-                id="contactName"
-                name="contactName"
+                id="contactpersoon"
+                name="contactpersoon"
                 placeholder="Jan Jansen"
                 required
                 title="Vul aub uw naam in"
                 type="text"
-                value={contactName}
+                value={contactpersoon}
                 onChange={this.handleChange}
                 onBlur={this.handleBlur}
               />
@@ -206,21 +207,21 @@ class ContactForm extends React.Component {
               </label>
               <label
                 className="contact-form__label"
-                htmlFor="phoneNumber"
+                htmlFor="telefoonnummer"
               >
                 Telefoonnummer
                 <input
                   className={`
                     contact-form__input
-                    contact-form__input--${validity.phoneNumber ? '' : 'invalid'}
+                    contact-form__input--${validity.telefoonnummer ? '' : 'invalid'}
                   `}
-                  id="phoneNumber"
-                  name="phoneNumber"
+                  id="telefoonnummer"
+                  name="telefoonnummer"
                   placeholder="06 1234 5678"
                   required
                   title=""
                   type="text"
-                  value={phoneNumber}
+                  value={telefoonnummer}
                   onChange={this.handleChange}
                   onBlur={this.handleBlur}
                 />
@@ -228,33 +229,27 @@ class ContactForm extends React.Component {
             </div>
             <label
               className="contact-form__label"
-              htmlFor="message"
+              htmlFor="bericht"
             >
               Bericht
               <textarea
                 className={`
                   contact-form__input
                   contact-form__input--message
-                  contact-form__input--${validity.message ? '' : 'invalid'}
+                  contact-form__input--${validity.bericht ? '' : 'invalid'}
                 `}
-                id="message"
-                name="message"
+                id="bericht"
+                name="bericht"
                 placeholder="Vul hier uw bericht in."
                 required
                 title=""
                 type="text"
-                value={message}
+                value={bericht}
                 onChange={this.handleChange}
                 onBlur={this.handleBlur}
               />
             </label>
           </div>
-          <Recaptcha
-             sitekey="6LeDBp4UAAAAAHmHHFKXGR7h1WVjqsbYLtcdkDYs"
-             render="explicit"
-             onloadCallback={this.recaptchaLoaded}
-             verifyCallback={this.verifyCallback}
-           />
           <button
             className={`
               contact-form__button
@@ -265,6 +260,12 @@ class ContactForm extends React.Component {
             Versturen
           </button>
         </form>
+        <Recaptcha
+           sitekey="6LeDBp4UAAAAAHmHHFKXGR7h1WVjqsbYLtcdkDYs"
+           render="explicit"
+           onloadCallback={this.recaptchaLoaded}
+           verifyCallback={this.verifyCallback}
+         />
         {confirmation && (
           <div className="confirm">
             <p className="confirm__text">
