@@ -2,8 +2,6 @@ import React from 'react';
 import Link from 'next/link';
 
 import './cutting-boards-container.scss';
-import InfoSection from '../info-section/InfoSection';
-import InfoSectionReversed from '../info-section-reversed/InfoSectionReversed';
 import InfoHeader from '../info-header/InfoHeader';
 import Divider from '../divider/Divider';
 

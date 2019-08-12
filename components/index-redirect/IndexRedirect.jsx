@@ -2,45 +2,45 @@ import React from 'react';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
 
-import './knife-info-test.scss';
+import './index-redirect.scss';
 
-class KnifeInfoTest extends React.Component {
+class IndexRedirect extends React.Component {
 
   render() {
     const { title, info, photoOne, photoTwo, altOne, altTwo, className, link } = this.props;
     return (
       <li
         className={`
-          knife-info-test
-          knife-info-test--${className}
+          index-redirect
+          index-redirect--${className}
         `}
       >
-        <div className="knife-info-test__wrapper">
+        <div className="index-redirect__wrapper">
           <div
-            className="knife-info-test__title-wrapper">
+            className="index-redirect__title-wrapper">
             <h2
-              className="knife-info-test__title">
+              className="index-redirect__title">
               {title}
             </h2>
           </div>
           <img
-            className="knife-info-test__photo knife-info-test--one"
+            className="index-redirect__photo index-redirect--one"
             src={photoOne}
             alt={altOne}
           />
           <img
-            className="knife-info-test__photo knife-info-test--two"
+            className="index-redirect__photo index-redirect--two"
             src={photoTwo}
             alt={altTwo}
           />
         </div>
         <button
-          className="knife-info-test__button"
+          className="index-redirect__button"
           tabIndex="0"
           type="button"
         >
           <Link href={link}>
-            <a className="knife-info-test__info">
+            <a className="index-redirect__info">
               {info}
             </a>
           </Link>
@@ -50,13 +50,13 @@ class KnifeInfoTest extends React.Component {
   }
 }
 
-KnifeInfoTest.defaultProps = {
+IndexRedirect.defaultProps = {
   altOne: 'Foto',
   altTwo: 'Foto',
   className: ''
 };
 
-KnifeInfoTest.propTypes = {
+IndexRedirect.propTypes = {
   title: PropTypes.string.isRequired,
   info: PropTypes.string.isRequired,
   photoOne: PropTypes.string.isRequired,
@@ -67,4 +67,4 @@ KnifeInfoTest.propTypes = {
   className: PropTypes.string
 };
 
-export default KnifeInfoTest;
+export default IndexRedirect;

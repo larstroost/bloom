@@ -1,11 +1,5 @@
 @import "../../shared/styles/main";
 
-.test {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 .contact-info {
   margin-bottom: 16px;
   width: 100%;
@@ -66,6 +60,12 @@
 
   &__hours {
     min-width: 49%;
+  }
+
+  &__hours-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   &__title {

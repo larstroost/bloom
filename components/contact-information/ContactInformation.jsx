@@ -48,25 +48,25 @@ class ContactInformation extends React.Component {
             <h2 className="contact-info__title">
               Openingstijden
             </h2>
-            <div className="test">
+            <div className="contact-info__hours-wrapper">
               <p className="contact-info__text">Maandag:</p><p className="contact-info__text">9:00 - 17:00</p>
             </div>
-            <div className="test">
+            <div className="contact-info__hours-wrapper">
               <p className="contact-info__text">Dinsdag:</p><p className="contact-info__text">9:00 - 17:00</p>
             </div>
-            <div className="test">
+            <div className="contact-info__hours-wrapper">
               <p className="contact-info__text">Woensdag:</p><p className="contact-info__text">9:00 - 17:00</p>
             </div>
-            <div className="test">
+            <div className="contact-info__hours-wrapper">
               <p className="contact-info__text">Donderdag:</p><p className="contact-info__text">9:00 - 17:00</p>
             </div>
-            <div className="test">
+            <div className="contact-info__hours-wrapper">
               <p className="contact-info__text">Vrijdag:</p><p className="contact-info__text">9:00 - 15:30</p>
             </div>
-            <div className="test">
+            <div className="contact-info__hours-wrapper">
               <p className="contact-info__text">Zaterdag:</p><p className="contact-info__text">Gesloten</p>
             </div>
-            <div className="test">
+            <div className="contact-info__hours-wrapper">
               <p className="contact-info__text">Zondag:</p><p className="contact-info__text">Gesloten</p>
             </div>
           </div>

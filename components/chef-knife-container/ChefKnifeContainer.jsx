@@ -3,7 +3,6 @@ import Link from 'next/link';
 
 import './chef-knife-container.scss';
 import KnifeInfo from '../knife-info/KnifeInfo'
-import InfoSection from '../info-section/InfoSection'
 import InfoHeader from '../info-header/InfoHeader'
 
 class ChefKnifeContainer extends React.Component {

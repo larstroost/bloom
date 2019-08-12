@@ -2,9 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 
 import './index-container.scss';
-import InfoSection from '../info-section/InfoSection'
 import Workflow from '../workflow/Workflow'
-import KnifeInfoTest from '../knife-info-test/KnifeInfoTest';
+import IndexRedirect from '../index-redirect/IndexRedirect';
 import Divider from '../divider/Divider';
 
 class IndexContainer extends React.Component {
@@ -44,7 +43,7 @@ class IndexContainer extends React.Component {
           <h2 className="index__h2">
             Wat doet Horecaslijperij Bloom?
           </h2>
-          <p className="index__p-test">
+          <p className="index__p">
             Wij slijpen alles wat een scherpe rand hoort te hebben. Of het nu gaat om koksmessen, Japanse messen, kartel(brood)messen, tafelmessen, of machinemessen wij kunnen het voor u slijpen. Natuurlijk heeft elk mes een specifieke vorm en functie en daar houden onze ervaren slijpers ook rekening mee.
             <br />
             Is je favoriete mes ernstig beschadigd, is er een punt of een stukje van het lemmet afgebroken of zijn de kartels van je broodmes niet meer zichtbaar? Gooi je mes dan niet weg. Dit kunnen wij namelijk allemaal voor je herstellen.
@@ -52,7 +51,7 @@ class IndexContainer extends React.Component {
           <h2 className="index__h2">
             Hoe doen we dat?
           </h2>
-          <p className="index__p-test">
+          <p className="index__p">
             Wij komen naar je toe met onze uitstekend uitgeruste mobiele slijp-units, waardoor bijna alle voorkomende slijpwerkzaamheden bij je ter plaatse uitgevoerd kunnen worden. Tijdens het slijpen kun je gebruik maken van een leen-set messen, zodat de werkzaamheden in de keuken gewoon door kunnen gaan.
             <br />
             Ook op onze locatie in Hendrik-Ido-Ambacht is het mogelijk messen en andere te slijpen spullen in te leveren.
@@ -60,27 +59,27 @@ class IndexContainer extends React.Component {
           <h2 className="index__h2">
             Afspraak maken of meer informatie nodig?
           </h2>
-          <p className="index__p-test">
+          <p className="index__p">
             Elke werkdag zitten wij klaar om al je vragen te beantwoorden. Wil je een afspraak maken of meer informatie? Neem dan gerust <Link href="/contact"><a className="index__link"><b>contact</b></a></Link> met ons op.
           </p>
         </div>
         <Divider />
-        <ul className="index__ul-test">
-          <KnifeInfoTest
+        <ul className="index__ul">
+          <IndexRedirect
             title="MESSEN SLIJPEN"
             photoOne="../../static/photos/index/knives-one.png"
             photoTwo="../../static/photos/index/knives-two.png"
             link="/keukenmessen"
             info="Meer informatie"
           />
-          <KnifeInfoTest
+          <IndexRedirect
             title="SNIJPLANKEN VLAKKEN"
             photoOne="../../static/photos/cuttingboards/White1-voor.png"
             photoTwo="../../static/photos/cuttingboards/White1-na.png"
             link="/snijplanken"
             info="Meer informatie"
           />
-          <KnifeInfoTest
+          <IndexRedirect
             title="OVER ONS"
             photoOne="../../static/photos/index/bussen-resize.png"
             photoTwo="../../static/photos/index/old-school-photo.jpg"

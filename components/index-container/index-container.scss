@@ -48,7 +48,7 @@
     }
   }
 
-  &__p-test {
+  &__p {
     color: $color-secondary;
     font-size: $default-mobile-font-size;
     font-weight: 400;
@@ -71,7 +71,7 @@
     }
   }
 
-  &__ul-test {
+  &__ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
