@@ -32,6 +32,18 @@
       font-size: $default-h1-desktop;
       line-height: 36px;
     }
+
+    &--asterisk {
+      font-size: 14px;
+
+      @include tablet {
+        font-size: 18px;
+      }
+
+      @include desktop {
+        font-size: 22px;
+      }
+    }
   }
 
   &__image {

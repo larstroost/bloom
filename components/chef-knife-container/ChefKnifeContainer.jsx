@@ -63,7 +63,7 @@ class ChefKnifeContainer extends React.Component {
           />
           <KnifeInfo
             title="MAGIMIX"
-            info="Een groot mes met glad lemmet van ongeveer 27 centimeter met als voornaamste gebruiksdoel het openbreken van karkassen, doorhakken van gewrichten en het snijden van vlees."
+            info="Een magimix bestaat vaak uit twee rond uitlopende mesjes en wordt voornamelijk gebruikt om groenten en fruit mee te snijden. Vaak wordt dit tegelijkertijd vermengd met water, zuivel of ijs voor dingen als smoothies, soepen en sauzen."
             photo="../../static/photos/chef-knives/Magimix.png"
           />
         </ul>

@@ -36,6 +36,7 @@ class IndexContainer extends React.Component {
             src="../../static/photos/index/workflow-5.svg"
             alt="Binnen een paar uur klaar"
             text="Binnen 1 à 2 uur klaar"
+            asterisk="*"
           />
         </div>
         <Divider />
@@ -88,6 +89,9 @@ class IndexContainer extends React.Component {
             className="last"
           />
         </ul>
+        <p className="index__p index__p--small">
+          *Dit is een indicatie, bij grote hoeveelheden messen kan dit mogelijk langer duren.
+        </p>
       </div>
     );
   }

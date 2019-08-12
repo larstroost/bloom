@@ -60,6 +60,15 @@
     @include desktop {
       font-size: $default-h2-mobile;
     }
+
+    &--small {
+      font-size: 10px;
+      margin-bottom: 5px;
+
+      @include desktop {
+        margin-bottom: 0;
+      }
+    }
   }
 
   &__link {
