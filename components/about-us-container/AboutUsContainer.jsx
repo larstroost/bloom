@@ -38,7 +38,7 @@ class AboutUsContainer extends React.Component {
             Onze geschiedenis
           </h2>
           <p className="about-us__p">
-            In 1985 heeft de heer Bloom, nadat hij een exclusieve opleiding had genoten aan de beroemde Solingen Messerfabrieken in Duitsland, het bedrijf Bloom Staalwaren opgericht. De eerste jaren was hij te vinden op markten met een mobiele slijperij. Maar ook in zijn bedrijfspand was hij actief. In die tijd werd er nog veel zilverwerk verwerkt, waarbij niet alleen geslepen werd maar ook handvaten opnieuw aan het lemmet werden gezet. In 2006 is de het bedrijf verder gegaan onder de huidige naam: 'Horecaslijperij Bloom BV'. Zilverwerk is sindsdien wat naar de achtergrond geraakt.
+            In 1985 heeft de heer Bloom, nadat hij een exclusieve opleiding had genoten aan de beroemde Solingen Messerfabrieken in Duitsland, het bedrijf Bloom Staalwaren opgericht. De eerste jaren was hij te vinden op markten met een mobiele slijperij. Maar ook in zijn bedrijfspand was hij actief. In die tijd werd er nog veel zilverwerk verwerkt, waarbij niet alleen geslepen werd maar ook handvaten opnieuw aan het lemmet werden gezet. In 2006 is het bedrijf verder gegaan onder de huidige naam: 'Horecaslijperij Bloom BV'. Zilverwerk is sindsdien wat naar de achtergrond geraakt.
             <br />
             Inmiddels rijden we met vijf mobiele slijpunits in heel Nederland. Ook kunnen wij u van dienst zijn in ons bedrijfspand in Hendrik Ido Ambacht, waar wij buiten het slijpen, u ook kunnen helpen met het vlakken van snijplanken.
           </p>

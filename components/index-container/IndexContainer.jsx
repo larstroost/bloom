@@ -47,13 +47,13 @@ class IndexContainer extends React.Component {
           <p className="index__p">
             Wij slijpen alles wat een scherpe rand hoort te hebben. Of het nu gaat om koksmessen, Japanse messen, kartel(brood)messen, tafelmessen, of machinemessen wij kunnen het voor u slijpen. Natuurlijk heeft elk mes een specifieke vorm en functie en daar houden onze ervaren slijpers ook rekening mee.
             <br />
-            Is je favoriete mes ernstig beschadigd, is er een punt of een stukje van het lemmet afgebroken of zijn de kartels van je broodmes niet meer zichtbaar? Gooi je mes dan niet weg. Dit kunnen wij namelijk allemaal voor je herstellen.
+            Is uw favoriete mes ernstig beschadigd, is er een punt of een stukje van het lemmet afgebroken of zijn de kartels van uw broodmes niet meer zichtbaar? Gooi uw mes dan niet weg. Dit kunnen wij namelijk allemaal voor u herstellen.
           </p>
           <h2 className="index__h2">
             Hoe doen we dat?
           </h2>
           <p className="index__p">
-            Wij komen naar je toe met onze uitstekend uitgeruste mobiele slijp-units, waardoor bijna alle voorkomende slijpwerkzaamheden bij je ter plaatse uitgevoerd kunnen worden. Tijdens het slijpen kun je gebruik maken van een leen-set messen, zodat de werkzaamheden in de keuken gewoon door kunnen gaan.
+            Wij komen naar u toe met onze uitstekend uitgeruste mobiele slijp-units, waardoor bijna alle voorkomende slijpwerkzaamheden bij u ter plaatse uitgevoerd kunnen worden. Tijdens het slijpen kunt u gebruik maken van een leen-set messen, zodat de werkzaamheden in de keuken gewoon door kunnen gaan.
             <br />
             Ook op onze locatie in Hendrik-Ido-Ambacht is het mogelijk messen en andere te slijpen spullen in te leveren.
           </p>
@@ -61,7 +61,7 @@ class IndexContainer extends React.Component {
             Afspraak maken of meer informatie nodig?
           </h2>
           <p className="index__p">
-            Elke werkdag zitten wij klaar om al je vragen te beantwoorden. Wil je een afspraak maken of meer informatie? Neem dan gerust <Link href="/contact"><a className="index__link"><b>contact</b></a></Link> met ons op.
+            Elke werkdag zitten wij klaar om al uw vragen te beantwoorden. Wilt u een afspraak maken of meer informatie? Neem dan gerust <Link href="/contact"><a className="index__link"><b>contact</b></a></Link> met ons op.
           </p>
         </div>
         <Divider />
